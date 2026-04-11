@@ -2,11 +2,10 @@
 layout: default
 ---
 
-## Navigation
+# Problem Statement
+
 - [Team](TEAM.md)
 - [Problem](PROBLEM.md)
-
-# Problem Statement
 
 *(Add your problem statement content here)*
 
