@@ -3,77 +3,79 @@ layout: default
 ---
 
 <style>
-  .site-wrap {
-    display: flex;
-    min-height: 100vh;
+  .hamburger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+    color: white;
   }
 
   .sidebar {
-    width: 240px;
-    background: #1f1f1f;
-    padding: 2rem 1.25rem;
-    box-sizing: border-box;
-    position: sticky;
+    height: 100%;
+    width: 0;
+    position: fixed;
     top: 0;
-    height: 100vh;
-  }
-
-  .sidebar h2 {
-    color: white;
-    font-size: 1.2rem;
-    margin: 0 0 1rem 0;
+    left: 0;
+    background-color: #1f1f1f;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
   }
 
   .sidebar a {
-    display: block;
-    color: #d6d6d6;
+    padding: 12px 24px;
     text-decoration: none;
-    padding: 0.75rem 0;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 18px;
+    color: #ddd;
+    display: block;
   }
 
   .sidebar a:hover {
     color: white;
+    background: #333;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
   }
 
   .main-content {
-    flex: 1;
     padding: 3rem;
-  }
-
-  .hero-box {
-    max-width: 900px;
-  }
-
-  @media screen and (max-width: 980px) {
-    .site-wrap {
-      flex-direction: column;
-    }
-
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-
-    .main-content {
-      padding: 2rem 1.25rem;
-    }
   }
 </style>
 
-<div class="site-wrap">
-  <aside class="sidebar">
-    <h2>Navigation</h2>
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/team/' | relative_url }}">Team</a>
-    <a href="{{ '/problem/' | relative_url }}">Problem</a>
-  </aside>
+<!-- Hamburger icon -->
+<div class="hamburger" onclick="openNav()">☰</div>
 
-  <main class="main-content">
-    <div class="hero-box">
-      <h1>{{ page.title }}</h1>
-      {{ content }}
-    </div>
-  </main>
+<!-- Sidebar menu -->
+<div id="mySidebar" class="sidebar">
+  <span class="closebtn" onclick="closeNav()">×</span>
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/team/' | relative_url }}">Team</a>
+  <a href="{{ '/problem/' | relative_url }}">Problem</a>
 </div>
+
+<!-- Page content -->
+<div class="main-content">
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+}
+</script>
