@@ -1,8 +1,6 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
 .github-corner,
 .github-corner svg,
 a.github-corner {
@@ -16,4 +14,11 @@ a.github-corner {
 .page-header a[href*="github.com"] {
   display: none !important;
 }
+
+footer,
+.page-footer,
+.site-footer {
+  display: none !important;
+}
+
 
