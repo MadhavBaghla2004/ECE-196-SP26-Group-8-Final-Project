@@ -51,22 +51,10 @@ permalink: /team/
 <!-- Member 3 -->
 <div style="text-align:center; width:220px;">
   <img src="{{ '/images/ece.svg' | relative_url }}" alt="Member 3"
-       style="width:180px; height:180px; object-fit:cover; border-radius:12px; box-shadow:0 6px 16px rgba(0,0,0,0.3);">
+         style="width:180px; height:180px; object-fit:cover; border-radius:12px; box-shadow:0 6px 16px rgba(0,0,0,0.3);">
 
-  <h3 style="margin:12px 0 6px 0; font-weight:700;">Nathaniel Miller</h3>
-
-  <p style="
-    margin:0;
-    font-weight:600;
-    color:#222;
-    min-height:48px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-  ">
-  4th Year, Electrical<br>Engineering
-  </p>
+    <h3 style="margin:12px 0 6px 0; font-weight:700;">Nathaniel Miller</h3>
+    <p style="margin:0; font-weight:600; color:#222;">4th Year, Electrical <br> Engineering</p>
 
   <div style="margin-top:12px; display:flex; justify-content:center; gap:14px;">
     <a href="https://github.com/Nathan-Miller" target="_blank">
