@@ -1,4 +1,17 @@
-theme: jekyll-theme-leap-day
+remote_theme: mmistakes/minimal-mistakes@4.26.2
 
 title: ECE 196 Group 8 Final Project
 description: Final project for ECE 196
+
+locale: "en-US"
+minimal_mistakes_skin: "dark"
+
+# Sidebar navigation
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
