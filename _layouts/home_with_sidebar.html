@@ -7,7 +7,15 @@ layout: default
     margin: 0;
   }
 
-  /* HEADER */
+  .page-bg {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(255,255,255,0.72), rgba(255,255,255,0.72)), url("{{ '/images/Hydroponics.webp' | relative_url }}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
   .top-header {
     background: #111;
     color: white;
@@ -20,7 +28,6 @@ layout: default
     z-index: 1000;
   }
 
-  /* HAMBURGER */
   .hamburger {
     position: fixed;
     top: 18px;
@@ -31,7 +38,6 @@ layout: default
     color: white;
   }
 
-  /* SIDEBAR */
   .sidebar {
     height: 100%;
     width: 0;
@@ -67,39 +73,37 @@ layout: default
     color: white;
   }
 
-  /* CONTENT */
   .main-content {
     padding: 40px;
+    min-height: calc(100vh - 80px);
   }
 </style>
 
-<!-- Header -->
-<div class="top-header">
-  ECE 196 Group 8 Final Project
-</div>
+<div class="page-bg">
+  <div class="top-header">
+    ECE 196 Group 8 Final Project
+  </div>
 
-<!-- Hamburger -->
-<div class="hamburger" onclick="openNav()">☰</div>
+  <div class="hamburger" onclick="openNav()">☰</div>
 
-<!-- Sidebar -->
-<div id="mySidebar" class="sidebar">
-  <span class="closebtn" onclick="closeNav()">×</span>
-  <a href="{{ '/' | relative_url }}">Home</a>
-  <a href="{{ '/team/' | relative_url }}">Team</a>
-  <a href="{{ '/problem/' | relative_url }}">Problem</a>
-</div>
+  <div id="mySidebar" class="sidebar">
+    <span class="closebtn" onclick="closeNav()">×</span>
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/team/' | relative_url }}">Team</a>
+    <a href="{{ '/problem/' | relative_url }}">Problem</a>
+  </div>
 
-<!-- Content -->
-<div class="main-content">
-  {{ content }}
+  <div class="main-content">
+    {{ content }}
+  </div>
 </div>
 
 <script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-}
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+  }
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-}
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+  }
 </script>
