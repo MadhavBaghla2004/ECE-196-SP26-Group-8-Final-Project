@@ -3,8 +3,6 @@ name: Build and Deploy
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 permissions:
   contents: read
@@ -26,21 +24,17 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: false
+          bundler-cache: true
 
-      - name: Install dependencies
+      - name: Build Jekyll site
         run: |
-          gem install jekyll bundler
           bundle install
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Build
-        run: bundle exec jekyll build
+          bundle exec jekyll build --destination ./_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: './_site'
 
   deploy:
     environment:
