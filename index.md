@@ -1,6 +1,5 @@
 ---
 layout: home_with_sidebar
-title: ECE 196 Group 8 Final Project
 permalink: /
 ---
 
