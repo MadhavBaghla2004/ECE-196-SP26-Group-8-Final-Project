@@ -1,6 +1,5 @@
 ---
 layout: single
 title: Team
+permalink: /team/
 ---
-
-Add your team information here.

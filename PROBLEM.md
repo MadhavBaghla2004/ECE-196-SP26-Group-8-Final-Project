@@ -1,6 +1,5 @@
 ---
 layout: single
-title: Problem Statement
+title: Problem
+permalink: /problem/
 ---
-
-Add your problem statement content here.

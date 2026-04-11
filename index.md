@@ -1,8 +1,3 @@
 ---
-layout: single
-title: Problem Statement
+layout: home
 ---
-
-*(Add your problem statement content here)*
-
-This is our project website.
