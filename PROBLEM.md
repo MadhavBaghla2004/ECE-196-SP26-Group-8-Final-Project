@@ -1,6 +1,3 @@
----
-layout: single
-title: Problem Statement
----
+# Problem Statement
 
 Add your problem statement content here.

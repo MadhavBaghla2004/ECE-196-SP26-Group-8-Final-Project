@@ -1,6 +1,3 @@
----
-layout: single
-title: Team
----
+# Team
 
 Add your team information here.
