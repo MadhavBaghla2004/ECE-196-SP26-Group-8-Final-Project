@@ -3,5 +3,5 @@
 This is our project website.
 
 ## Pages
-- [Team](team.md)
+- [Team](team.)
 - [Problem](problem.md)

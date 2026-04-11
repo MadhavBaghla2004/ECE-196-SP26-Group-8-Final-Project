@@ -3,6 +3,6 @@ theme: jekyll-theme-cayman
 title: My Project
 
 header_pages:
-  - index.md
-  - team.md
-  - problem.md
+  - INDEX.md
+  - TEAM.md
+  - PROBLEM.md
