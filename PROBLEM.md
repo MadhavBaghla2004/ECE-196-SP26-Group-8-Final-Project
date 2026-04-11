@@ -1,8 +1,6 @@
 # Problem Statement
 
-*(Add your problem statement content here)*
-
-This is our project website.
+This is where you add your problem statement content.
 
 ## Pages
 - [Team](TEAM.md)
