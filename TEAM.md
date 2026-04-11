@@ -65,7 +65,8 @@ permalink: /team/
     justify-content:center;
     text-align:center;
   ">
-    4th Year, Electrical Engineering
+  4th Year, Electrical<br>Engineering
+</p>
   </p>
 
   <div style="margin-top:12px; display:flex; justify-content:center; gap:14px;">
