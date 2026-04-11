@@ -1,7 +1,6 @@
-# Problem Statement
+---
+layout: single
+title: Problem Statement
+---
 
-This is where you add your problem statement content.
-
-## Pages
-- [Team](TEAM.md)
-- [Problem](PROBLEM.md)
+Add your problem statement content here.

@@ -1,11 +1,16 @@
-remote_theme: mmistakes/minimal-mistakes
+theme: minimal-mistakes-jekyll
 
 title: ECE 196 Group 8 Final Project
-description: 
+description: Final project for ECE 196
 
-show_downloads: false
+locale: "en-US"
+minimal_mistakes_skin: "dark"
 
-header_pages:
-  - index.md
-  - TEAM.md
-  - PROBLEM.md
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-include-cache

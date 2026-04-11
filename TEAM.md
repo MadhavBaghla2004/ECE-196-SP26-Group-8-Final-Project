@@ -1,7 +1,6 @@
-# Team
+---
+layout: single
+title: Team
+---
 
-This is our project website.
-
-## Pages
-- [Team](TEAM.md)
-- [Problem](PROBLEM.md)
+Add your team information here.
