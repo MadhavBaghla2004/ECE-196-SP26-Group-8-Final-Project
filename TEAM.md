@@ -50,7 +50,7 @@ permalink: /team/
 
 <!-- Member 3 -->
 <div style="text-align:center; width:220px;">
-  <img src="{{ '/images/ece.svg' | relative_url }}" alt="Member 3"
+  <img src="{{ '/images/Nathaniel.jpg' | relative_url }}" alt="Member 3"
          style="width:180px; height:180px; object-fit:cover; border-radius:12px; box-shadow:0 6px 16px rgba(0,0,0,0.3);">
 
     <h3 style="margin:12px 0 6px 0; font-weight:700;">Nathaniel Miller</h3>
