@@ -87,7 +87,7 @@ permalink: /
       <div style="font-size:1.6rem; margin-bottom:8px;">🔍</div>
       <div style="font-size:0.7rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1.5px; font-weight:700; margin-bottom:8px;">What</div>
       <div style="font-size:1rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Failed Germination</div>
-      <div style="font-size:0.88rem; color:rgba(255,255,255,0.72); line-height:1.55;">Inconsistent results from poor environmental control of temperature &amp; humidity</div>
+      <div style="font-size:0.88rem; color:rgba(255,255,255,0.72); line-height:1.55;">Inconsistent results from poor environmental control </div>
     </div>
     <div style="background:rgba(30,80,30,0.55); border:1px solid rgba(120,220,120,0.3); border-radius:12px; padding:22px 20px; text-align:center; flex:1; min-width:170px;">
       <div style="font-size:1.6rem; margin-bottom:8px;">👤</div>
@@ -98,7 +98,7 @@ permalink: /
     <div style="background:rgba(30,80,30,0.55); border:1px solid rgba(120,220,120,0.3); border-radius:12px; padding:22px 20px; text-align:center; flex:1; min-width:170px;">
       <div style="font-size:1.6rem; margin-bottom:8px;">📍</div>
       <div style="font-size:0.7rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1.5px; font-weight:700; margin-bottom:8px;">Where</div>
-      <div style="font-size:1rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Indoor Homes</div>
+      <div style="font-size:1rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Indoor Spaces</div>
       <div style="font-size:0.88rem; color:rgba(255,255,255,0.72); line-height:1.55;">Living spaces without controlled greenhouse environments</div>
     </div>
   </div>
