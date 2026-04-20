@@ -159,78 +159,100 @@ permalink: /
   <!-- System images stacked -->
   <div style="display:flex; flex-direction:column; align-items:center; gap:16px; margin-bottom:36px;">
     <img src="{{ '/images/homehydroponicsystem.png' | relative_url }}" alt="Home Hydroponic System"
-         style="width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
+         max-width:500px; style="width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
     <img src="{{ '/images/hydroponicsystemdiag.png' | relative_url }}" alt="Hydroponic System Diagram"
-         style="width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
+         max-width:500px; style="width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
   </div>
 
   <!-- Block Diagram -->
   <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 16px;">Block Diagram of Technology</h3>
   <div style="text-align:center; margin-bottom:32px;">
     <img src="{{ '/images/TechBlockDiag.jpeg' | relative_url }}" alt="Technology Block Diagram"
-         style="width:100%; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12);">
+         max-width:500px; style="width:100%; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12);">
   </div>
 
   <!-- Milestones -->
-  <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:36px 0 24px; text-align:center; letter-spacing:0.5px;">Milestones</h3>
 
-  <div style="position:relative; padding:8px 0;">
 
-    <!-- Center vertical line -->
-    <div style="position:absolute; left:50%; top:0; bottom:0; width:2px; background:rgba(255,255,255,0.15); transform:translateX(-50%);"></div>
+<h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:36px 0 24px; text-align:center; letter-spacing:0.5px;">Milestones</h3>
 
-    <!-- Week 4 — LEFT -->
-    <div style="display:flex; align-items:flex-start; margin-bottom:0; position:relative;">
-      <div style="flex:1; padding-right:28px; padding-bottom:48px;">
-        <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
-          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600; margin-bottom:5px;">Date of Completion: End of Week 4</div>
-          <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Define System Requirements &amp; Success Criteria</div>
-          <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Finalize target crops, key variables to monitor and control, and hypothesis metrics such as germination rate, time to sprout, and beginner ease of use.</div>
+<div style="position:relative; padding:8px 0;">
+
+  <!-- Center vertical line -->
+  <div style="position:absolute; left:50%; top:0; bottom:0; width:2px; background:rgba(255,255,255,0.15); transform:translateX(-50%);"></div>
+
+  <!-- Week 4 — LEFT -->
+  <div style="display:flex; align-items:stretch; margin-bottom:0; position:relative;">
+    <div style="flex:1; padding-right:28px; padding-bottom:48px; position:relative;">
+      <!-- branch -->
+      <div style="position:absolute; top:34px; right:0; width:28px; height:2px; background:rgba(255,255,255,0.15);"></div>
+
+      <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+          <div style="width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">⏳</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: End of Week 4</div>
         </div>
-      </div>
-      <div style="flex-shrink:0; width:42px; height:42px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1.1rem; position:relative; z-index:1; margin-top:14px;">⏳</div>
-      <div style="flex:1; padding-bottom:48px;"></div>
-    </div>
-
-    <!-- Week 5 — RIGHT -->
-    <div style="display:flex; align-items:flex-start; margin-bottom:0; position:relative;">
-      <div style="flex:1; padding-bottom:48px;"></div>
-      <div style="flex-shrink:0; width:42px; height:42px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1.1rem; position:relative; z-index:1; margin-top:14px;">⏳</div>
-      <div style="flex:1; padding-left:28px; padding-bottom:48px;">
-        <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
-          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600; margin-bottom:5px;">Date of Completion: End of Week 5</div>
-          <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Build Core Sensing &amp; Control Prototype</div>
-          <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Integrate the microcontroller, sensor array, and basic hardware controls for temperature, humidity, water level, and nutrient monitoring.</div>
-        </div>
+        <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Define System Requirements &amp; Success Criteria</div>
+        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Finalize target crops, key variables to monitor and control, and hypothesis metrics such as germination rate, time to sprout, and beginner ease of use.</div>
       </div>
     </div>
+    <div style="flex:0 0 0;"></div>
+    <div style="flex:1; padding-bottom:48px;"></div>
+  </div>
 
-    <!-- Week 6 — LEFT -->
-    <div style="display:flex; align-items:flex-start; margin-bottom:0; position:relative;">
-      <div style="flex:1; padding-right:28px; padding-bottom:48px;">
-        <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
-          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600; margin-bottom:5px;">Date of Completion: End of Week 6</div>
-          <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Develop Software &amp; User Interface</div>
-          <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Create the UI and database connection for species selection, recommended germination settings, notifications, and live condition tracking.</div>
-        </div>
-      </div>
-      <div style="flex-shrink:0; width:42px; height:42px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1.1rem; position:relative; z-index:1; margin-top:14px;">⏳</div>
-      <div style="flex:1; padding-bottom:48px;"></div>
-    </div>
+  <!-- Week 5 — RIGHT -->
+  <div style="display:flex; align-items:stretch; margin-bottom:0; position:relative;">
+    <div style="flex:1; padding-bottom:48px;"></div>
+    <div style="flex:1; padding-left:28px; padding-bottom:48px; position:relative;">
+      <!-- branch -->
+      <div style="position:absolute; top:34px; left:0; width:28px; height:2px; background:rgba(255,255,255,0.15);"></div>
 
-    <!-- Week 7 — RIGHT -->
-    <div style="display:flex; align-items:flex-start; position:relative;">
-      <div style="flex:1;"></div>
-      <div style="flex-shrink:0; width:42px; height:42px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1.1rem; position:relative; z-index:1; margin-top:14px;">⏳</div>
-      <div style="flex:1; padding-left:28px;">
-        <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
-          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600; margin-bottom:5px;">Date of Completion: End of Week 7</div>
-          <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Testing &amp; Validation</div>
-          <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Run controlled germination trials under varying conditions and validate with beginner users, comparing results to standard setups while gathering feedback to refine performance and usability.</div>
+      <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+          <div style="width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">⏳</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: End of Week 5</div>
         </div>
+        <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Build Core Sensing &amp; Control Prototype</div>
+        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Integrate the microcontroller, sensor array, and basic hardware controls for temperature, humidity, water level, and nutrient monitoring.</div>
       </div>
     </div>
+  </div>
 
+  <!-- Week 6 — LEFT -->
+  <div style="display:flex; align-items:stretch; margin-bottom:0; position:relative;">
+    <div style="flex:1; padding-right:28px; padding-bottom:48px; position:relative;">
+      <!-- branch -->
+      <div style="position:absolute; top:34px; right:0; width:28px; height:2px; background:rgba(255,255,255,0.15);"></div>
+
+      <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+          <div style="width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">⏳</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: End of Week 6</div>
+        </div>
+        <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Develop Software &amp; User Interface</div>
+        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Create the UI and database connection for species selection, recommended germination settings, notifications, and live condition tracking.</div>
+      </div>
+    </div>
+    <div style="flex:0 0 0;"></div>
+    <div style="flex:1; padding-bottom:48px;"></div>
+  </div>
+
+  <!-- Week 7 — RIGHT -->
+  <div style="display:flex; align-items:stretch; position:relative;">
+    <div style="flex:1;"></div>
+    <div style="flex:1; padding-left:28px; position:relative;">
+      <!-- branch -->
+      <div style="position:absolute; top:34px; left:0; width:28px; height:2px; background:rgba(255,255,255,0.15);"></div>
+
+      <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+          <div style="width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">⏳</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: End of Week 7</div>
+        </div>
+        <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Testing &amp; Validation</div>
+        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Run controlled germination trials under varying conditions and validate with beginner users, comparing results to standard setups while gathering feedback to refine performance and usability.</div>
+      </div>
+    </div>
   </div>
 
 </div>
