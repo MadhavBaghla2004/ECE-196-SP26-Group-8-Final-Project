@@ -159,7 +159,7 @@ permalink: /
   <!-- System images stacked -->
   <div style="display:flex; flex-direction:column; align-items:center; gap:16px; margin-bottom:36px;">
     <img src="{{ '/images/homehydroponicsystem.png' | relative_url }}" alt="Home Hydroponic System"
-         max-width:500px; style="width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
+         style="max-width:500px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
     <img src="{{ '/images/hydroponicsystemdiag.png' | relative_url }}" alt="Hydroponic System Diagram"
          max-width:500px; style="width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
   </div>
@@ -168,7 +168,7 @@ permalink: /
   <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 16px;">Block Diagram of Technology</h3>
   <div style="text-align:center; margin-bottom:32px;">
     <img src="{{ '/images/TechBlockDiag.jpeg' | relative_url }}" alt="Technology Block Diagram"
-         max-width:500px; style="width:100%; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12);">
+         style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12);">
   </div>
 
   <!-- Milestones -->
