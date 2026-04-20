@@ -6,14 +6,15 @@ permalink: /
 
 <!-- ═══════════════════════════════ HOME ═══════════════════════════════ -->
 <div class="content-glass" id="home" style="text-align:center;">
-  <div style="margin-bottom:20px;">
+  <div style="margin-bottom:22px;">
     <img src="{{ '/images/homehydroponicsystem.png' | relative_url }}" alt="Home Hydroponic System"
-         style="max-width:100%; width:320px; height:220px; object-fit:cover; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.15);">
+         style="max-width:100%; width:440px; height:300px; object-fit:cover; border-radius:14px; box-shadow:0 8px 30px rgba(0,0,0,0.7); border:1px solid rgba(255,255,255,0.15);">
   </div>
-  <p style="color:rgba(255,255,255,0.6); font-size:0.85rem; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; margin:0 0 8px;">ECE 196 Group 8 SP26 Final Project</p>
-  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; margin:0 0 20px; line-height:1.3; text-shadow:0 2px 8px rgba(0,0,0,0.6);">
-    Indoor Smart Hydroponics System<br>for Beginners
+  <p style="color:#ffffff; font-size:1.7rem; font-weight:800; letter-spacing:0.3px; margin:0 0 6px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">ECE 196 Group 8 SP26 Final Project</p>
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; margin:0 0 14px; line-height:1.3; text-shadow:0 2px 8px rgba(0,0,0,0.6);">
+    Indoor Smart Hydroponics System for Beginners
   </h2>
+  <p style="color:rgba(255,255,255,0.72); font-size:1rem; line-height:1.6; margin:0 0 24px;">An affordable, sensor-driven growing system that automates seed germination so anyone can grow fresh produce at home — no expertise needed.</p>
   <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
     <a href="#team" style="background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.4); color:#ffffff; padding:10px 26px; border-radius:8px; text-decoration:none; font-size:1rem; font-weight:700;"
        onmouseover="this.style.background='rgba(255,255,255,0.28)'" onmouseout="this.style.background='rgba(255,255,255,0.15)'">Meet the Team ↓</a>
@@ -115,25 +116,21 @@ permalink: /
   </p>
 
   <!-- Patent card 1 -->
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:16px; display:flex; gap:22px; align-items:flex-start; flex-wrap:wrap;">
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:16px; text-align:center;">
     <img src="{{ '/images/SeedTray.jpg' | relative_url }}" alt="Seed Monitoring System"
-         style="width:160px; height:120px; object-fit:cover; border-radius:10px; flex-shrink:0; border:1px solid rgba(255,255,255,0.1);">
-    <div style="flex:1; min-width:220px;">
-      <div style="font-size:0.78rem; color:#a8e6a3; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">📋 US12543625B2</div>
-      <div style="font-size:1.1rem; color:#ffffff; font-weight:800; margin-bottom:8px;">Soil/Seed Monitoring System for Germination</div>
-      <div style="font-size:0.95rem; color:rgba(255,255,255,0.8); line-height:1.7;">A precision agriculture system that uses sensors and data processing to monitor soil conditions and predict seed germination timing, emergence, and risk.</div>
-    </div>
+         style="width:100%; max-height:220px; object-fit:cover; border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin-bottom:18px;">
+    <div style="font-size:0.78rem; color:#a8e6a3; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">📋 US12543625B2</div>
+    <div style="font-size:1.15rem; color:#ffffff; font-weight:800; margin-bottom:10px;">Soil/Seed Monitoring System for Germination</div>
+    <div style="font-size:1rem; color:rgba(255,255,255,0.8); line-height:1.75; text-align:left;">A precision agriculture system that uses sensors and data processing to monitor soil conditions and predict seed germination timing, emergence, and risk.</div>
   </div>
 
   <!-- Patent card 2 -->
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:32px; display:flex; gap:22px; align-items:flex-start; flex-wrap:wrap;">
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:32px; text-align:center;">
     <img src="{{ '/images/SeedTray2.avif' | relative_url }}" alt="Seedling Tray Assembly"
-         style="width:160px; height:120px; object-fit:cover; border-radius:10px; flex-shrink:0; border:1px solid rgba(255,255,255,0.1);">
-    <div style="flex:1; min-width:220px;">
-      <div style="font-size:0.78rem; color:#a8e6a3; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">📋 US4236350A</div>
-      <div style="font-size:1.1rem; color:#ffffff; font-weight:800; margin-bottom:8px;">Seedling Tray / Greenhouse Assembly</div>
-      <div style="font-size:0.95rem; color:rgba(255,255,255,0.8); line-height:1.7;">A modular seedling tray and greenhouse assembly designed to efficiently grow and manage plant seedlings in controlled environments.</div>
-    </div>
+         style="width:100%; max-height:220px; object-fit:cover; border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin-bottom:18px;">
+    <div style="font-size:0.78rem; color:#a8e6a3; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">📋 US4236350A</div>
+    <div style="font-size:1.15rem; color:#ffffff; font-weight:800; margin-bottom:10px;">Seedling Tray / Greenhouse Assembly</div>
+    <div style="font-size:1rem; color:rgba(255,255,255,0.8); line-height:1.75; text-align:left;">A modular seedling tray and greenhouse assembly designed to efficiently grow and manage plant seedlings in controlled environments.</div>
   </div>
 
   <!-- Proposed Solution -->
@@ -159,91 +156,19 @@ permalink: /
     </ul>
   </div>
 
-  <!-- System images -->
-  <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap; margin-bottom:36px;">
+  <!-- System images stacked -->
+  <div style="display:flex; flex-direction:column; align-items:center; gap:16px; margin-bottom:36px;">
     <img src="{{ '/images/homehydroponicsystem.png' | relative_url }}" alt="Home Hydroponic System"
-         style="flex:1; min-width:200px; max-width:48%; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); object-fit:cover; max-height:200px;">
-    <img src="{{ '/images/hydroponicsystemdiag.png' | relative_url }}" alt="Hydroponic System 2"
-         style="flex:1; min-width:200px; max-width:48%; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); object-fit:cover; max-height:200px;">
+         style="width:100%; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); object-fit:cover; max-height:280px;">
+    <img src="{{ '/images/hydroponicsystem2.jpg' | relative_url }}" alt="Hydroponic System 2"
+         style="width:100%; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); object-fit:cover; max-height:280px;">
   </div>
 
   <!-- Block Diagram -->
-  <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 20px;">Block Diagram of Technology</h3>
-
-  <!-- Visual block diagram -->
-  <div style="font-size:0.88rem;">
-
-    <!-- Row 1: Databases -->
-    <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
-      <div style="background:rgba(30,80,30,0.55); border:1px solid rgba(120,220,120,0.3); border-radius:10px; padding:14px 18px; text-align:center; min-width:160px; flex:1; max-width:220px;">
-        <div style="font-size:1.2rem; margin-bottom:4px;">☁️</div>
-        <div style="color:#ffffff; font-weight:700; font-size:0.9rem;">Cloud Database</div>
-        <div style="color:rgba(255,255,255,0.6); font-size:0.78rem; margin-top:4px; line-height:1.4;">Species info, updates, regional recommendations, user data</div>
-      </div>
-      <div style="background:rgba(30,80,30,0.55); border:1px solid rgba(120,220,120,0.3); border-radius:10px; padding:14px 18px; text-align:center; min-width:160px; flex:1; max-width:220px;">
-        <div style="font-size:1.2rem; margin-bottom:4px;">💾</div>
-        <div style="color:#ffffff; font-weight:700; font-size:0.9rem;">Local Database</div>
-        <div style="color:rgba(255,255,255,0.6); font-size:0.78rem; margin-top:4px; line-height:1.4;">Recent &amp; popular plants, offline fallback</div>
-      </div>
-    </div>
-
-    <!-- Arrow down -->
-    <div style="text-align:center; color:rgba(168,230,163,0.5); font-size:1.4rem; line-height:1.6;">↕</div>
-
-    <!-- Row 2: UI + User Input -->
-    <div style="display:flex; justify-content:center; gap:12px; align-items:center; flex-wrap:wrap;">
-      <div style="background:rgba(20,60,80,0.6); border:1px solid rgba(100,180,255,0.3); border-radius:10px; padding:14px 18px; text-align:center; min-width:200px; flex:2; max-width:300px;">
-        <div style="font-size:1.2rem; margin-bottom:4px;">📱</div>
-        <div style="color:#ffffff; font-weight:700; font-size:0.9rem;">User Interface</div>
-        <div style="color:rgba(255,255,255,0.6); font-size:0.78rem; margin-top:4px; line-height:1.4;">Species selection · ETA · Notifications · Social · Manual adjustments</div>
-      </div>
-      <div style="color:rgba(168,230,163,0.5); font-size:1.2rem; flex-shrink:0;">←</div>
-      <div style="background:rgba(30,80,30,0.55); border:1px solid rgba(120,220,120,0.3); border-radius:10px; padding:14px 18px; text-align:center; min-width:140px; flex:1; max-width:200px;">
-        <div style="font-size:1.2rem; margin-bottom:4px;">👤</div>
-        <div style="color:#ffffff; font-weight:700; font-size:0.9rem;">User Input</div>
-        <div style="color:rgba(255,255,255,0.6); font-size:0.78rem; margin-top:4px; line-height:1.4;">Species selection, manual parameter adjustments</div>
-      </div>
-    </div>
-
-    <!-- Arrow down -->
-    <div style="text-align:center; color:rgba(168,230,163,0.5); font-size:1.4rem; line-height:1.6;">↕</div>
-
-    <!-- Row 3: Backend + Microcontroller -->
-    <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
-      <div style="background:rgba(30,80,30,0.55); border:1px solid rgba(120,220,120,0.3); border-radius:10px; padding:14px 18px; text-align:center; min-width:160px; flex:1; max-width:220px;">
-        <div style="font-size:1.2rem; margin-bottom:4px;">⚙️</div>
-        <div style="color:#ffffff; font-weight:700; font-size:0.9rem;">Backend Processing</div>
-        <div style="color:rgba(255,255,255,0.6); font-size:0.78rem; margin-top:4px; line-height:1.4;">Data formatting, plant recommendations, user data processing</div>
-      </div>
-      <div style="background:rgba(20,60,80,0.6); border:1px solid rgba(100,180,255,0.3); border-radius:10px; padding:14px 18px; text-align:center; min-width:160px; flex:1; max-width:220px;">
-        <div style="font-size:1.2rem; margin-bottom:4px;">🔧</div>
-        <div style="color:#ffffff; font-weight:700; font-size:0.9rem;">Microcontroller</div>
-        <div style="color:rgba(255,255,255,0.6); font-size:0.78rem; margin-top:4px; line-height:1.4;">Scheduling, sensor data relay, hardware control, PID loop</div>
-      </div>
-    </div>
-
-    <!-- Split arrows -->
-    <div style="display:flex; justify-content:center; color:rgba(168,230,163,0.5); font-size:1.4rem; line-height:1.6; gap:120px;">
-      <span>↙</span><span>↘</span>
-    </div>
-
-    <!-- Row 4: Hardware + Sensors -->
-    <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
-      <div style="background:rgba(30,80,30,0.55); border:1px solid rgba(120,220,120,0.3); border-radius:10px; padding:14px 18px; text-align:center; min-width:160px; flex:1; max-width:220px;">
-        <div style="font-size:1.2rem; margin-bottom:4px;">⚡</div>
-        <div style="color:#ffffff; font-weight:700; font-size:0.9rem;">Hardware Controls</div>
-        <div style="color:rgba(255,255,255,0.6); font-size:0.78rem; margin-top:4px; line-height:1.4;">Fan, mister, nutrient dispenser, pH spray, LED strips</div>
-      </div>
-      <div style="background:rgba(30,80,30,0.55); border:1px solid rgba(120,220,120,0.3); border-radius:10px; padding:14px 18px; text-align:center; min-width:160px; flex:1; max-width:220px;">
-        <div style="font-size:1.2rem; margin-bottom:4px;">📡</div>
-        <div style="color:#ffffff; font-weight:700; font-size:0.9rem;">Sensor Array</div>
-        <div style="color:rgba(255,255,255,0.6); font-size:0.78rem; margin-top:4px; line-height:1.4;">Temperature, humidity, nutrient density, water level, pH, LED intensity</div>
-      </div>
-    </div>
-
-    <!-- Arrow back up from sensors -->
-    <div style="text-align:right; padding-right:calc(50% - 116px); color:rgba(168,230,163,0.4); font-size:0.78rem; margin-top:4px; line-height:1.4;">sensor data ↑</div>
-
+  <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 16px;">Block Diagram of Technology</h3>
+  <div style="text-align:center; margin-bottom:32px;">
+    <img src="{{ '/images/TechBlockDiag.jpeg' | relative_url }}" alt="Technology Block Diagram"
+         style="width:100%; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12);">
   </div>
 
   <!-- Milestones -->
@@ -260,7 +185,7 @@ permalink: /
       </div>
     </div>
 
-    <div style="text-align:center; color:rgba(168,230,163,0.35); font-size:1.5rem; line-height:1.8;">↓</div>
+    <div style="text-align:center; color:#ffffff; font-size:1.5rem; line-height:1.8;">↓</div>
 
     <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:20px 22px; display:flex; gap:16px; align-items:flex-start;">
       <div style="flex-shrink:0; width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.6); display:flex; align-items:center; justify-content:center; font-size:1rem; margin-top:2px;">⏳</div>
@@ -271,7 +196,7 @@ permalink: /
       </div>
     </div>
 
-    <div style="text-align:center; color:rgba(168,230,163,0.35); font-size:1.5rem; line-height:1.8;">↓</div>
+    <div style="text-align:center; color:#ffffff; font-size:1.5rem; line-height:1.8;">↓</div>
 
     <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:20px 22px; display:flex; gap:16px; align-items:flex-start;">
       <div style="flex-shrink:0; width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.6); display:flex; align-items:center; justify-content:center; font-size:1rem; margin-top:2px;">⏳</div>
@@ -282,7 +207,7 @@ permalink: /
       </div>
     </div>
 
-    <div style="text-align:center; color:rgba(168,230,163,0.35); font-size:1.5rem; line-height:1.8;">↓</div>
+    <div style="text-align:center; color:#ffffff; font-size:1.5rem; line-height:1.8;">↓</div>
 
     <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:20px 22px; display:flex; gap:16px; align-items:flex-start;">
       <div style="flex-shrink:0; width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.6); display:flex; align-items:center; justify-content:center; font-size:1rem; margin-top:2px;">⏳</div>
