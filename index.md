@@ -160,7 +160,7 @@ permalink: /
   <div style="display:flex; flex-direction:column; align-items:center; gap:16px; margin-bottom:36px;">
     <img src="{{ '/images/homehydroponicsystem.png' | relative_url }}" alt="Home Hydroponic System"
          style="width:100%; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); object-fit:cover; max-height:280px;">
-    <img src="{{ '/images/hydroponicsystem2.jpg' | relative_url }}" alt="Hydroponic System 2"
+    <img src="{{ '/images/hydroponicsystemdiag.png' | relative_url }}" alt="Hydroponic System 2"
          style="width:100%; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); object-fit:cover; max-height:280px;">
   </div>
 
