@@ -3,94 +3,143 @@ layout: default
 ---
 
 <style>
-  body {
-    margin: 0;
+  body { margin: 0; overflow-x: hidden; }
+
+  #bgCanvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 0;
   }
 
-  .page-bg {
+  .page-wrapper {
+    position: relative;
+    z-index: 1;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(255,255,255,0.72), rgba(255,255,255,0.72)), url("{{ '/images/Hydroponics.webp' | relative_url }}");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
   }
 
   .top-header {
-    background: #111;
-    color: white;
-    padding: 20px;
+    background: rgba(8, 22, 8, 0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #a8e6a3;
+    padding: 18px 20px;
     text-align: center;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid rgba(120, 220, 120, 0.25);
+    letter-spacing: 1px;
   }
 
   .hamburger {
     position: fixed;
-    top: 18px;
+    top: 19px;
     left: 20px;
-    font-size: 28px;
     cursor: pointer;
     z-index: 1100;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 4px;
   }
+  .hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #a8e6a3;
+    border-radius: 2px;
+    transition: background 0.2s;
+  }
+  .hamburger:hover span { background: #fff; }
 
   .sidebar {
     height: 100%;
     width: 0;
     position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #1f1f1f;
+    top: 0; left: 0;
+    background: rgba(6, 20, 6, 0.96);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
     overflow-x: hidden;
-    transition: 0.3s;
+    transition: 0.35s cubic-bezier(.4,0,.2,1);
     padding-top: 60px;
     z-index: 1050;
+    border-right: 1px solid rgba(100, 200, 100, 0.18);
   }
 
   .sidebar a {
-    padding: 12px 24px;
+    padding: 14px 28px;
     text-decoration: none;
-    font-size: 18px;
-    color: #ddd;
-    display: block;
+    font-size: 17px;
+    color: #b8ddb5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
   }
-
   .sidebar a:hover {
-    color: white;
-    background: #333;
+    color: #c8ffc8;
+    background: rgba(100, 200, 100, 0.1);
+    padding-left: 38px;
   }
 
   .closebtn {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 10px; right: 20px;
     font-size: 30px;
     cursor: pointer;
-    color: white;
+    color: #a8e6a3;
   }
 
+  html { scroll-behavior: smooth; }
+
   .main-content {
-    padding: 40px;
-    min-height: calc(100vh - 80px);
+    padding: 60px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .content-glass {
+    background: rgba(4, 18, 4, 0.72);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(120, 230, 120, 0.22);
+    border-radius: 18px;
+    padding: 40px 50px;
+    max-width: 540px;
+    width: 100%;
+    box-shadow: 0 8px 40px rgba(0, 80, 0, 0.35), 0 0 0 1px rgba(255,255,255,0.04) inset;
+    scroll-margin-top: 80px;
+  }
+
+  @media (max-width: 640px) {
+    .content-glass { padding: 28px 22px; }
   }
 </style>
 
-<div class="page-bg">
+<canvas id="bgCanvas"></canvas>
+
+<div class="page-wrapper">
   <div class="top-header">
-    ECE 196 Group 8 Final Project
+    🌱 ECE 196 Group 8 — Smart Hydroponics System
   </div>
 
-  <div class="hamburger" onclick="openNav()">☰</div>
+  <div class="hamburger" onclick="openNav()">
+    <span></span><span></span><span></span>
+  </div>
 
   <div id="mySidebar" class="sidebar">
-    <span class="closebtn" onclick="closeNav()">×</span>
-    <a href="{{ '/' | relative_url }}">Home</a>
-    <a href="{{ '/team/' | relative_url }}">Team</a>
-    <a href="{{ '/problem/' | relative_url }}">Problem</a>
+    <span class="closebtn" onclick="closeNav()">&times;</span>
+    <a href="{{ '/' | relative_url }}#home" onclick="closeNav()">🏠 Home</a>
+    <a href="{{ '/' | relative_url }}#team" onclick="closeNav()">👥 Team</a>
+    <a href="{{ '/' | relative_url }}#problem" onclick="closeNav()">🔬 Problem</a>
   </div>
 
   <div class="main-content">
@@ -99,11 +148,583 @@ layout: default
 </div>
 
 <script>
-  function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
+(function () {
+  const canvas = document.getElementById('bgCanvas');
+  const ctx = canvas.getContext('2d');
+  let W, H;
+
+  // roundRect polyfill
+  if (!CanvasRenderingContext2D.prototype.roundRect) {
+    CanvasRenderingContext2D.prototype.roundRect = function (x, y, w, h, r) {
+      r = Math.min(r, w / 2, h / 2);
+      this.beginPath();
+      this.moveTo(x + r, y);
+      this.lineTo(x + w - r, y);
+      this.arcTo(x + w, y, x + w, y + r, r);
+      this.lineTo(x + w, y + h - r);
+      this.arcTo(x + w, y + h, x + w - r, y + h, r);
+      this.lineTo(x + r, y + h);
+      this.arcTo(x, y + h, x, y + h - r, r);
+      this.lineTo(x, y + r);
+      this.arcTo(x, y, x + r, y, r);
+      this.closePath();
+      return this;
+    };
   }
 
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
+  function resize() {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+    generateBooks();
   }
+  window.addEventListener('resize', resize);
+
+  function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+  function lerp(a, b, t) { return a + (b - a) * t; }
+
+  // Pre-generate bookshelf data to avoid per-frame random flicker
+  let bookData = [];
+  const BOOK_COLORS = ['#c0392b','#2980b9','#27ae60','#8e44ad','#e67e22','#16a085','#d35400','#1a5276'];
+  function generateBooks() {
+    bookData = [];
+    const shelves = 4;
+    const sx = W * 0.82, sw = W * 0.14;
+    for (let shelf = 0; shelf < shelves; shelf++) {
+      const row = [];
+      let bx = 0;
+      while (bx < sw - 18) {
+        const bw = 10 + ((shelf * 7 + bx * 3) % 13);
+        if (bx + bw > sw - 10) break;
+        row.push({ x: bx, w: bw, color: BOOK_COLORS[(shelf * 5 + Math.floor(bx / 3)) % BOOK_COLORS.length], h: 0.7 + ((shelf + bx) % 4) * 0.08 });
+        bx += bw + 2;
+      }
+      bookData.push(row);
+    }
+  }
+
+  // ─── Wall ────────────────────────────────────────────
+  function drawWall() {
+    const g = ctx.createLinearGradient(0, 0, 0, H * 0.73);
+    g.addColorStop(0, '#ede0cb');
+    g.addColorStop(0.5, '#e0d0b5');
+    g.addColorStop(1, '#d5c8a5');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, W, H * 0.73);
+
+    // Subtle wall paneling lines
+    ctx.strokeStyle = 'rgba(160,140,100,0.18)';
+    ctx.lineWidth = 1;
+    for (let y = H * 0.15; y < H * 0.73; y += H * 0.12) {
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+    }
+
+    // Baseboard
+    const bg = ctx.createLinearGradient(0, H * 0.69, 0, H * 0.73);
+    bg.addColorStop(0, '#c8b890'); bg.addColorStop(1, '#b0a07a');
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, H * 0.695, W, H * 0.035);
+  }
+
+  // ─── Floor ───────────────────────────────────────────
+  function drawFloor() {
+    const g = ctx.createLinearGradient(0, H * 0.73, 0, H);
+    g.addColorStop(0, '#7a4f2e'); g.addColorStop(1, '#5c3820');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, H * 0.73, W, H * 0.27);
+
+    ctx.strokeStyle = 'rgba(0,0,0,0.10)';
+    ctx.lineWidth = 1;
+    const plankH = H * 0.032;
+    for (let y = H * 0.73; y < H; y += plankH) {
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
+    }
+    ctx.strokeStyle = 'rgba(0,0,0,0.055)';
+    ctx.lineWidth = 1;
+    const cols = 9;
+    for (let c = 0; c < cols; c++) {
+      const x = (W / cols) * c;
+      for (let row = 0; row < 9; row++) {
+        const y = H * 0.73 + plankH * row + (c % 2 === 0 ? 0 : plankH * 0.5);
+        ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x, y + plankH); ctx.stroke();
+      }
+    }
+
+    // Floor reflection/gloss
+    const rg = ctx.createLinearGradient(0, H * 0.73, 0, H * 0.80);
+    rg.addColorStop(0, 'rgba(255,220,160,0.08)'); rg.addColorStop(1, 'rgba(255,220,160,0)');
+    ctx.fillStyle = rg;
+    ctx.fillRect(0, H * 0.73, W, H * 0.07);
+  }
+
+  // ─── Window ──────────────────────────────────────────
+  function drawWindow(ts) {
+    const wx = W * 0.11, wy = H * 0.07, ww = W * 0.22, wh = H * 0.52;
+
+    // Animated sunlight rays
+    const pulse = 0.85 + 0.15 * Math.sin(ts * 0.0006);
+    ctx.save();
+    for (let i = 0; i < 5; i++) {
+      const rx = wx + ww * (i / 5 + 0.05);
+      const rg = ctx.createLinearGradient(rx, wy, rx + ww * 0.6, H * 0.73);
+      rg.addColorStop(0, `rgba(255,240,160,${0.14 * pulse})`);
+      rg.addColorStop(1, 'rgba(255,240,160,0)');
+      ctx.fillStyle = rg;
+      ctx.beginPath();
+      ctx.moveTo(rx, wy); ctx.lineTo(rx + ww * 0.55, H * 0.73);
+      ctx.lineTo(rx + ww * 0.55 + 22, H * 0.73); ctx.lineTo(rx + 18, wy);
+      ctx.fill();
+    }
+    ctx.restore();
+
+    // Sky
+    const sky = ctx.createLinearGradient(wx, wy, wx, wy + wh);
+    sky.addColorStop(0, '#6ab4e8'); sky.addColorStop(0.5, '#a8d8f0'); sky.addColorStop(1, '#d8eefc');
+    ctx.fillStyle = sky;
+    ctx.fillRect(wx, wy, ww, wh);
+
+    // Clouds
+    drawCloud(wx + ww * 0.18, wy + wh * 0.12, ww * 0.28);
+    drawCloud(wx + ww * 0.55, wy + wh * 0.38, ww * 0.18);
+
+    // Window frame
+    ctx.strokeStyle = '#5C3D2E'; ctx.lineWidth = 8;
+    ctx.strokeRect(wx, wy, ww, wh);
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.moveTo(wx + ww / 2, wy); ctx.lineTo(wx + ww / 2, wy + wh);
+    ctx.moveTo(wx, wy + wh / 2); ctx.lineTo(wx + ww, wy + wh / 2);
+    ctx.stroke();
+
+    // Sill
+    ctx.fillStyle = '#7a5030';
+    ctx.fillRect(wx - 12, wy + wh - 2, ww + 24, 14);
+
+    // Curtains
+    const cColors = ['#7a3820', '#6b3018'];
+    [[wx - 28, wx + 30], [wx + ww - 30, wx + ww + 28]].forEach(([x1, x2], side) => {
+      ctx.fillStyle = cColors[side % 2];
+      ctx.beginPath();
+      ctx.moveTo(x1, wy - 12);
+      ctx.quadraticCurveTo(lerp(x1, x2, 0.5), wy + wh * 0.4, x1 + (side === 0 ? -10 : 10), wy + wh + 14);
+      ctx.lineTo(x2 + (side === 0 ? 10 : -10), wy + wh + 14);
+      ctx.quadraticCurveTo(x2, wy + wh * 0.4, x2, wy - 12);
+      ctx.fill();
+    });
+
+    // Curtain rod
+    ctx.fillStyle = '#3d2010';
+    ctx.fillRect(wx - 44, wy - 20, ww + 88, 10);
+    ctx.fillStyle = '#6a3828';
+    ctx.beginPath(); ctx.arc(wx - 44, wy - 15, 7, 0, Math.PI * 2); ctx.fill();
+    ctx.beginPath(); ctx.arc(wx + ww + 44, wy - 15, 7, 0, Math.PI * 2); ctx.fill();
+  }
+
+  function drawCloud(x, y, size) {
+    ctx.fillStyle = 'rgba(255,255,255,0.82)';
+    ctx.beginPath();
+    ctx.arc(x, y, size * 0.28, 0, Math.PI * 2);
+    ctx.arc(x + size * 0.22, y - size * 0.09, size * 0.20, 0, Math.PI * 2);
+    ctx.arc(x + size * 0.46, y, size * 0.24, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  // ─── Couch ───────────────────────────────────────────
+  function drawCouch() {
+    const cx = -W * 0.02, cy = H * 0.54, cw = W * 0.30, ch = H * 0.22;
+
+    // Shadow
+    const sg = ctx.createLinearGradient(cx, H * 0.73, cx, H * 0.73 + 18);
+    sg.addColorStop(0, 'rgba(0,0,0,0.25)'); sg.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = sg;
+    ctx.fillRect(cx, H * 0.73, cw, 18);
+
+    // Body
+    ctx.fillStyle = '#3d2818';
+    ctx.beginPath(); ctx.roundRect(cx + cw * 0.07, cy + ch * 0.34, cw * 0.86, ch * 0.66, 7); ctx.fill();
+
+    // Backrest
+    ctx.fillStyle = '#2e1e10';
+    ctx.beginPath(); ctx.roundRect(cx + cw * 0.07, cy, cw * 0.86, ch * 0.50, 7); ctx.fill();
+
+    // Armrests
+    ctx.fillStyle = '#4a2e18';
+    [[cx, cy + ch * 0.08, cw * 0.10, ch * 0.82], [cx + cw * 0.90, cy + ch * 0.08, cw * 0.10, ch * 0.82]].forEach(([x, y, w, h]) => {
+      ctx.beginPath(); ctx.roundRect(x, y, w, h, 5); ctx.fill();
+    });
+
+    // Seat cushions
+    const cush = [cx + cw * 0.10, cx + cw * 0.52];
+    cush.forEach(bx => {
+      ctx.fillStyle = '#4a2a14';
+      ctx.beginPath(); ctx.roundRect(bx, cy + ch * 0.40, cw * 0.38, ch * 0.32, 5); ctx.fill();
+      ctx.strokeStyle = 'rgba(0,0,0,0.15)'; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.roundRect(bx + 3, cy + ch * 0.43, cw * 0.32, ch * 0.26, 3); ctx.stroke();
+    });
+
+    // Throw pillow (green accent)
+    ctx.fillStyle = '#2e5e2e';
+    ctx.beginPath(); ctx.roundRect(cx + cw * 0.52, cy + ch * 0.06, cw * 0.28, ch * 0.38, 4); ctx.fill();
+    ctx.strokeStyle = 'rgba(100,200,100,0.2)'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.roundRect(cx + cw * 0.55, cy + ch * 0.09, cw * 0.22, ch * 0.32, 3); ctx.stroke();
+  }
+
+  // ─── Floor lamp ──────────────────────────────────────
+  function drawLamp(ts) {
+    const lx = W * 0.28, baseY = H * 0.73, topY = H * 0.26;
+
+    // Cast shadow
+    ctx.fillStyle = 'rgba(0,0,0,0.12)';
+    ctx.beginPath(); ctx.ellipse(lx + 20, baseY, 22, 6, 0, 0, Math.PI * 2); ctx.fill();
+
+    // Pole
+    ctx.strokeStyle = '#3d2b1f'; ctx.lineWidth = 5; ctx.lineCap = 'round';
+    ctx.beginPath(); ctx.moveTo(lx, baseY); ctx.lineTo(lx, topY + H * 0.08); ctx.stroke();
+
+    // Base disc
+    ctx.fillStyle = '#3d2b1f';
+    ctx.beginPath(); ctx.ellipse(lx, baseY, 20, 6, 0, 0, Math.PI * 2); ctx.fill();
+
+    // Arm
+    ctx.lineWidth = 4;
+    ctx.beginPath(); ctx.moveTo(lx, topY + H * 0.08);
+    ctx.quadraticCurveTo(lx + 18, topY, lx + 42, topY); ctx.stroke();
+
+    // Shade
+    ctx.fillStyle = '#c8a060';
+    ctx.beginPath();
+    ctx.moveTo(lx + 18, topY);
+    ctx.lineTo(lx + 66, topY + H * 0.065);
+    ctx.lineTo(lx + 12, topY + H * 0.065);
+    ctx.closePath(); ctx.fill();
+    ctx.fillStyle = 'rgba(255,220,140,0.4)';
+    ctx.beginPath();
+    ctx.moveTo(lx + 20, topY + 2);
+    ctx.lineTo(lx + 60, topY + H * 0.06);
+    ctx.lineTo(lx + 40, topY + H * 0.055);
+    ctx.closePath(); ctx.fill();
+
+    // Warm glow
+    const pulse = 0.9 + 0.1 * Math.sin(ts * 0.0009);
+    const glow = ctx.createRadialGradient(lx + 40, topY + H * 0.065, 0, lx + 40, topY + H * 0.065, H * 0.18);
+    glow.addColorStop(0, `rgba(255,235,160,${0.22 * pulse})`);
+    glow.addColorStop(1, 'rgba(255,235,160,0)');
+    ctx.fillStyle = glow;
+    ctx.beginPath(); ctx.arc(lx + 40, topY + H * 0.065, H * 0.18, 0, Math.PI * 2); ctx.fill();
+  }
+
+  // ─── Bookshelf ───────────────────────────────────────
+  function drawBookshelf() {
+    const sx = W * 0.82, sy = H * 0.10, sw = W * 0.14, sh = H * 0.63;
+    const shelves = 4, shelfH = sh / shelves;
+
+    // Frame
+    ctx.fillStyle = '#5c3820';
+    ctx.fillRect(sx, sy, sw, sh);
+    // Frame top/sides highlight
+    ctx.fillStyle = '#7a5030';
+    ctx.fillRect(sx, sy, sw, 6);
+    ctx.fillRect(sx, sy, 6, sh);
+    ctx.fillRect(sx + sw - 6, sy, 6, sh);
+
+    // Shelf boards
+    for (let i = 0; i <= shelves; i++) {
+      const by = sy + shelfH * i;
+      ctx.fillStyle = '#7a4f2e';
+      ctx.fillRect(sx - 5, by, sw + 10, 9);
+      ctx.fillStyle = '#9a6a3e';
+      ctx.fillRect(sx - 5, by, sw + 10, 3);
+    }
+
+    // Books
+    bookData.forEach((row, shelf) => {
+      const shelfY = sy + shelfH * shelf + 9;
+      const availH = shelfH - 18;
+      row.forEach(b => {
+        const bx = sx + 6 + b.x;
+        const bh = availH * b.h;
+        const by = shelfY + availH - bh;
+        ctx.fillStyle = b.color;
+        ctx.fillRect(bx, by, b.w, bh);
+        ctx.fillStyle = 'rgba(255,255,255,0.08)';
+        ctx.fillRect(bx, by, 2, bh);
+        ctx.strokeStyle = 'rgba(0,0,0,0.15)'; ctx.lineWidth = 0.5;
+        ctx.strokeRect(bx, by, b.w, bh);
+      });
+    });
+
+    // Shelf shadow
+    const sg = ctx.createLinearGradient(sx, H * 0.73, sx, H * 0.73 + 16);
+    sg.addColorStop(0, 'rgba(0,0,0,0.22)'); sg.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = sg; ctx.fillRect(sx - 5, H * 0.73, sw + 10, 16);
+  }
+
+  // ─── Table ───────────────────────────────────────────
+  function drawTable() {
+    const tx = W * 0.68, ty = H * 0.625, tw = W * 0.28, topH = H * 0.022;
+    const legH = H * 0.105, legW = tw * 0.055;
+
+    // Table shadow
+    const sg = ctx.createRadialGradient(tx + tw * 0.5, H * 0.73, 0, tx + tw * 0.5, H * 0.73, tw * 0.55);
+    sg.addColorStop(0, 'rgba(0,0,0,0.28)'); sg.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = sg; ctx.fillRect(tx, H * 0.73, tw, 20);
+
+    // Legs
+    ctx.fillStyle = '#7a4f2e';
+    [[tx + tw * 0.06, ty + topH], [tx + tw * 0.89, ty + topH]].forEach(([x, y]) => {
+      ctx.beginPath(); ctx.roundRect(x, y, legW, legH, 2); ctx.fill();
+    });
+    // Leg shadow
+    ctx.fillStyle = 'rgba(0,0,0,0.12)';
+    [[tx + tw * 0.06, ty + topH], [tx + tw * 0.89, ty + topH]].forEach(([x]) => {
+      ctx.fillRect(x + legW, H * 0.73, 6, 10);
+    });
+
+    // Tabletop
+    const tg = ctx.createLinearGradient(tx, ty, tx, ty + topH * 2);
+    tg.addColorStop(0, '#b07840'); tg.addColorStop(0.4, '#9c6b3c'); tg.addColorStop(1, '#7a4f2e');
+    ctx.fillStyle = tg;
+    ctx.beginPath(); ctx.roundRect(tx - 12, ty, tw + 24, topH + 8, 3); ctx.fill();
+
+    // Highlight
+    ctx.fillStyle = 'rgba(255,220,150,0.14)';
+    ctx.fillRect(tx, ty + 2, tw, 4);
+  }
+
+  // ─── Hydroponic system ───────────────────────────────
+  function drawHydroSystem(growth, ts) {
+    const tx = W * 0.68, ty = H * 0.625, tw = W * 0.28;
+    const sx = tx + tw * 0.18, sw = tw * 0.64;
+    const sh = H * 0.20, sy = ty - sh;
+
+    // ── LED grow light bar ──
+    const lightY = sy - H * 0.07;
+    // Mounting arm
+    ctx.strokeStyle = '#2a2a2a'; ctx.lineWidth = 4;
+    ctx.beginPath(); ctx.moveTo(sx + sw * 0.5, lightY + 8); ctx.lineTo(sx + sw * 0.5, lightY - H * 0.04); ctx.stroke();
+
+    ctx.fillStyle = '#1a1a1a';
+    ctx.beginPath(); ctx.roundRect(sx - 18, lightY, sw + 36, 10, 3); ctx.fill();
+
+    const ledCount = Math.max(1, Math.floor((sw + 36) / 11));
+    for (let i = 0; i < ledCount; i++) {
+      const lx = sx - 18 + i * 11 + 5.5;
+      const isRed = (i % 3) !== 2;
+      const ledPulse = 0.8 + 0.2 * Math.sin(ts * 0.002 + i * 0.5);
+      ctx.fillStyle = isRed ? '#ff2255' : '#5533ff';
+      ctx.beginPath(); ctx.arc(lx, lightY + 5, 2.5, 0, Math.PI * 2); ctx.fill();
+      const lg = ctx.createRadialGradient(lx, lightY + 5, 0, lx, lightY + 5, 18);
+      lg.addColorStop(0, isRed ? `rgba(255,30,80,${0.18 * ledPulse})` : `rgba(80,50,255,${0.18 * ledPulse})`);
+      lg.addColorStop(1, 'rgba(0,0,0,0)');
+      ctx.fillStyle = lg; ctx.beginPath(); ctx.arc(lx, lightY + 5, 18, 0, Math.PI * 2); ctx.fill();
+    }
+
+    // Combined grow light downward glow on plant area
+    const growGlow = ctx.createLinearGradient(sx, lightY + 10, sx, sy - 4);
+    growGlow.addColorStop(0, 'rgba(200,100,255,0.07)'); growGlow.addColorStop(1, 'rgba(200,100,255,0)');
+    ctx.fillStyle = growGlow; ctx.fillRect(sx, lightY + 10, sw, sy - lightY - 10);
+
+    // ── Reservoir ──
+    // Water fill
+    const waterH = sh * 0.52;
+    const waterG = ctx.createLinearGradient(sx, sy + sh - waterH, sx, sy + sh);
+    waterG.addColorStop(0, 'rgba(80,180,255,0.32)'); waterG.addColorStop(1, 'rgba(40,130,220,0.48)');
+    ctx.fillStyle = waterG; ctx.fillRect(sx + 4, sy + sh - waterH, sw - 8, waterH - 4);
+
+    // Water shimmer animated
+    const shimmer = 0.5 + 0.5 * Math.sin(ts * 0.003);
+    ctx.strokeStyle = `rgba(255,255,255,${0.25 + 0.15 * shimmer})`; ctx.lineWidth = 1.2;
+    ctx.beginPath(); ctx.moveTo(sx + 4, sy + sh - waterH); ctx.lineTo(sx + sw - 8, sy + sh - waterH); ctx.stroke();
+
+    // Reservoir walls (acrylic/glass)
+    ctx.strokeStyle = 'rgba(140,210,255,0.6)'; ctx.lineWidth = 3;
+    ctx.strokeRect(sx, sy, sw, sh);
+    ctx.strokeStyle = 'rgba(255,255,255,0.22)'; ctx.lineWidth = 1;
+    ctx.strokeRect(sx + 3, sy + 3, sw - 6, sh - 6);
+    // Corner highlights
+    ctx.strokeStyle = 'rgba(255,255,255,0.35)'; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(sx + 3, sy + 12); ctx.lineTo(sx + 3, sy + 3); ctx.lineTo(sx + 12, sy + 3); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(sx + sw - 12, sy + 3); ctx.lineTo(sx + sw - 3, sy + 3); ctx.lineTo(sx + sw - 3, sy + 12); ctx.stroke();
+
+    // ── Lid + net cup ──
+    const lidH = H * 0.020, lidY = sy - lidH * 0.6;
+    ctx.fillStyle = '#383838';
+    ctx.beginPath(); ctx.roundRect(sx - 5, lidY, sw + 10, lidH, 3); ctx.fill();
+    ctx.fillStyle = 'rgba(255,255,255,0.07)'; ctx.fillRect(sx - 5, lidY, sw + 10, 3);
+
+    const cupW = sw * 0.24, cupH = sh * 0.30, cupX = sx + sw * 0.5 - cupW * 0.5, cupY = lidY + lidH * 0.5;
+    ctx.fillStyle = '#2e2e2e';
+    ctx.beginPath();
+    ctx.moveTo(cupX, cupY); ctx.lineTo(cupX + cupW * 0.08, cupY + cupH);
+    ctx.lineTo(cupX + cupW * 0.92, cupY + cupH); ctx.lineTo(cupX + cupW, cupY);
+    ctx.closePath(); ctx.fill();
+    ctx.strokeStyle = 'rgba(255,255,255,0.08)'; ctx.lineWidth = 1;
+    ctx.stroke();
+
+    // Growing medium (rockwool)
+    const medG = ctx.createLinearGradient(cupX, cupY, cupX, cupY + cupH);
+    medG.addColorStop(0, '#8a7252'); medG.addColorStop(1, '#6a5238');
+    ctx.fillStyle = medG;
+    ctx.beginPath();
+    ctx.moveTo(cupX + 3, cupY + 2); ctx.lineTo(cupX + cupW * 0.10, cupY + cupH - 2);
+    ctx.lineTo(cupX + cupW * 0.90, cupY + cupH - 2); ctx.lineTo(cupX + cupW - 3, cupY + 2);
+    ctx.closePath(); ctx.fill();
+    // Texture dots on medium
+    ctx.fillStyle = 'rgba(0,0,0,0.12)';
+    for (let d = 0; d < 6; d++) {
+      ctx.beginPath(); ctx.arc(cupX + 6 + d * (cupW * 0.14), cupY + 5 + (d % 2) * 4, 2, 0, Math.PI * 2); ctx.fill();
+    }
+
+    const stemBaseX = sx + sw * 0.5, stemBaseY = cupY + 1;
+
+    // ── Roots ──
+    if (growth > 0.04) {
+      const rp = clamp((growth - 0.04) / 0.65, 0, 1);
+      const maxLen = (sy + sh - 5) - (cupY + cupH);
+      ctx.save(); ctx.globalAlpha = 0.8;
+      ctx.strokeStyle = 'rgba(235,235,210,0.9)'; ctx.lineWidth = 1.8; ctx.lineCap = 'round';
+      // Main taproot
+      ctx.beginPath();
+      ctx.moveTo(stemBaseX, cupY + cupH);
+      ctx.quadraticCurveTo(stemBaseX + 6, cupY + cupH + maxLen * rp * 0.5, stemBaseX, cupY + cupH + maxLen * rp);
+      ctx.stroke();
+      if (rp > 0.25) {
+        ctx.lineWidth = 1;
+        const sides = [[-1, 12, 9], [1, 18, 11], [-1, 9, 14], [1, 16, 12]];
+        sides.forEach(([dir, offsetX, offsetLen], i) => {
+          if (rp < 0.25 + i * 0.18) return;
+          const ry = cupY + cupH + maxLen * rp * (0.18 + i * 0.18);
+          ctx.beginPath(); ctx.moveTo(stemBaseX, ry);
+          ctx.quadraticCurveTo(stemBaseX + dir * offsetX * 0.5, ry + 5, stemBaseX + dir * offsetX, ry + offsetLen);
+          ctx.stroke();
+        });
+      }
+      ctx.restore();
+    }
+
+    // ── Seed (visible early) ──
+    if (growth < 0.20) {
+      const alpha = 1 - growth / 0.20;
+      ctx.save(); ctx.globalAlpha = alpha;
+      ctx.fillStyle = '#7a5810';
+      ctx.beginPath(); ctx.ellipse(stemBaseX, stemBaseY - 5, 5.5, 3.5, -0.25, 0, Math.PI * 2); ctx.fill();
+      ctx.strokeStyle = 'rgba(0,0,0,0.3)'; ctx.lineWidth = 0.5; ctx.stroke();
+      ctx.restore();
+    }
+
+    // ── Stem ──
+    if (growth > 0.02) {
+      const maxStemH = H * 0.30;
+      const stemH = maxStemH * growth;
+      const sway = Math.sin(ts * 0.0012) * 4 * growth;
+      const stemW = clamp(2 + growth * 4, 2, 6);
+      const tipX = stemBaseX + sway * 0.5, tipY = stemBaseY - stemH;
+
+      ctx.strokeStyle = '#3d8c3d'; ctx.lineWidth = stemW; ctx.lineCap = 'round';
+      ctx.beginPath();
+      ctx.moveTo(stemBaseX, stemBaseY);
+      ctx.quadraticCurveTo(stemBaseX + sway, stemBaseY - stemH * 0.55, tipX, tipY);
+      ctx.stroke();
+
+      // Stem highlight
+      ctx.strokeStyle = 'rgba(100,200,80,0.3)'; ctx.lineWidth = stemW * 0.4;
+      ctx.beginPath();
+      ctx.moveTo(stemBaseX - stemW * 0.2, stemBaseY);
+      ctx.quadraticCurveTo(stemBaseX + sway - stemW * 0.2, stemBaseY - stemH * 0.55, tipX - stemW * 0.2, tipY);
+      ctx.stroke();
+
+      // ── Leaf pairs ──
+      if (growth > 0.18) {
+        const leafCount = Math.floor(growth * 6);
+        for (let i = 0; i < leafCount; i++) {
+          const t = (i + 1) / (leafCount + 1);
+          const lx = lerp(stemBaseX, tipX, t);
+          const ly = lerp(stemBaseY, tipY, t);
+          const leafAge = clamp((growth - 0.18 - i * 0.09) / 0.35, 0, 1);
+          if (leafAge <= 0) continue;
+          const leafSize = (18 + i * 9) * leafAge;
+          const lightness = 28 + leafAge * 18;
+          const sat = 55 + leafAge * 20;
+          const col = `hsl(${112 + i * 4},${sat}%,${lightness}%)`;
+          drawLeaf(lx, ly, leafSize, i % 2 === 0 ? -0.45 : Math.PI + 0.45, col, ts, i);
+        }
+      }
+
+      // Apical bud
+      if (growth < 0.40) {
+        ctx.fillStyle = `hsl(115,65%,${35 + growth * 15}%)`;
+        ctx.beginPath(); ctx.arc(tipX, tipY, 3 + growth * 3, 0, Math.PI * 2); ctx.fill();
+      }
+    }
+  }
+
+  function drawLeaf(x, y, size, angle, color, ts, idx) {
+    if (size < 1) return;
+    const wave = Math.sin(ts * 0.001 + idx * 0.8) * 0.04 * (size / 20);
+    ctx.save();
+    ctx.translate(x, y);
+    ctx.rotate(angle + wave);
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.bezierCurveTo(size * 0.35, -size * 0.42, size * 0.85, -size * 0.32, size, 0);
+    ctx.bezierCurveTo(size * 0.85, size * 0.32, size * 0.35, size * 0.42, 0, 0);
+    ctx.fillStyle = color; ctx.fill();
+    // Midrib
+    ctx.strokeStyle = 'rgba(0,70,0,0.22)'; ctx.lineWidth = 0.8;
+    ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(size * 0.88, 0); ctx.stroke();
+    // Veins
+    ctx.strokeStyle = 'rgba(0,80,0,0.12)'; ctx.lineWidth = 0.5;
+    [0.3, 0.55, 0.75].forEach(vt => {
+      ctx.beginPath();
+      ctx.moveTo(size * vt, -0.5);
+      ctx.lineTo(size * vt + size * 0.14, -size * 0.14);
+      ctx.moveTo(size * vt, 0.5);
+      ctx.lineTo(size * vt + size * 0.14, size * 0.14);
+      ctx.stroke();
+    });
+    ctx.restore();
+  }
+
+  // ─── Vignette ────────────────────────────────────────
+  function drawVignette() {
+    const vg = ctx.createRadialGradient(W / 2, H / 2, H * 0.28, W / 2, H / 2, W * 0.82);
+    vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(0,0,0,0.52)');
+    ctx.fillStyle = vg; ctx.fillRect(0, 0, W, H);
+  }
+
+  // ─── Growth timing ───────────────────────────────────
+  const CYCLE = 9500;
+  let startTime = null;
+
+  function getGrowth(ts) {
+    if (!startTime) startTime = ts;
+    const raw = ((ts - startTime) % CYCLE) / CYCLE;
+    if (raw < 0.72) return raw / 0.72;       // grow
+    if (raw < 0.88) return 1.0;              // hold
+    return 1.0 - (raw - 0.88) / 0.12;       // fade & restart
+  }
+
+  // ─── Main loop ───────────────────────────────────────
+  function animate(ts) {
+    ctx.clearRect(0, 0, W, H);
+    const g = getGrowth(ts);
+
+    drawWall();
+    drawWindow(ts);
+    drawFloor();
+    drawLamp(ts);
+    drawCouch();
+    drawBookshelf();
+    drawTable();
+    drawHydroSystem(g, ts);
+    drawVignette();
+
+    requestAnimationFrame(animate);
+  }
+
+  resize();
+  requestAnimationFrame(animate);
+})();
+
+function openNav()  { document.getElementById("mySidebar").style.width = "250px"; }
+function closeNav() { document.getElementById("mySidebar").style.width = "0"; }
 </script>
