@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <!-- ═══════════════════════════════ HOME ═══════════════════════════════ -->
-<div class="content-glass" id="home" style="text-align:center;">
+<div class="content-glass" id="home" style="text-align:center; max-width:820px; margin:0 auto;">
   <div style="margin-bottom:22px;">
     <img src="{{ '/images/homehydroponicsystem.png' | relative_url }}" alt="Home Hydroponic System"
          style="max-width:100%; width:440px; height:300px; object-fit:cover; border-radius:14px; box-shadow:0 8px 30px rgba(0,0,0,0.7); border:1px solid rgba(255,255,255,0.15);">
@@ -24,7 +24,7 @@ permalink: /
 </div>
 
 <!-- ═══════════════════════════════ TEAM ════════════════════════════════ -->
-<div class="content-glass" id="team" style="text-align:center; max-width:720px;">
+<div class="content-glass" id="team" style="text-align:center; max-width:820px; margin:0 auto;">
   <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; margin:0 0 28px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Our Team</h2>
   <div style="display:flex; justify-content:center; gap:24px; flex-wrap:nowrap;">
 
@@ -65,7 +65,7 @@ permalink: /
 </div>
 
 <!-- ══════════════════════════════ PROBLEM ═══════════════════════════════ -->
-<div class="content-glass" id="problem" style="max-width:820px;">
+<div class="content-glass" id="problem" style="max-width:820px; margin:0 auto;">
 
   <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">The Problem</h2>
 
@@ -118,7 +118,7 @@ permalink: /
 <!-- Patent card 1 -->
 <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:16px;">
   <img src="{{ '/images/SeedTray.jpg' | relative_url }}" alt="Seed Monitoring System"
-       style="max-width:400px; width:100%; height:auto; object-fit:contain; border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin:0 auto 18px auto; display:block;">
+       style="max-width:300px; width:100%; height:auto; object-fit:contain; border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin:0 auto 18px auto; display:block;">
   <div style="font-size:0.95rem; color:#a8e6a3; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">📋 US12543625B2</div>
   <div style="font-size:1.15rem; color:#ffffff; font-weight:800; margin-bottom:10px;">Soil/Seed Monitoring System for Germination</div>
   <div style="font-size:1rem; color:rgba(255,255,255,0.8); line-height:1.75;">A precision agriculture system that uses sensors and data processing to monitor soil conditions and predict seed germination timing, emergence, and risk.</div>
@@ -127,7 +127,7 @@ permalink: /
 <!-- Patent card 2 -->
 <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:32px;">
   <img src="{{ '/images/SeedTray2.avif' | relative_url }}" alt="Seedling Tray Assembly"
-       style="max-width:400px; width:100%; height:auto; object-fit:contain; border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin:0 auto 18px auto; display:block;">
+       style="max-width:300px; width:100%; height:auto; object-fit:contain; border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin:0 auto 18px auto; display:block;">
   <div style="font-size:0.95rem; color:#a8e6a3; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">📋 US4236350A</div>
   <div style="font-size:1.15rem; color:#ffffff; font-weight:800; margin-bottom:10px;">Seedling Tray / Greenhouse Assembly</div>
   <div style="font-size:1rem; color:rgba(255,255,255,0.8); line-height:1.75;">A modular seedling tray and greenhouse assembly designed to efficiently grow and manage plant seedlings in controlled environments.</div>
