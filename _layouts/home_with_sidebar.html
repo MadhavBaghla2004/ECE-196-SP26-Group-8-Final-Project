@@ -127,8 +127,10 @@ layout: default
 <canvas id="bgCanvas"></canvas>
 
 <div class="page-wrapper">
-  <div class="top-header">
-    🌱 ECE 196 Group 8 — Smart Hydroponics System
+  <div class="top-header" style="position:relative;">
+    Smart Hydroponics System
+    <img src="{{ '/images/ece.svg' | relative_url }}" alt="ECE UCSD"
+         style="position:absolute; right:20px; top:50%; transform:translateY(-50%); height:34px; filter:brightness(0) invert(1) opacity(0.85);">
   </div>
 
   <div class="hamburger" onclick="openNav()">
