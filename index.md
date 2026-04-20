@@ -161,7 +161,7 @@ permalink: /
     <img src="{{ '/images/homehydroponicsystem.png' | relative_url }}" alt="Home Hydroponic System"
          style="max-width:500px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
     <img src="{{ '/images/hydroponicsystemdiag.png' | relative_url }}" alt="Hydroponic System Diagram"
-         style="max-width:500px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
+         style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
   </div>
 
   <!-- Block Diagram -->
