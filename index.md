@@ -10,11 +10,11 @@ permalink: /
     <img src="{{ '/images/homehydroponicsystem.png' | relative_url }}" alt="Home Hydroponic System"
          style="max-width:100%; width:440px; height:300px; object-fit:cover; border-radius:14px; box-shadow:0 8px 30px rgba(0,0,0,0.7); border:1px solid rgba(255,255,255,0.15);">
   </div>
-  <p style="color:#ffffff; font-size:1.7rem; font-weight:800; letter-spacing:0.3px; margin:0 0 6px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">ECE 196 Group 8 SP26 Final Project</p>
+  <p style="color:#ffffff; font-size:1.7rem; font-weight:800; letter-spacing:0.3px; margin:0 0 6px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">ECE 196 SP26 Group 8 Final Project</p>
   <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; margin:0 0 14px; line-height:1.3; text-shadow:0 2px 8px rgba(0,0,0,0.6);">
     Indoor Smart Hydroponics System for Beginners
   </h2>
-  <p style="color:rgba(255,255,255,0.72); font-size:1rem; line-height:1.6; margin:0 0 24px;">An affordable, sensor-driven growing system that automates seed germination so anyone can grow fresh produce at home — no expertise needed.</p>
+  <p style="color:rgba(255,255,255,0.72); font-size:1rem; line-height:1.6; margin:0 0 24px;">An affordable, sensor-driven growing system that automates seed germination so anyone can grow fresh produce at the comfort of their home</p>
   <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
     <a href="#team" style="background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.4); color:#ffffff; padding:10px 26px; border-radius:8px; text-decoration:none; font-size:1rem; font-weight:700;"
        onmouseover="this.style.background='rgba(255,255,255,0.28)'" onmouseout="this.style.background='rgba(255,255,255,0.15)'">Meet the Team ↓</a>
@@ -115,23 +115,23 @@ permalink: /
     There are many products which attempt to simplify hydroponics, but most still require personal intervention. This means a learning curve still exists — users must know the temperature range for germination, nutrition requirements, heat thresholds, etc. — which causes plants to fail. These solutions typically use a simple tabletop container with a water misting setup in a plastic greenhouse dome, with limited customization for different seed types.
   </p>
 
-  <!-- Patent card 1 -->
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:16px;">
-    <img src="{{ '/images/SeedTray.jpg' | relative_url }}" alt="Seed Monitoring System"
-         style="width:100%; height:auto; border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin-bottom:18px; display:block;">
-    <div style="font-size:0.95rem; color:#a8e6a3; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">📋 US12543625B2</div>
-    <div style="font-size:1.15rem; color:#ffffff; font-weight:800; margin-bottom:10px;">Soil/Seed Monitoring System for Germination</div>
-    <div style="font-size:1rem; color:rgba(255,255,255,0.8); line-height:1.75;">A precision agriculture system that uses sensors and data processing to monitor soil conditions and predict seed germination timing, emergence, and risk.</div>
-  </div>
+<!-- Patent card 1 -->
+<div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:16px;">
+  <img src="{{ '/images/SeedTray.jpg' | relative_url }}" alt="Seed Monitoring System"
+       style="max-width:260px; width:100%; height:auto; object-fit:contain; border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin:0 auto 18px auto; display:block;">
+  <div style="font-size:0.95rem; color:#a8e6a3; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">📋 US12543625B2</div>
+  <div style="font-size:1.15rem; color:#ffffff; font-weight:800; margin-bottom:10px;">Soil/Seed Monitoring System for Germination</div>
+  <div style="font-size:1rem; color:rgba(255,255,255,0.8); line-height:1.75;">A precision agriculture system that uses sensors and data processing to monitor soil conditions and predict seed germination timing, emergence, and risk.</div>
+</div>
 
-  <!-- Patent card 2 -->
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:32px;">
-    <img src="{{ '/images/SeedTray2.avif' | relative_url }}" alt="Seedling Tray Assembly"
-         style="width:100%; height:auto; border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin-bottom:18px; display:block;">
-    <div style="font-size:0.95rem; color:#a8e6a3; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">📋 US4236350A</div>
-    <div style="font-size:1.15rem; color:#ffffff; font-weight:800; margin-bottom:10px;">Seedling Tray / Greenhouse Assembly</div>
-    <div style="font-size:1rem; color:rgba(255,255,255,0.8); line-height:1.75;">A modular seedling tray and greenhouse assembly designed to efficiently grow and manage plant seedlings in controlled environments.</div>
-  </div>
+<!-- Patent card 2 -->
+<div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:32px;">
+  <img src="{{ '/images/SeedTray2.avif' | relative_url }}" alt="Seedling Tray Assembly"
+       style="max-width:260px; width:100%; height:auto; object-fit:contain; border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin:0 auto 18px auto; display:block;">
+  <div style="font-size:0.95rem; color:#a8e6a3; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">📋 US4236350A</div>
+  <div style="font-size:1.15rem; color:#ffffff; font-weight:800; margin-bottom:10px;">Seedling Tray / Greenhouse Assembly</div>
+  <div style="font-size:1rem; color:rgba(255,255,255,0.8); line-height:1.75;">A modular seedling tray and greenhouse assembly designed to efficiently grow and manage plant seedlings in controlled environments.</div>
+</div>
 
   <!-- Proposed Solution -->
   <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 16px;">Proposed Solution</h3>
