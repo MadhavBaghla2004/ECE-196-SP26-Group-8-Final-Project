@@ -159,9 +159,9 @@ permalink: /
 
   <!-- System images — add homehydroponicsystem.jpg and hydroponicsystem2.jpg to /images/ -->
   <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-bottom:32px;">
-    <img src="{{ '/images/homehydroponicsystem.jpg' | relative_url }}" alt="Home Hydroponic System"
+    <img src="{{ '/images/homehydroponicsystem.png' | relative_url }}" alt="Home Hydroponic System"
          style="width:48%; min-width:200px; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.15); object-fit:cover; max-height:220px;">
-    <img src="{{ '/images/hydroponicsystem2.jpg' | relative_url }}" alt="Hydroponic System 2"
+    <img src="{{ '/images/HydroponicSystem2.png' | relative_url }}" alt="Hydroponic System 2"
          style="width:48%; min-width:200px; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.15); object-fit:cover; max-height:220px;">
   </div>
 
@@ -169,7 +169,7 @@ permalink: /
   <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 14px;">Block Diagram of Technology</h3>
   <!-- Add TechBlockImage.jpg to /images/ to display here -->
   <div style="text-align:center; margin-bottom:32px;">
-    <img src="{{ '/images/TechBlockImage.jpg' | relative_url }}" alt="Technology Block Diagram"
+    <img src="{{ '/images/TechBlockDiag.jpeg' | relative_url }}" alt="Technology Block Diagram"
          style="width:100%; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.15); background:rgba(255,255,255,0.04);">
   </div>
 
