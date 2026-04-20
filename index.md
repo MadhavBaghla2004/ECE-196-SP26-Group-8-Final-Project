@@ -168,7 +168,7 @@ permalink: /
   <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 16px;">Block Diagram of Technology</h3>
   <div style="text-align:center; margin-bottom:32px;">
     <img src="{{ '/images/TechBlockDiag.jpeg' | relative_url }}" alt="Technology Block Diagram"
-         style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12);">
+         style="width:100%; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12);">
   </div>
 
   <!-- Milestones -->
