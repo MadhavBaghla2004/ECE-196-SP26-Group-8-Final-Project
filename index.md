@@ -118,7 +118,7 @@ permalink: /
 <!-- Patent card 1 -->
 <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:16px;">
   <img src="{{ '/images/SeedTray.jpg' | relative_url }}" alt="Seed Monitoring System"
-       style="max-width:260px; width:100%; height:auto; object-fit:contain; border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin:0 auto 18px auto; display:block;">
+       style="max-width:400px; width:100%; height:auto; object-fit:contain; border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin:0 auto 18px auto; display:block;">
   <div style="font-size:0.95rem; color:#a8e6a3; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">📋 US12543625B2</div>
   <div style="font-size:1.15rem; color:#ffffff; font-weight:800; margin-bottom:10px;">Soil/Seed Monitoring System for Germination</div>
   <div style="font-size:1rem; color:rgba(255,255,255,0.8); line-height:1.75;">A precision agriculture system that uses sensors and data processing to monitor soil conditions and predict seed germination timing, emergence, and risk.</div>
@@ -127,7 +127,7 @@ permalink: /
 <!-- Patent card 2 -->
 <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:32px;">
   <img src="{{ '/images/SeedTray2.avif' | relative_url }}" alt="Seedling Tray Assembly"
-       style="max-width:260px; width:100%; height:auto; object-fit:contain; border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin:0 auto 18px auto; display:block;">
+       style="max-width:400px; width:100%; height:auto; object-fit:contain; border-radius:10px; border:1px solid rgba(255,255,255,0.1); margin:0 auto 18px auto; display:block;">
   <div style="font-size:0.95rem; color:#a8e6a3; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">📋 US4236350A</div>
   <div style="font-size:1.15rem; color:#ffffff; font-weight:800; margin-bottom:10px;">Seedling Tray / Greenhouse Assembly</div>
   <div style="font-size:1rem; color:rgba(255,255,255,0.8); line-height:1.75;">A modular seedling tray and greenhouse assembly designed to efficiently grow and manage plant seedlings in controlled environments.</div>
@@ -159,7 +159,7 @@ permalink: /
   <!-- System images stacked -->
   <div style="display:flex; flex-direction:column; align-items:center; gap:16px; margin-bottom:36px;">
     <img src="{{ '/images/homehydroponicsystem.png' | relative_url }}" alt="Home Hydroponic System"
-         style="max-width:500px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
+         style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
     <img src="{{ '/images/hydroponicsystemdiag.png' | relative_url }}" alt="Hydroponic System Diagram"
          style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
   </div>
