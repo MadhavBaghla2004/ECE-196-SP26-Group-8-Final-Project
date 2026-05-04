@@ -32,7 +32,6 @@ layout: default
     border-bottom: 1px solid rgba(120, 220, 120, 0.25);
     letter-spacing: 1px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 
@@ -187,8 +186,8 @@ layout: default
 
 <div class="page-wrapper">
   <div class="top-header" style="position:relative;">
-    Smart Hydroponics System
-    <img src="{{ '/images/ECElogo.jpg' | relative_url }}" alt="ECE Logo" style="height: 50px; width: auto; margin-left: auto;">
+    <div style="flex: 1; text-align: center;">Smart Hydroponics System</div>
+    <img src="{{ '/images/ECElogo.jpg' | relative_url }}" alt="ECE Logo" style="height: 50px; width: auto;">
   </div>
 
   <div class="hamburger" onclick="openNav()">
