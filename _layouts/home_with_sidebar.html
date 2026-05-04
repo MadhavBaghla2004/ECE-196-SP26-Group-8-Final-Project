@@ -109,22 +109,24 @@ layout: default
   }
 
   .page-footer {
-    padding: 26px 20px 40px;
+    padding: 28px 20px 48px;
     width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
-    z-index: 2;
-    background: rgba(4, 18, 4, 0.85);
+    z-index: 9999 !important;
+    background: rgba(0, 0, 0, 0.92) !important;
+    border-top: 2px solid rgba(120, 220, 120, 0.45);
   }
 
   .page-footer img {
-    max-width: 420px;
+    max-width: 540px;
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 14px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    border-radius: 18px;
+    box-shadow: 0 14px 38px rgba(0,0,0,0.45);
+    background: rgba(255,255,255,0.04);
   }
 
   .doc-frame-shell {
@@ -226,7 +228,10 @@ layout: default
   </div>
 </div>
 <footer class="page-footer">
-  <img src="{{ '/images/ECElogo.jpg' | relative_url }}" alt="ECE Logo">
+  <div style="text-align:center; width:100%; max-width:560px;">
+    <img src="{{ '/images/ECElogo.jpg' | relative_url }}" alt="ECE Logo">
+    <div style="color:#b8ddb5; margin-top:12px; font-size:0.95rem; letter-spacing:0.8px;">ECE Logo</div>
+  </div>
 </footer>
 
 <script>
