@@ -200,27 +200,29 @@ permalink: /
 
   <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">PCB Design</h2>
 
-  <p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 24px;">
-    Custom PCB design for the microcontroller, sensor integration, and control circuits.
-  </p>
-
-  <div style="text-align:center; margin-bottom:32px;">
-    <!-- Placeholder for PCB image -->
-    <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:60px; display:inline-block;">
-      <p style="color:rgba(255,255,255,0.88); font-size:1.1rem; margin:0;">PCB schematic and layout will be shown here</p>
+  <div style="display:flex; flex-direction:column; align-items:center; gap:32px; margin-bottom:32px;">
+    <div style="text-align:center; width:100%;">
+      <img src="{{ '/images/PCBLayout.png' | relative_url }}" alt="PCB Layout"
+           style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
+      <p style="font-size:0.95rem; color:rgba(255,255,255,0.75); margin:14px 0 0; font-style:italic;">PCB Layout</p>
+    </div>
+    <div style="text-align:center; width:100%;">
+      <img src="{{ '/images/PCB3D.png' | relative_url }}" alt="PCB 3D View"
+           style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
+      <p style="font-size:0.95rem; color:rgba(255,255,255,0.75); margin:14px 0 0; font-style:italic;">PCB 3D View</p>
     </div>
   </div>
 
 </div>
 
 <!-- ═══════════════════════════════ VIDEO DEMO ═══════════════════════════════ -->
-<div class=\"content-glass\" id=\"video-demo\" style=\"max-width:820px; margin:0 auto;\">
+<div class="content-glass" id="video-demo" style="max-width:820px; margin:0 auto;">
 
-  <h2 style=\"color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);\">Video Demo</h2>
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Video Demo</h2>
 
-  <div style=\"text-align:center; margin-bottom:32px;\">
+  <div style="text-align:center; margin-bottom:32px;">
     <!-- Placeholder for video embed -->
-    <div style=\"background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:60px; display:inline-block;\">
+    <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:60px; display:inline-block;">
       <p style="color:rgba(255,255,255,0.88); font-size:1.1rem; margin:0;">Video demo will be embedded here</p>
     </div>
   </div>
@@ -228,7 +230,7 @@ permalink: /
 </div>
 
 <!-- ═══════════════════════════════ POSTER ═══════════════════════════════ -->
-<div class=\"content-glass\" id=\"poster\" style=\"max-width:820px; margin:0 auto;\">
+<div class="content-glass" id="poster" style="max-width:820px; margin:0 auto;">
 
   <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Poster</h2>
 
@@ -242,7 +244,7 @@ permalink: /
 <!-- ═══════════════════════════════ PROJECT TUTORIAL ═══════════════════════════════ -->
 <div class="content-glass" id="tutorial" style="max-width:820px; margin:0 auto;">
 
-  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Project Tutorial</h2>
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Mini Project #3 Tutorial</h2>
 
   <p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 24px;">
     Step-by-step guide on how to build and use the Indoor Smart Hydroponics System.
@@ -367,7 +369,7 @@ permalink: /
 </div>
 
 <!-- ═══════════════════════════════ RESOURCES ═══════════════════════════════ -->
-<div class="content-glass" id="resources" style="max-width:820px; margin:0 auto;">
+<div class="content-glass" id="resources" style="max-width:820px; margin:60px auto 0;">
 
   <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Resources</h2>
 
