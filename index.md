@@ -200,22 +200,25 @@ permalink: /
            style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
       <p style="font-size:0.95rem; color:rgba(255,255,255,0.75); margin:14px 0 0; font-style:italic;">PCB Layout</p>
     </div>
-    <div style="display:flex; flex-direction:column; align-items:center; gap:32px; margin-bottom:32px;">
     <div style="text-align:center; width:100%;">
       <img src="{{ '/images/PCBFront.png' | relative_url }}" alt="Board Front Layout"
            style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
       <p style="font-size:0.95rem; color:rgba(255,255,255,0.75); margin:14px 0 0; font-style:italic;">Board Front Layout</p>
     </div>
-    <div style="display:flex; flex-direction:column; align-items:center; gap:32px; margin-bottom:32px;">
     <div style="text-align:center; width:100%;">
       <img src="{{ '/images/PCBBack.png' | relative_url }}" alt="Board Back Layout"
            style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
       <p style="font-size:0.95rem; color:rgba(255,255,255,0.75); margin:14px 0 0; font-style:italic;">Board Back Layout</p>
     </div>
     <div style="text-align:center; width:100%;">
-      <img src="{{ '/images/PCB3D.png' | relative_url }}" alt="PCB 3D View"
+      <img src="{{ '/images/PCBTop.png' | relative_url }}" alt="PCB 3D Top"
            style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
-      <p style="font-size:0.95rem; color:rgba(255,255,255,0.75); margin:14px 0 0; font-style:italic;">PCB 3D View</p>
+      <p style="font-size:0.95rem; color:rgba(255,255,255,0.75); margin:14px 0 0; font-style:italic;">PCB Top 3D View</p>
+    </div>
+    <div style="text-align:center; width:100%;">
+      <img src="{{ '/images/PCBBottom.png' | relative_url }}" alt="PCB 3D Bottom"
+           style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
+      <p style="font-size:0.95rem; color:rgba(255,255,255,0.75); margin:14px 0 0; font-style:italic;">PCB Bottom 3D View</p>
     </div>
   </div>
 
