@@ -271,3 +271,104 @@ permalink: /
   </div>
 
 </div>
+
+<!-- ═══════════════════════════════ VIDEO DEMO ═══════════════════════════════ -->
+<div class="content-glass" id="video-demo" style="max-width:820px;">
+
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Video Demo</h2>
+
+  <div style="text-align:center; margin-bottom:32px;">
+    <!-- Placeholder for video embed -->
+    <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:40px; display:inline-block;">
+      <p style="color:rgba(255,255,255,0.88); font-size:1.1rem; margin:0;">Video demo will be embedded here</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════ POSTER ═══════════════════════════════ -->
+<div class="content-glass" id="poster" style="max-width:820px;">
+
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Poster</h2>
+
+  <div style="text-align:center; margin-bottom:32px;">
+    <img src="{{ '/images/poster.png' | relative_url }}" alt="Project Poster"
+         style="width:100%; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12);">
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════ PROJECT TUTORIAL ═══════════════════════════════ -->
+<div class="content-glass" id="tutorial" style="max-width:820px;">
+
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Project Tutorial</h2>
+
+  <p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 24px;">
+    Step-by-step guide on how to build and use the Indoor Smart Hydroponics System.
+  </p>
+
+  <!-- Tutorial steps -->
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📋 Step 1: Assembly</div>
+    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
+      <li>Gather all components</li>
+      <li>Assemble the hardware</li>
+      <li>Connect sensors and microcontroller</li>
+    </ul>
+  </div>
+
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📋 Step 2: Setup</div>
+    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
+      <li>Install software and dependencies</li>
+      <li>Configure the system</li>
+      <li>Test connections</li>
+    </ul>
+  </div>
+
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📋 Step 3: Usage</div>
+    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
+      <li>Select seed type</li>
+      <li>Monitor growth</li>
+      <li>Harvest produce</li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════ RESOURCES ═══════════════════════════════ -->
+<div class="content-glass" id="resources" style="max-width:820px;">
+
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Resources</h2>
+
+  <p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 24px;">
+    Links to code repositories, documentation, and additional materials.
+  </p>
+
+  <!-- Resource links -->
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">🔗 Code Repository</div>
+    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
+      <li><a href="https://github.com/your-repo" target="_blank" style="color:#a8e6a3;">GitHub Repository</a></li>
+    </ul>
+  </div>
+
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📚 Documentation</div>
+    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
+      <li><a href="{{ '/docs/' | relative_url }}" style="color:#a8e6a3;">Full Documentation</a></li>
+      <li><a href="{{ '/api/' | relative_url }}" style="color:#a8e6a3;">API Reference</a></li>
+    </ul>
+  </div>
+
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">🛠️ Tools & Libraries</div>
+    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
+      <li>Arduino IDE</li>
+      <li>Python</li>
+      <li>Jekyll</li>
+    </ul>
+  </div>
+
+</div>
