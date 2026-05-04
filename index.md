@@ -15,12 +15,7 @@ permalink: /
     Indoor Smart Hydroponics System for Beginners
   </h2>
   <p style="color:rgba(255,255,255,0.72); font-size:1rem; line-height:1.6; margin:0 0 24px;">An affordable, sensor-driven growing system that automates seed germination so anyone can grow fresh produce at the comfort of their home</p>
-  <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
-    <a href="#team" style="background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.4); color:#ffffff; padding:10px 26px; border-radius:8px; text-decoration:none; font-size:1rem; font-weight:700;"
-       onmouseover="this.style.background='rgba(255,255,255,0.28)'" onmouseout="this.style.background='rgba(255,255,255,0.15)'">Meet the Team ↓</a>
-    <a href="#problem" style="background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.4); color:#ffffff; padding:10px 26px; border-radius:8px; text-decoration:none; font-size:1rem; font-weight:700;"
-       onmouseover="this.style.background='rgba(255,255,255,0.28)'" onmouseout="this.style.background='rgba(255,255,255,0.15)'">The Problem ↓</a>
-  </div>
+
 </div>
 
 <!-- ═══════════════════════════════ TEAM ════════════════════════════════ -->
@@ -63,7 +58,6 @@ permalink: /
 
   </div>
 </div>
-
 <!-- ══════════════════════════════ PROBLEM ═══════════════════════════════ -->
 <div class="content-glass" id="problem" style="max-width:820px; margin:0 auto;">
 
@@ -221,10 +215,10 @@ permalink: /
   <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Video Demo</h2>
 
   <div style="text-align:center; margin-bottom:32px;">
-    <!-- Placeholder for video embed -->
-    <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:60px; display:inline-block;">
-      <p style="color:rgba(255,255,255,0.88); font-size:1.1rem; margin:0;">Video demo will be embedded here</p>
-    </div>
+    <iframe src="https://docs.google.com/document/d/1xzU8UcMcpKXJ8mXc36a6TB2d4cCmEwv0vu0MmWzqOn4/preview"
+            style="width:100%; height:680px; border:1px solid rgba(255,255,255,0.18); border-radius:14px; background:#0a140a;"
+            allowfullscreen>
+    </iframe>
   </div>
 
 </div>
@@ -235,8 +229,10 @@ permalink: /
   <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Poster</h2>
 
   <div style="text-align:center; margin-bottom:32px;">
-    <img src="{{ '/images/poster.png' | relative_url }}" alt="Project Poster"
-         style="width:100%; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12);">
+    <iframe src="https://docs.google.com/presentation/d/1P1LDY73guXG3NnxYoRm6mlEnYV38SoIO68-8Utp_w2I/embed?start=false&loop=false&delayms=3000"
+            style="width:100%; height:680px; border:1px solid rgba(255,255,255,0.18); border-radius:14px; background:#0a140a;"
+            allowfullscreen>
+    </iframe>
   </div>
 
 </div>
@@ -329,42 +325,6 @@ permalink: /
     </div>
   </div>
 
-  <!-- ═══════════════════════════════ RESOURCES ═══════════════════════════════ -->
-<div class="content-glass" id="resources" style="max-width:820px; margin:60px auto 0;">
-
-  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Resources</h2>
-
-  <p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 24px;">
-    Links to code repositories, documentation, and additional materials.
-  </p>
-
-  <!-- Resource links -->
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
-    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">🔗 Code Repository</div>
-    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
-      <li><a href="https://github.com/your-repo" target="_blank" style="color:#a8e6a3;">GitHub Repository</a></li>
-    </ul>
-  </div>
-
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
-    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📚 Documentation</div>
-    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
-      <li><a href="{{ '/docs/' | relative_url }}" style="color:#a8e6a3;">Full Documentation</a></li>
-      <li><a href="{{ '/api/' | relative_url }}" style="color:#a8e6a3;">API Reference</a></li>
-    </ul>
-  </div>
-
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
-    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">🛠️ Tools & Libraries</div>
-    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
-      <li>Arduino IDE</li>
-      <li>Python</li>
-      <li>Jekyll</li>
-    </ul>
-  </div>
-
-</div>
-
   <!-- Week 6 — LEFT -->
   <div style="display:flex; align-items:stretch; margin-bottom:0; position:relative;">
     <div style="flex:1; padding-right:28px; padding-bottom:48px; position:relative;">
@@ -400,6 +360,41 @@ permalink: /
         <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Run controlled germination trials under varying conditions and validate with beginner users, comparing results to standard setups while gathering feedback to refine performance and usability.</div>
       </div>
     </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════ RESOURCES ═══════════════════════════════ -->
+<div class="content-glass" id="resources" style="max-width:820px; margin:60px auto 0;">
+
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Resources</h2>
+
+  <p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 24px;">
+    Links to code repositories, documentation, and additional materials.
+  </p>
+
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">🔗 Code Repository</div>
+    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
+      <li><a href="https://github.com/your-repo" target="_blank" style="color:#a8e6a3;">GitHub Repository</a></li>
+    </ul>
+  </div>
+
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📚 Documentation</div>
+    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
+      <li><a href="{{ '/docs/' | relative_url }}" style="color:#a8e6a3;">Full Documentation</a></li>
+      <li><a href="{{ '/api/' | relative_url }}" style="color:#a8e6a3;">API Reference</a></li>
+    </ul>
+  </div>
+
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">🛠️ Tools & Libraries</div>
+    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
+      <li>Arduino IDE</li>
+      <li>Python</li>
+      <li>Jekyll</li>
+    </ul>
   </div>
 
 </div>

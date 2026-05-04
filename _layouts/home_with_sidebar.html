@@ -108,6 +108,22 @@ layout: default
     gap: 60px;
   }
 
+  .page-footer {
+    padding: 26px 20px 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-footer img {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  }
+
   .content-glass {
     background: rgba(4, 18, 4, 0.72);
     backdrop-filter: blur(14px);
@@ -142,8 +158,6 @@ layout: default
 <div class="page-wrapper">
   <div class="top-header" style="position:relative;">
     Smart Hydroponics System
-    <img src="{{ '/images/ece.svg' | relative_url }}" alt="ECE UCSD"
-         style="position:absolute; right:20px; top:50%; transform:translateY(-50%); height:34px; filter:brightness(0) invert(1) opacity(0.85);">
   </div>
 
   <div class="hamburger" onclick="openNav()">
@@ -151,23 +165,25 @@ layout: default
   </div>
 
   <div id="mySidebar" class="sidebar">
-    <span class="closebtn" onclick="closeNav()">&times;</span>
-    <a href="{{ '/' | relative_url }}#home" onclick="closeNav()">🏠 Home</a>
-    <a href="{{ '/' | relative_url }}#team" onclick="closeNav()">👥 Team</a>
-    <a href="{{ '/' | relative_url }}#problem" onclick="closeNav()">🔬 Problem</a>
-    <a href="{{ '/' | relative_url }}#solution" onclick="closeNav()">💡 Solution</a>
-    <a href="{{ '/' | relative_url }}#pcb" onclick="closeNav()">🔌 PCB</a>
-    <a href="{{ '/' | relative_url }}#video-demo" onclick="closeNav()">🎥 Video Demo</a>
-    <a href="{{ '/' | relative_url }}#poster" onclick="closeNav()">📄 Poster</a>
-    <a href="{{ '/' | relative_url }}#tutorial" onclick="closeNav()">📖 Tutorial</a>
-    <a href="{{ '/' | relative_url }}#milestones" onclick="closeNav()">🗓️ Milestones</a>
-    <a href="{{ '/' | relative_url }}#resources" onclick="closeNav()">🔗 Resources</a>
+    <a href="{{ '/' | relative_url }}#home">🏠 Home</a>
+    <a href="{{ '/' | relative_url }}#team">👥 Team</a>
+    <a href="{{ '/' | relative_url }}#problem">🔬 Problem</a>
+    <a href="{{ '/' | relative_url }}#solution">💡 Solution</a>
+    <a href="{{ '/' | relative_url }}#pcb">🔌 PCB</a>
+    <a href="{{ '/' | relative_url }}#video-demo">🎥 Video Demo</a>
+    <a href="{{ '/' | relative_url }}#poster">📄 Poster</a>
+    <a href="{{ '/' | relative_url }}#tutorial">📖 Tutorial</a>
+    <a href="{{ '/' | relative_url }}#milestones">🗓️ Milestones</a>
+    <a href="{{ '/' | relative_url }}#resources">🔗 Resources</a>
   </div>
 
   <div class="main-content">
     {{ content }}
   </div>
 </div>
+<footer class="page-footer">
+  <img src="{{ '/images/ECElogo.jpg' | relative_url }}" alt="ECE Logo">
+</footer>
 
 <script>
 (function () {
