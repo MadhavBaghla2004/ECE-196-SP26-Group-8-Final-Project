@@ -195,28 +195,28 @@ permalink: /
   <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">PCB Design</h2>
 
   <div style="display:flex; flex-direction:column; align-items:center; gap:32px; margin-bottom:32px;">
-    <div style="text-align:center; width:100%;">
-      <p style="font-size:0.95rem; color:rgba(255,255,255,0.75); margin:0 0 14px; font-style:normal;">PCB Layout</p>
+    <div style="text-align:left; width:100%;">
+      <p style="font-size:1.1rem; color:rgba(255,255,255,0.75); margin:0 0 14px; font-style:normal;">PCB Layout</p>
       <img src="{{ '/images/PCBLayout.png' | relative_url }}" alt="PCB Layout"
            style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
     </div>
-    <div style="text-align:center; width:100%;">
-      <p style="font-size:0.95rem; color:rgba(255,255,255,0.75); margin:0 0 14px; font-style:normal;">Board Front Layout</p>
+    <div style="text-align:left; width:100%;">
+      <p style="font-size:1.1rem; color:rgba(255,255,255,0.75); margin:0 0 14px; font-style:normal;">Board Front Layout</p>
       <img src="{{ '/images/PCBFront.png' | relative_url }}" alt="Board Front Layout"
            style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
     </div>
-    <div style="text-align:center; width:100%;">
-      <p style="font-size:0.95rem; color:rgba(255,255,255,0.75); margin:0 0 14px; font-style:normal;">Board Back Layout</p>
+    <div style="text-align:left; width:100%;">
+      <p style="font-size:1.1rem; color:rgba(255,255,255,0.75); margin:0 0 14px; font-style:normal;">Board Back Layout</p>
       <img src="{{ '/images/PCBBack.png' | relative_url }}" alt="Board Back Layout"
            style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
     </div>
-    <div style="text-align:center; width:100%;">
-      <p style="font-size:0.95rem; color:rgba(255,255,255,0.75); margin:0 0 14px; font-style:normal;">PCB Top 3D View</p>
+    <div style="text-align:left; width:100%;">
+      <p style="font-size:1.1rem; color:rgba(255,255,255,0.75); margin:0 0 14px; font-style:normal;">PCB Top 3D View</p>
       <img src="{{ '/images/PCBTop.png' | relative_url }}" alt="PCB 3D Top"
            style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
     </div>
-    <div style="text-align:center; width:100%;">
-      <p style="font-size:0.95rem; color:rgba(255,255,255,0.75); margin:0 0 14px; font-style:normal;">PCB Bottom 3D View</p>
+    <div style="text-align:left; width:100%;">
+      <p style="font-size:1.1rem; color:rgba(255,255,255,0.75); margin:0 0 14px; font-style:normal;">PCB Bottom 3D View</p>
       <img src="{{ '/images/PCBBottom.png' | relative_url }}" alt="PCB 3D Bottom"
            style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
     </div>
