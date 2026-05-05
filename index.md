@@ -380,7 +380,7 @@ permalink: /
 </div>
 
 <!-- ═══════════════════════════════ RESOURCES ═══════════════════════════════ -->
-<div class="content-glass" id="resources" style="max-width:820px; margin:60px auto 0;">
+<div class="content-glass" id="resources" style="max-width:820px; margin:0 auto 40px;">
 
   <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Resources</h2>
 
