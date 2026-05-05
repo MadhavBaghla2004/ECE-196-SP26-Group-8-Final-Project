@@ -291,6 +291,41 @@ permalink: /
 
 </div>
 
+<!-- ═══════════════════════════════ RESOURCES ═══════════════════════════════ -->
+<div class="content-glass" id="resources" style="max-width:820px; margin:0 auto;">
+
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Resources</h2>
+
+  <p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 24px;">
+    Links to code repositories, documentation, and additional materials.
+  </p>
+
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">🔗 Code Repository</div>
+    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
+      <li><a href="https://github.com/your-repo" target="_blank" style="color:#a8e6a3;">GitHub Repository</a></li>
+    </ul>
+  </div>
+
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📚 Documentation</div>
+    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
+      <li><a href="{{ '/docs/' | relative_url }}" style="color:#a8e6a3;">Full Documentation</a></li>
+      <li><a href="{{ '/api/' | relative_url }}" style="color:#a8e6a3;">API Reference</a></li>
+    </ul>
+  </div>
+
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">🛠️ Tools & Libraries</div>
+    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
+      <li>Arduino IDE</li>
+      <li>Python</li>
+      <li>Jekyll</li>
+    </ul>
+  </div>
+
+</div>
+
 <!-- ══════════════════════════════ MILESTONES ═══════════════════════════════ -->
 <div class="content-glass" id="milestones" style="max-width:820px; margin:0 auto;">
 
@@ -379,37 +414,4 @@ permalink: /
 
 </div>
 
-<!-- ═══════════════════════════════ RESOURCES ═══════════════════════════════ -->
-<div class="content-glass" id="resources" style="max-width:820px; margin:0 auto;">
 
-  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Resources</h2>
-
-  <p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 24px;">
-    Links to code repositories, documentation, and additional materials.
-  </p>
-
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
-    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">🔗 Code Repository</div>
-    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
-      <li><a href="https://github.com/your-repo" target="_blank" style="color:#a8e6a3;">GitHub Repository</a></li>
-    </ul>
-  </div>
-
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
-    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📚 Documentation</div>
-    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
-      <li><a href="{{ '/docs/' | relative_url }}" style="color:#a8e6a3;">Full Documentation</a></li>
-      <li><a href="{{ '/api/' | relative_url }}" style="color:#a8e6a3;">API Reference</a></li>
-    </ul>
-  </div>
-
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
-    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">🛠️ Tools & Libraries</div>
-    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
-      <li>Arduino IDE</li>
-      <li>Python</li>
-      <li>Jekyll</li>
-    </ul>
-  </div>
-
-</div>
