@@ -222,6 +222,11 @@ permalink: /
     </div>
   </div>
 
+<h3 style="color:#ffffff; font-size:1.4rem; font-weight:700; margin:20px 0 10px;">PCB Functionality</h3>
+<p style="font-size:1.05rem; color:rgba(255,255,255,0.8); line-height:1.7; text-align:justify; margin:0;">
+The purpose of our PCB is to serve as the central control system for the smart hydroponics setup by integrating power management, sensing, and actuation into a single platform. It performs power conversions by taking a 12V input and stepping it down to regulated 5V and 3.3V levels required by different components. The board also provides structured I/O connections for sensors such as moisture, temperature, and water level, enabling the ESP32 to collect environmental data. Additionally, it handles peripheral device control by using switching components to operate actuators like pumps, fans, heaters, and LEDs based on sensor inputs, allowing the system to automatically maintain optimal growing conditions.
+</p>
+
 </div>
 
 <!-- ═══════════════════════════════ VIDEO DEMO ═══════════════════════════════ -->
@@ -347,10 +352,10 @@ permalink: /
       <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
         <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
           <div style="width:34px; height:34px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">✅</div>
-          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: End of Week 4</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: April 25</div>
         </div>
         <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Define System Requirements &amp; Success Criteria</div>
-        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Finalize target crops, key variables to monitor and control, and hypothesis metrics such as germination rate, time to sprout, and beginner ease of use.</div>
+        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Establish clear functional requirements, performance metrics, and measurable success criteria for reliable seed germination in hydroponic systems</div>
       </div>
     </div>
     <div style="flex:0 0 0;"></div>
@@ -367,10 +372,10 @@ permalink: /
       <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
         <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
           <div style="width:34px; height:34px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">✅</div>
-          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: End of Week 5</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 2</div>
         </div>
-        <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Build Core Sensing &amp; Control Prototype</div>
-        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Integrate the microcontroller, sensor array, and basic hardware controls for temperature, humidity, water level, and nutrient monitoring.</div>
+        <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Component Selection &amp; Procurement</div>
+        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Identify and select appropriate sensors, actuators, microcontrollers, and supporting components that meet system requirements and constraints</div>
       </div>
     </div>
   </div>
@@ -383,11 +388,11 @@ permalink: /
 
       <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
         <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
-          <div style="width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">⏳</div>
-          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: End of Week 6</div>
+          <div style="width:34px; height:34px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">✅</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 9</div>
         </div>
-        <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Develop Software &amp; User Interface</div>
-        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Create the UI and database connection for species selection, recommended germination settings, notifications, and live condition tracking.</div>
+        <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;"> PCB Design &amp; Circuit Integration</div>
+        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Design and finalize a custom PCB layout that integrates all electrical components with optimized routing, power distribution, and reliability</div>
       </div>
     </div>
     <div style="flex:0 0 0;"></div>
@@ -404,12 +409,68 @@ permalink: /
       <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
         <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
           <div style="width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">⏳</div>
-          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: End of Week 7</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 16</div>
         </div>
-        <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Testing &amp; Validation</div>
-        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Run controlled germination trials under varying conditions and validate with beginner users, comparing results to standard setups while gathering feedback to refine performance and usability.</div>
+        <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Enclosure Design &amp; 3D Printing</div>
+        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Develop and fabricate a protective and functional enclosure using CAD and 3D printing to house all system components</div>
       </div>
     </div>
+  </div>
+
+  <!-- Week 8 — LEFT -->
+  <div style="display:flex; align-items:stretch; margin-bottom:0; position:relative;">
+    <div style="flex:1; padding-right:28px; padding-bottom:48px; position:relative;">
+      <!-- branch -->
+      <div style="position:absolute; top:34px; right:0; width:28px; height:2px; background:rgba(255,255,255,0.15);"></div>
+
+      <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+          <div style="width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">⏳</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 23</div>
+        </div>
+        <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;"> System Assembly &amp; Hardware Integration</div>
+        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Assemble all hardware components, including PCB, sensors, actuators, and enclosure, into a fully functional prototype</div>
+      </div>
+    </div>
+    <div style="flex:0 0 0;"></div>
+    <div style="flex:1; padding-bottom:48px;"></div>
+  </div>
+
+  <!-- Week 9 — RIGHT -->
+  <div style="display:flex; align-items:stretch; position:relative;">
+    <div style="flex:1;"></div>
+    <div style="flex:1; padding-left:28px; position:relative;">
+      <!-- branch -->
+      <div style="position:absolute; top:34px; left:0; width:28px; height:2px; background:rgba(255,255,255,0.15);"></div>
+
+      <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+          <div style="width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">⏳</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 25</div>
+        </div>
+        <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Software Development &amp; System Integration</div>
+        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Develop and integrate firmware/software to enable sensor data collection, control logic, and system automation</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Week 10 — LEFT -->
+  <div style="display:flex; align-items:stretch; margin-bottom:0; position:relative;">
+    <div style="flex:1; padding-right:28px; padding-bottom:48px; position:relative;">
+      <!-- branch -->
+      <div style="position:absolute; top:34px; right:0; width:28px; height:2px; background:rgba(255,255,255,0.15);"></div>
+
+      <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+          <div style="width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">⏳</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: June 1</div>
+        </div>
+        <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;"> Validation, Testing &amp; Iteration</div>
+        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Conduct controlled experiments to evaluate system performance, validate success criteria, and refine the design based on results</div>
+      </div>
+    </div>
+    <div style="flex:0 0 0;"></div>
+    <div style="flex:1; padding-bottom:48px;"></div>
   </div>
 
 </div>
