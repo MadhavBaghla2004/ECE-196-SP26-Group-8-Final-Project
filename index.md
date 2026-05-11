@@ -120,7 +120,7 @@ permalink: /
 <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:16px;">
 
   <div style="width:100%; max-width:420px; height:220px; margin:0 auto 18px auto; background:#fff; border-radius:10px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; overflow:hidden;">
-    <img src="{{ '/images/SeedTray.jpg' | relative_url }}" alt="Seed Monitoring System"
+    <img src="{{ '/images/Patent1.webp' | relative_url }}" alt="Seed Monitoring System"
          style="max-width:100%; max-height:100%; object-fit:contain; display:block;">
   </div>
 
@@ -137,7 +137,7 @@ permalink: /
 <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:32px;">
 
   <div style="width:100%; max-width:420px; height:220px; margin:0 auto 18px auto; background:#fff; border-radius:10px; border:1px solid rgba(255,255,255,0.1); display:flex; align-items:center; justify-content:center; overflow:hidden;">
-    <img src="{{ '/images/SeedTray2.avif' | relative_url }}" alt="Seedling Tray Assembly"
+    <img src="{{ '/images/Patent2.png' | relative_url }}" alt="Seedling Tray Assembly"
          style="max-width:100%; max-height:100%; object-fit:contain; display:block;">
   </div>
 

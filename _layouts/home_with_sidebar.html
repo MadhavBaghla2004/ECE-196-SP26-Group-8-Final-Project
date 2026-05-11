@@ -180,7 +180,35 @@ layout: default
   @media (max-width: 640px) {
     .content-glass { padding: 28px 22px; }
   }
-</style>
+
+  /* Image hover zoom effects for better visibility on high-res displays */
+  img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    position: relative;
+  }
+
+  /* Special handling for small icons to prevent over-scaling */
+  img[style*="width:24px"], img[style*="height:24px"] {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  img[style*="width:24px"]:hover, img[style*="height:24px"]:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  /* Header logo hover effect */
+  .top-header img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
 
 <canvas id="bgCanvas"></canvas>
 
