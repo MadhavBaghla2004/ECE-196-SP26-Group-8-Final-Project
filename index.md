@@ -426,7 +426,7 @@ The purpose of our PCB is to serve as the central control system for the smart h
       <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
         <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
           <div style="width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">⏳</div>
-          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 23</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 27</div>
         </div>
         <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;"> System Assembly &amp; Hardware Integration</div>
         <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Assemble all hardware components, including PCB, sensors, actuators, and enclosure, into a fully functional prototype</div>
