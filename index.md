@@ -392,7 +392,7 @@ The purpose of our PCB is to serve as the central control system for the smart h
           <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 9</div>
         </div>
         <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;"> PCB Design &amp; Circuit Integration</div>
-        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Design and finalize a custom PCB layout that integrates all electrical components with optimized routing, power distribution, and reliability</div>
+        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Designed our PCB integrating the ESP32, sensor interfaces, actuator connections, and power regulation circuitry</div>
       </div>
     </div>
     <div style="flex:0 0 0;"></div>
@@ -409,10 +409,10 @@ The purpose of our PCB is to serve as the central control system for the smart h
       <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
         <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
           <div style="width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">⏳</div>
-          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 16</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 25</div>
         </div>
         <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Enclosure Design &amp; 3D Printing</div>
-        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Develop and fabricate a protective and functional enclosure using CAD and 3D printing to house all system components</div>
+        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Designed and fabricated a 3D-printed enclosure to securely house all system components and wiring</div>
       </div>
     </div>
   </div>
@@ -449,7 +449,7 @@ The purpose of our PCB is to serve as the central control system for the smart h
           <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 25</div>
         </div>
         <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Software Development &amp; System Integration</div>
-        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Develop and integrate firmware/software to enable sensor data collection, control logic, and system automation</div>
+        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Developed embedded software and mobile app features for sensor monitoring and automated system control.</div>
       </div>
     </div>
   </div>
@@ -466,13 +466,63 @@ The purpose of our PCB is to serve as the central control system for the smart h
           <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: June 1</div>
         </div>
         <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;"> Validation, Testing &amp; Iteration</div>
-        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Conduct controlled experiments to evaluate system performance, validate success criteria, and refine the design based on results</div>
+        <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Conduct controlled experiments to evaluate system performance, validate success criteria, and refine the design based on results with Lettuce seeds</div>
       </div>
     </div>
     <div style="flex:0 0 0;"></div>
     <div style="flex:1; padding-bottom:48px;"></div>
   </div>
+  <!-- Challenges -->
 
+  <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(255,120,120,0.2); border-radius:14px; padding:22px;">
+
+    
+
+    <h3 style="color:#ffb3b3; font-size:1.2rem; font-weight:800; margin:0 0 16px;">
+
+      Challenges
+
+    </h3>
+
+    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.75); line-height:1.8; font-size:0.92rem;">
+
+      <li>Finding reliable and compatible components online that met the system requirements and budget constraints</li>
+
+      <li>Searching for accurate PCB footprints and symbols for several components during schematic and PCB development</li>
+
+      <li>Balancing component placement and routing while maintaining clean power distribution on the PCB</li>
+
+      <li>Ensuring compatibility between sensors, actuators, and the ESP32 development environment</li>
+
+    </ul>
+
+  </div>
+
+  <!-- Lessons Learned -->
+
+  <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:22px;">
+
+    
+
+    <h3 style="color:#a8e6a3; font-size:1.2rem; font-weight:800; margin:0 0 16px;">
+
+      Lessons Learned
+
+    </h3>
+
+    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.75); line-height:1.8; font-size:0.92rem;">
+
+      <li>Proper component placement in PCB design greatly improves routing efficiency and overall system reliability</li>
+
+      <li>Different environmental sensors require unique calibration methods and communication interfaces</li>
+
+      <li>Careful power management and decoupling are important for stable sensor readings and actuator control</li>
+
+      <li>Iterative prototyping and testing help identify hardware and integration issues early in development</li>
+
+    </ul>
+
+  </div>
 </div>
 
 
