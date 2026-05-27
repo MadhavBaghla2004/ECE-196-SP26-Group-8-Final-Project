@@ -257,7 +257,12 @@ permalink: /
 <!-- ══════════════════════════════ PCB ═══════════════════════════════ -->
 <div class="content-glass" id="pcb" style="max-width:820px; margin:0 auto;">
 
-  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">
+  <h2 style="color:#ffffff;
+             font-size:1.7rem;
+             font-weight:800;
+             text-align:center;
+             margin:0 0 24px;
+             text-shadow:0 2px 8px rgba(0,0,0,0.6);">
     PCB Design
   </h2>
 
@@ -265,111 +270,205 @@ permalink: /
 
     <!-- PCB Layout -->
     <div style="text-align:left; width:100%;">
-      <p style="font-size:1.1rem; color:rgba(255,255,255,0.75); margin:0 0 14px;">
+
+      <p style="font-size:1.1rem;
+                color:rgba(255,255,255,0.75);
+                margin:0 0 14px;">
         PCB Layout
       </p>
 
       <div style="display:flex; justify-content:center;">
-        <img src="{{ '/images/PCBLayout.png' | relative_url }}" alt="PCB Layout"
-             style="width:70%; max-width:500px; height:auto;
+
+        <img src="{{ '/images/PCBLayout.png' | relative_url }}"
+             alt="PCB Layout"
+
+             style="width:420px;
+             height:300px;
+             object-fit:contain;
+             display:block;
+
              border-radius:12px;
              box-shadow:0 6px 24px rgba(0,0,0,0.6);
              border:1px solid rgba(255,255,255,0.12);">
+
       </div>
     </div>
 
-<!-- Board Front Layout -->
-<div style="text-align:left; width:100%;">
-  <p style="font-size:1.1rem; color:rgba(255,255,255,0.75); margin:0 0 14px;">
-    Board Front Layout
-  </p>
+    <!-- Board Front Layout -->
+    <div style="text-align:left; width:100%;">
 
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
-    <img src="{{ '/images/PCBFront.png' | relative_url }}" alt="Board Front Layout"
-         style="width:45%; min-width:260px; max-width:380px; height:auto;
-         object-fit:contain;
-         border-radius:12px;
-         box-shadow:0 6px 24px rgba(0,0,0,0.6);
-         border:1px solid rgba(255,255,255,0.12);">
+      <p style="font-size:1.1rem;
+                color:rgba(255,255,255,0.75);
+                margin:0 0 14px;">
+        Board Front Layout
+      </p>
 
-    <img src="{{ '/images/PCBTopLayoutUA.png' | relative_url }}" alt="Board Front Layout 2"
-         style="width:45%; min-width:260px; max-width:380px; height:auto;
-         object-fit:contain;
-         border-radius:12px;
-         box-shadow:0 6px 24px rgba(0,0,0,0.6);
-         border:1px solid rgba(255,255,255,0.12);">
-  </div>
-</div>
+      <div style="display:flex;
+                  flex-wrap:wrap;
+                  justify-content:center;
+                  align-items:center;
+                  gap:20px;">
 
-<!-- Board Back Layout -->
-<div style="text-align:left; width:100%;">
-  <p style="font-size:1.1rem; color:rgba(255,255,255,0.75); margin:0 0 14px;">
-    Board Back Layout
-  </p>
+        <img src="{{ '/images/PCBFront.png' | relative_url }}"
+             alt="Board Front Layout"
 
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
-    <img src="{{ '/images/PCBBack.png' | relative_url }}" alt="Board Back Layout"
-         style="width:45%; min-width:260px; max-width:380px; height:auto;
-         object-fit:contain;
-         border-radius:12px;
-         box-shadow:0 6px 24px rgba(0,0,0,0.6);
-         border:1px solid rgba(255,255,255,0.12);">
+             style="width:360px;
+             height:300px;
+             object-fit:contain;
+             display:block;
 
-    <img src="{{ '/images/PCBBottomLayoutUA.jpg' | relative_url }}" alt="Board Back Layout 2"
-         style="width:45%; min-width:260px; max-width:380px; height:auto;
-         object-fit:contain;
-         border-radius:12px;
-         box-shadow:0 6px 24px rgba(0,0,0,0.6);
-         border:1px solid rgba(255,255,255,0.12);">
-  </div>
-</div>
+             border-radius:12px;
+             box-shadow:0 6px 24px rgba(0,0,0,0.6);
+             border:1px solid rgba(255,255,255,0.12);">
+
+        <img src="{{ '/images/PCBTopLayoutUA.png' | relative_url }}"
+             alt="Board Front Layout 2"
+
+             style="width:360px;
+             height:300px;
+             object-fit:contain;
+             display:block;
+
+             border-radius:12px;
+             box-shadow:0 6px 24px rgba(0,0,0,0.6);
+             border:1px solid rgba(255,255,255,0.12);">
+
+      </div>
+    </div>
+
+    <!-- Board Back Layout -->
+    <div style="text-align:left; width:100%;">
+
+      <p style="font-size:1.1rem;
+                color:rgba(255,255,255,0.75);
+                margin:0 0 14px;">
+        Board Back Layout
+      </p>
+
+      <div style="display:flex;
+                  flex-wrap:wrap;
+                  justify-content:center;
+                  align-items:center;
+                  gap:20px;">
+
+        <img src="{{ '/images/PCBBack.png' | relative_url }}"
+             alt="Board Back Layout"
+
+             style="width:360px;
+             height:300px;
+             object-fit:contain;
+             display:block;
+
+             border-radius:12px;
+             box-shadow:0 6px 24px rgba(0,0,0,0.6);
+             border:1px solid rgba(255,255,255,0.12);">
+
+        <img src="{{ '/images/PCBBottomLayoutUA.jpg' | relative_url }}"
+             alt="Board Back Layout 2"
+
+             style="width:360px;
+             height:300px;
+             object-fit:contain;
+             display:block;
+
+             border-radius:12px;
+             box-shadow:0 6px 24px rgba(0,0,0,0.6);
+             border:1px solid rgba(255,255,255,0.12);">
+
+      </div>
+    </div>
 
     <!-- PCB Top 3D View -->
     <div style="text-align:left; width:100%;">
-      <p style="font-size:1.1rem; color:rgba(255,255,255,0.75); margin:0 0 14px;">
+
+      <p style="font-size:1.1rem;
+                color:rgba(255,255,255,0.75);
+                margin:0 0 14px;">
         PCB Top 3D View
       </p>
 
-      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
-        <img src="{{ '/images/PCBTopAnnotated.png' | relative_url }}" alt="PCB 3D Top"
-             style="width:45%; min-width:260px; max-width:380px; height:auto;
+      <div style="display:flex;
+                  flex-wrap:wrap;
+                  justify-content:center;
+                  align-items:center;
+                  gap:20px;">
+
+        <img src="{{ '/images/PCBTopAnnotated.png' | relative_url }}"
+             alt="PCB 3D Top"
+
+             style="width:360px;
+             height:300px;
+             object-fit:contain;
+             display:block;
+
              border-radius:12px;
              box-shadow:0 6px 24px rgba(0,0,0,0.6);
              border:1px solid rgba(255,255,255,0.12);">
 
-        <img src="{{ '/images/PCBTopView.jpg' | relative_url }}" alt="PCB 3D Top 2"
-             style="width:45%; min-width:260px; max-width:380px; height:auto;
+        <img src="{{ '/images/PCBTopView.jpg' | relative_url }}"
+             alt="PCB 3D Top 2"
+
+             style="width:360px;
+             height:300px;
+             object-fit:contain;
+             display:block;
+
              border-radius:12px;
              box-shadow:0 6px 24px rgba(0,0,0,0.6);
              border:1px solid rgba(255,255,255,0.12);">
+
       </div>
     </div>
 
     <!-- PCB Bottom 3D View -->
     <div style="text-align:left; width:100%;">
-      <p style="font-size:1.1rem; color:rgba(255,255,255,0.75); margin:0 0 14px;">
+
+      <p style="font-size:1.1rem;
+                color:rgba(255,255,255,0.75);
+                margin:0 0 14px;">
         PCB Bottom 3D View
       </p>
 
-      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
-        <img src="{{ '/images/PCBBottomAnnotated.png' | relative_url }}" alt="PCB 3D Bottom"
-             style="width:45%; min-width:260px; max-width:380px; height:auto;
+      <div style="display:flex;
+                  flex-wrap:wrap;
+                  justify-content:center;
+                  align-items:center;
+                  gap:20px;">
+
+        <img src="{{ '/images/PCBBottomAnnotated.png' | relative_url }}"
+             alt="PCB 3D Bottom"
+
+             style="width:360px;
+             height:300px;
+             object-fit:contain;
+             display:block;
+
              border-radius:12px;
              box-shadow:0 6px 24px rgba(0,0,0,0.6);
              border:1px solid rgba(255,255,255,0.12);">
 
-        <img src="{{ '/images/PCBBackView.jpg' | relative_url }}" alt="PCB 3D Bottom 2"
-             style="width:45%; min-width:260px; max-width:380px; height:auto;
+        <img src="{{ '/images/PCBBackView.jpg' | relative_url }}"
+             alt="PCB 3D Bottom 2"
+
+             style="width:360px;
+             height:300px;
+             object-fit:contain;
+             display:block;
+
              border-radius:12px;
              box-shadow:0 6px 24px rgba(0,0,0,0.6);
              border:1px solid rgba(255,255,255,0.12);">
+
       </div>
     </div>
 
   </div>
 
   <!-- PCB Functionality -->
-  <h3 style="color:#ffffff; font-size:1.4rem; font-weight:700; margin:40px 0 10px;">
+  <h3 style="color:#ffffff;
+             font-size:1.4rem;
+             font-weight:700;
+             margin:40px 0 10px;">
     PCB Functionality
   </h3>
 
@@ -380,6 +479,7 @@ permalink: /
             margin:0;">
 
     The purpose of our PCB is to serve as the central control system for the smart hydroponics setup by integrating power management, sensing, and actuation into a single platform. It performs power conversions by taking a 12V input and stepping it down to regulated 5V and 3.3V levels required by different components. The board also provides structured I/O connections for sensors such as moisture, temperature, and water level, enabling the ESP32 to collect environmental data. Additionally, it handles peripheral device control by using switching components to operate actuators like pumps, fans, heaters, and LEDs based on sensor inputs, allowing the system to automatically maintain optimal growing conditions.
+
   </p>
 
 </div>
