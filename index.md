@@ -284,15 +284,17 @@ permalink: /
     Board Front Layout
   </p>
 
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:18px;">
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
     <img src="{{ '/images/PCBFront.png' | relative_url }}" alt="Board Front Layout"
-         style="width:38%; min-width:220px; max-width:320px; height:auto;
+         style="width:45%; min-width:260px; max-width:380px; height:auto;
+         object-fit:contain;
          border-radius:12px;
          box-shadow:0 6px 24px rgba(0,0,0,0.6);
          border:1px solid rgba(255,255,255,0.12);">
 
     <img src="{{ '/images/PCBTopLayoutUA.png' | relative_url }}" alt="Board Front Layout 2"
-         style="width:38%; min-width:220px; max-width:320px; height:auto;
+         style="width:45%; min-width:260px; max-width:380px; height:auto;
+         object-fit:contain;
          border-radius:12px;
          box-shadow:0 6px 24px rgba(0,0,0,0.6);
          border:1px solid rgba(255,255,255,0.12);">
@@ -305,15 +307,17 @@ permalink: /
     Board Back Layout
   </p>
 
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:18px;">
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
     <img src="{{ '/images/PCBBack.png' | relative_url }}" alt="Board Back Layout"
-         style="width:38%; min-width:220px; max-width:320px; height:auto;
+         style="width:45%; min-width:260px; max-width:380px; height:auto;
+         object-fit:contain;
          border-radius:12px;
          box-shadow:0 6px 24px rgba(0,0,0,0.6);
          border:1px solid rgba(255,255,255,0.12);">
 
     <img src="{{ '/images/PCBBottomLayoutUA.jpg' | relative_url }}" alt="Board Back Layout 2"
-         style="width:38%; min-width:220px; max-width:320px; height:auto;
+         style="width:45%; min-width:260px; max-width:380px; height:auto;
+         object-fit:contain;
          border-radius:12px;
          box-shadow:0 6px 24px rgba(0,0,0,0.6);
          border:1px solid rgba(255,255,255,0.12);">
