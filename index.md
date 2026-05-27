@@ -485,40 +485,83 @@ permalink: /
 <!-- ══════════════════════════════ MILESTONES ═══════════════════════════════ -->
 <div class="content-glass" id="milestones" style="max-width:820px; margin:0 auto;">
 
-  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">
+  <h2 style="color:#ffffff;
+             font-size:1.7rem;
+             font-weight:800;
+             text-align:center;
+             margin:0 0 24px;
+             text-shadow:0 2px 8px rgba(0,0,0,0.6);">
     Milestones
   </h2>
 
   <div style="position:relative; padding:8px 0;">
 
     <!-- Center vertical line -->
-    <div style="position:absolute; left:50%; top:0; bottom:0; width:2px; background:rgba(255,255,255,0.15); transform:translateX(-50%);"></div>
+    <div style="position:absolute;
+                left:50%;
+                top:0;
+                bottom:0;
+                width:2px;
+                background:rgba(255,255,255,0.15);
+                transform:translateX(-50%);">
+    </div>
 
     <!-- Week 4 — LEFT -->
-    <div style="display:flex; align-items:stretch; margin-bottom:0; position:relative;">
-      <div style="flex:1; padding-right:28px; padding-bottom:48px; position:relative;">
+    <div style="display:flex; align-items:stretch; position:relative;">
 
-        <div style="position:absolute; top:34px; right:0; width:28px; height:2px; background:rgba(255,255,255,0.15);"></div>
+      <div style="flex:1;
+                  padding-right:28px;
+                  padding-bottom:48px;
+                  position:relative;">
 
-        <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
+        <div style="position:absolute;
+                    top:34px;
+                    right:0;
+                    width:28px;
+                    height:2px;
+                    background:rgba(255,255,255,0.15);">
+        </div>
 
-          <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+        <div style="background:rgba(8,35,8,0.85);
+                    border:1px solid rgba(120,220,120,0.25);
+                    border-radius:12px;
+                    padding:18px 20px;">
 
-            <div style="width:34px; height:34px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">
+          <div style="display:flex;
+                      align-items:center;
+                      gap:10px;
+                      margin-bottom:8px;">
+
+            <div style="width:34px;
+                        height:34px;
+                        border-radius:50%;
+                        background:rgba(120,220,120,0.2);
+                        border:2px solid rgba(120,220,120,0.7);
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        font-size:1rem;">
               ✅
             </div>
 
-            <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">
+            <div style="font-size:0.75rem;
+                        color:rgba(160,200,255,0.85);
+                        font-weight:600;">
               Date of Completion: April 25
             </div>
 
           </div>
 
-          <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">
+          <div style="font-size:1rem;
+                      color:#ffffff;
+                      font-weight:700;
+                      margin-bottom:5px;">
             Define System Requirements &amp; Success Criteria
           </div>
 
-          <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">
+          <div style="font-size:0.88rem;
+                      color:rgba(255,255,255,0.7);
+                      line-height:1.6;">
             Establish clear functional requirements, performance metrics, and measurable success criteria for reliable seed germination in hydroponic systems
           </div>
 
@@ -529,34 +572,64 @@ permalink: /
     </div>
 
     <!-- Week 5 — RIGHT -->
-    <div style="display:flex; align-items:stretch; margin-bottom:0; position:relative;">
+    <div style="display:flex; align-items:stretch; position:relative;">
 
       <div style="flex:1; padding-bottom:48px;"></div>
 
-      <div style="flex:1; padding-left:28px; padding-bottom:48px; position:relative;">
+      <div style="flex:1;
+                  padding-left:28px;
+                  padding-bottom:48px;
+                  position:relative;">
 
-        <div style="position:absolute; top:34px; left:0; width:28px; height:2px; background:rgba(255,255,255,0.15);"></div>
+        <div style="position:absolute;
+                    top:34px;
+                    left:0;
+                    width:28px;
+                    height:2px;
+                    background:rgba(255,255,255,0.15);">
+        </div>
 
-        <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
+        <div style="background:rgba(8,35,8,0.85);
+                    border:1px solid rgba(120,220,120,0.25);
+                    border-radius:12px;
+                    padding:18px 20px;">
 
-          <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+          <div style="display:flex;
+                      align-items:center;
+                      gap:10px;
+                      margin-bottom:8px;">
 
-            <div style="width:34px; height:34px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">
+            <div style="width:34px;
+                        height:34px;
+                        border-radius:50%;
+                        background:rgba(120,220,120,0.2);
+                        border:2px solid rgba(120,220,120,0.7);
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        font-size:1rem;">
               ✅
             </div>
 
-            <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">
+            <div style="font-size:0.75rem;
+                        color:rgba(160,200,255,0.85);
+                        font-weight:600;">
               Date of Completion: May 2
             </div>
 
           </div>
 
-          <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">
+          <div style="font-size:1rem;
+                      color:#ffffff;
+                      font-weight:700;
+                      margin-bottom:5px;">
             Component Selection &amp; Procurement
           </div>
 
-          <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">
-            Identify and select appropriate sensors, actuators, microcontrollers, and supporting components that meet system requirements and constraints
+          <div style="font-size:0.88rem;
+                      color:rgba(255,255,255,0.7);
+                      line-height:1.6;">
+            Identify and select appropriate sensors, actuators, microcontrollers, and supporting components
           </div>
 
         </div>
@@ -564,31 +637,61 @@ permalink: /
     </div>
 
     <!-- Week 6 — LEFT -->
-    <div style="display:flex; align-items:stretch; margin-bottom:0; position:relative;">
+    <div style="display:flex; align-items:stretch; position:relative;">
 
-      <div style="flex:1; padding-right:28px; padding-bottom:48px; position:relative;">
+      <div style="flex:1;
+                  padding-right:28px;
+                  padding-bottom:48px;
+                  position:relative;">
 
-        <div style="position:absolute; top:34px; right:0; width:28px; height:2px; background:rgba(255,255,255,0.15);"></div>
+        <div style="position:absolute;
+                    top:34px;
+                    right:0;
+                    width:28px;
+                    height:2px;
+                    background:rgba(255,255,255,0.15);">
+        </div>
 
-        <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
+        <div style="background:rgba(8,35,8,0.85);
+                    border:1px solid rgba(120,220,120,0.25);
+                    border-radius:12px;
+                    padding:18px 20px;">
 
-          <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+          <div style="display:flex;
+                      align-items:center;
+                      gap:10px;
+                      margin-bottom:8px;">
 
-            <div style="width:34px; height:34px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">
+            <div style="width:34px;
+                        height:34px;
+                        border-radius:50%;
+                        background:rgba(120,220,120,0.2);
+                        border:2px solid rgba(120,220,120,0.7);
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        font-size:1rem;">
               ✅
             </div>
 
-            <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">
+            <div style="font-size:0.75rem;
+                        color:rgba(160,200,255,0.85);
+                        font-weight:600;">
               Date of Completion: May 9
             </div>
 
           </div>
 
-          <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">
+          <div style="font-size:1rem;
+                      color:#ffffff;
+                      font-weight:700;
+                      margin-bottom:5px;">
             PCB Design &amp; Circuit Integration
           </div>
 
-          <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">
+          <div style="font-size:0.88rem;
+                      color:rgba(255,255,255,0.7);
+                      line-height:1.6;">
             Designed our PCB integrating the ESP32, sensor interfaces, actuator connections, and power regulation circuitry
           </div>
 
@@ -598,8 +701,265 @@ permalink: /
       <div style="flex:1;"></div>
     </div>
 
-    <!-- Week 7 -->
-    <!-- Continue your remaining milestone cards here exactly the same way -->
+    <!-- Week 7 — RIGHT -->
+    <div style="display:flex; align-items:stretch; position:relative;">
+
+      <div style="flex:1;"></div>
+
+      <div style="flex:1;
+                  padding-left:28px;
+                  padding-bottom:48px;
+                  position:relative;">
+
+        <div style="position:absolute;
+                    top:34px;
+                    left:0;
+                    width:28px;
+                    height:2px;
+                    background:rgba(255,255,255,0.15);">
+        </div>
+
+        <div style="background:rgba(8,35,8,0.85);
+                    border:1px solid rgba(120,220,120,0.25);
+                    border-radius:12px;
+                    padding:18px 20px;">
+
+          <div style="display:flex;
+                      align-items:center;
+                      gap:10px;
+                      margin-bottom:8px;">
+
+            <div style="width:34px;
+                        height:34px;
+                        border-radius:50%;
+                        background:rgba(255,165,0,0.2);
+                        border:2px solid rgba(255,165,0,0.7);
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        font-size:1rem;">
+              ⏳
+            </div>
+
+            <div style="font-size:0.75rem;
+                        color:rgba(160,200,255,0.85);
+                        font-weight:600;">
+              Date of Completion: May 29
+            </div>
+
+          </div>
+
+          <div style="font-size:1rem;
+                      color:#ffffff;
+                      font-weight:700;
+                      margin-bottom:5px;">
+            Enclosure Design &amp; 3D Printing
+          </div>
+
+          <div style="font-size:0.88rem;
+                      color:rgba(255,255,255,0.7);
+                      line-height:1.6;">
+            Designed and fabricated a 3D-printed enclosure to securely house all system components and wiring
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Week 8 — LEFT -->
+    <div style="display:flex; align-items:stretch; position:relative;">
+
+      <div style="flex:1;
+                  padding-right:28px;
+                  padding-bottom:48px;
+                  position:relative;">
+
+        <div style="position:absolute;
+                    top:34px;
+                    right:0;
+                    width:28px;
+                    height:2px;
+                    background:rgba(255,255,255,0.15);">
+        </div>
+
+        <div style="background:rgba(8,35,8,0.85);
+                    border:1px solid rgba(120,220,120,0.25);
+                    border-radius:12px;
+                    padding:18px 20px;">
+
+          <div style="display:flex;
+                      align-items:center;
+                      gap:10px;
+                      margin-bottom:8px;">
+
+            <div style="width:34px;
+                        height:34px;
+                        border-radius:50%;
+                        background:rgba(255,165,0,0.2);
+                        border:2px solid rgba(255,165,0,0.7);
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        font-size:1rem;">
+              ⏳
+            </div>
+
+            <div style="font-size:0.75rem;
+                        color:rgba(160,200,255,0.85);
+                        font-weight:600;">
+              Date of Completion: May 29
+            </div>
+
+          </div>
+
+          <div style="font-size:1rem;
+                      color:#ffffff;
+                      font-weight:700;
+                      margin-bottom:5px;">
+            System Assembly &amp; Hardware Integration
+          </div>
+
+          <div style="font-size:0.88rem;
+                      color:rgba(255,255,255,0.7);
+                      line-height:1.6;">
+            Assemble all hardware components, including PCB, sensors, actuators, and enclosure
+          </div>
+
+        </div>
+      </div>
+
+      <div style="flex:1;"></div>
+    </div>
+
+    <!-- Week 9 — RIGHT -->
+    <div style="display:flex; align-items:stretch; position:relative;">
+
+      <div style="flex:1;"></div>
+
+      <div style="flex:1;
+                  padding-left:28px;
+                  padding-bottom:48px;
+                  position:relative;">
+
+        <div style="position:absolute;
+                    top:34px;
+                    left:0;
+                    width:28px;
+                    height:2px;
+                    background:rgba(255,255,255,0.15);">
+        </div>
+
+        <div style="background:rgba(8,35,8,0.85);
+                    border:1px solid rgba(120,220,120,0.25);
+                    border-radius:12px;
+                    padding:18px 20px;">
+
+          <div style="display:flex;
+                      align-items:center;
+                      gap:10px;
+                      margin-bottom:8px;">
+
+            <div style="width:34px;
+                        height:34px;
+                        border-radius:50%;
+                        background:rgba(255,165,0,0.2);
+                        border:2px solid rgba(255,165,0,0.7);
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        font-size:1rem;">
+              ⏳
+            </div>
+
+            <div style="font-size:0.75rem;
+                        color:rgba(160,200,255,0.85);
+                        font-weight:600;">
+              Date of Completion: May 29
+            </div>
+
+          </div>
+
+          <div style="font-size:1rem;
+                      color:#ffffff;
+                      font-weight:700;
+                      margin-bottom:5px;">
+            Software Development &amp; System Integration
+          </div>
+
+          <div style="font-size:0.88rem;
+                      color:rgba(255,255,255,0.7);
+                      line-height:1.6;">
+            Developed embedded software and mobile app features for monitoring and automated control
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Week 10 — LEFT -->
+    <div style="display:flex; align-items:stretch; position:relative;">
+
+      <div style="flex:1;
+                  padding-right:28px;
+                  padding-bottom:48px;
+                  position:relative;">
+
+        <div style="position:absolute;
+                    top:34px;
+                    right:0;
+                    width:28px;
+                    height:2px;
+                    background:rgba(255,255,255,0.15);">
+        </div>
+
+        <div style="background:rgba(8,35,8,0.85);
+                    border:1px solid rgba(120,220,120,0.25);
+                    border-radius:12px;
+                    padding:18px 20px;">
+
+          <div style="display:flex;
+                      align-items:center;
+                      gap:10px;
+                      margin-bottom:8px;">
+
+            <div style="width:34px;
+                        height:34px;
+                        border-radius:50%;
+                        background:rgba(255,165,0,0.2);
+                        border:2px solid rgba(255,165,0,0.7);
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        font-size:1rem;">
+              ⏳
+            </div>
+
+            <div style="font-size:0.75rem;
+                        color:rgba(160,200,255,0.85);
+                        font-weight:600;">
+              Date of Completion: June 1
+            </div>
+
+          </div>
+
+          <div style="font-size:1rem;
+                      color:#ffffff;
+                      font-weight:700;
+                      margin-bottom:5px;">
+            Validation, Testing &amp; Iteration
+          </div>
+
+          <div style="font-size:0.88rem;
+                      color:rgba(255,255,255,0.7);
+                      line-height:1.6;">
+            Conduct controlled experiments to evaluate performance and refine the system using Lettuce seeds
+          </div>
+
+        </div>
+      </div>
+
+      <div style="flex:1;"></div>
+    </div>
 
   </div>
 
@@ -624,13 +984,13 @@ permalink: /
                line-height:1.8;
                font-size:0.92rem;">
 
-      <li>Finding reliable and compatible components online that met the system requirements and budget constraints</li>
+      <li>Finding reliable and compatible components online that met system and budget requirements</li>
 
-      <li>Searching for accurate PCB footprints and symbols for several components during schematic and PCB development</li>
+      <li>Searching for accurate PCB footprints and symbols during schematic and PCB development</li>
 
-      <li>Balancing component placement and routing while maintaining clean power distribution on the PCB</li>
+      <li>Balancing component placement and routing while maintaining clean power distribution</li>
 
-      <li>Ensuring compatibility between sensors, actuators, and the ESP32 development environment</li>
+      <li>Ensuring compatibility between sensors, actuators, and the ESP32 environment</li>
 
     </ul>
   </div>
@@ -655,13 +1015,13 @@ permalink: /
                line-height:1.8;
                font-size:0.92rem;">
 
-      <li>Proper component placement in PCB design greatly improves routing efficiency and overall system reliability</li>
+      <li>Proper component placement greatly improves routing efficiency and reliability</li>
 
-      <li>Different environmental sensors require unique calibration methods and communication interfaces</li>
+      <li>Environmental sensors require unique calibration and communication methods</li>
 
-      <li>Careful power management and decoupling are important for stable sensor readings and actuator control</li>
+      <li>Careful power management and decoupling improve sensor stability</li>
 
-      <li>Iterative prototyping and testing help identify hardware and integration issues early in development</li>
+      <li>Iterative prototyping helps identify integration issues early</li>
 
     </ul>
   </div>
@@ -686,9 +1046,11 @@ permalink: /
                line-height:1.8;
                font-size:0.92rem;">
 
-      <li>Pushed enclosure 3D printing to a later stage to prioritize PCB completion and hardware validation</li>
+      <li>Pushed enclosure 3D printing later to prioritize PCB completion and testing</li>
 
-      <li>Moved software integration alongside enclosure development to allow parallel progress across the team</li>
+      <li>Moved software integration alongside enclosure development for parallel progress</li>
+
+      <li>Focused first on sensing and control before refining the physical enclosure</li>
 
     </ul>
   </div>
