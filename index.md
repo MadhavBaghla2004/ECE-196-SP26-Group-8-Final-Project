@@ -482,100 +482,216 @@ permalink: /
 
 </div>
 
-<!-- Week 10 — LEFT -->
-<div style="display:flex; align-items:stretch; margin-bottom:0; position:relative;">
-  <div style="flex:1; padding-right:28px; padding-bottom:48px; position:relative;">
-    
-    <!-- branch -->
-    <div style="position:absolute; top:34px; right:0; width:28px; height:2px; background:rgba(255,255,255,0.15);"></div>
+<!-- ══════════════════════════════ MILESTONES ═══════════════════════════════ -->
+<div class="content-glass" id="milestones" style="max-width:820px; margin:0 auto;">
 
-    <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
-      <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
-        <div style="width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">⏳</div>
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">
+    Milestones
+  </h2>
 
-        <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">
-          Date of Completion: June 1
+  <div style="position:relative; padding:8px 0;">
+
+    <!-- Center vertical line -->
+    <div style="position:absolute; left:50%; top:0; bottom:0; width:2px; background:rgba(255,255,255,0.15); transform:translateX(-50%);"></div>
+
+    <!-- Week 4 — LEFT -->
+    <div style="display:flex; align-items:stretch; margin-bottom:0; position:relative;">
+      <div style="flex:1; padding-right:28px; padding-bottom:48px; position:relative;">
+
+        <div style="position:absolute; top:34px; right:0; width:28px; height:2px; background:rgba(255,255,255,0.15);"></div>
+
+        <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
+
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+
+            <div style="width:34px; height:34px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">
+              ✅
+            </div>
+
+            <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">
+              Date of Completion: April 25
+            </div>
+
+          </div>
+
+          <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">
+            Define System Requirements &amp; Success Criteria
+          </div>
+
+          <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">
+            Establish clear functional requirements, performance metrics, and measurable success criteria for reliable seed germination in hydroponic systems
+          </div>
+
         </div>
       </div>
 
-      <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">
-        Validation, Testing &amp; Iteration
-      </div>
+      <div style="flex:1;"></div>
+    </div>
 
-      <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">
-        Conduct controlled experiments to evaluate system performance, validate success criteria, and refine the design based on results with Lettuce seeds
+    <!-- Week 5 — RIGHT -->
+    <div style="display:flex; align-items:stretch; margin-bottom:0; position:relative;">
+
+      <div style="flex:1; padding-bottom:48px;"></div>
+
+      <div style="flex:1; padding-left:28px; padding-bottom:48px; position:relative;">
+
+        <div style="position:absolute; top:34px; left:0; width:28px; height:2px; background:rgba(255,255,255,0.15);"></div>
+
+        <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
+
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+
+            <div style="width:34px; height:34px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">
+              ✅
+            </div>
+
+            <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">
+              Date of Completion: May 2
+            </div>
+
+          </div>
+
+          <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">
+            Component Selection &amp; Procurement
+          </div>
+
+          <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">
+            Identify and select appropriate sensors, actuators, microcontrollers, and supporting components that meet system requirements and constraints
+          </div>
+
+        </div>
       </div>
     </div>
+
+    <!-- Week 6 — LEFT -->
+    <div style="display:flex; align-items:stretch; margin-bottom:0; position:relative;">
+
+      <div style="flex:1; padding-right:28px; padding-bottom:48px; position:relative;">
+
+        <div style="position:absolute; top:34px; right:0; width:28px; height:2px; background:rgba(255,255,255,0.15);"></div>
+
+        <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
+
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+
+            <div style="width:34px; height:34px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">
+              ✅
+            </div>
+
+            <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">
+              Date of Completion: May 9
+            </div>
+
+          </div>
+
+          <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">
+            PCB Design &amp; Circuit Integration
+          </div>
+
+          <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">
+            Designed our PCB integrating the ESP32, sensor interfaces, actuator connections, and power regulation circuitry
+          </div>
+
+        </div>
+      </div>
+
+      <div style="flex:1;"></div>
+    </div>
+
+    <!-- Week 7 -->
+    <!-- Continue your remaining milestone cards here exactly the same way -->
+
   </div>
 
-  <div style="flex:0 0 0;"></div>
-  <div style="flex:1; padding-bottom:48px;"></div>
+  <!-- Challenges -->
+  <div style="background:rgba(8,35,8,0.85);
+              border:1px solid rgba(255,120,120,0.2);
+              border-radius:14px;
+              padding:22px;
+              margin-top:20px;
+              margin-bottom:28px;">
+
+    <h3 style="color:#ffb3b3;
+               font-size:1.2rem;
+               font-weight:800;
+               margin:0 0 16px;">
+      Challenges
+    </h3>
+
+    <ul style="margin:0;
+               padding-left:20px;
+               color:rgba(255,255,255,0.75);
+               line-height:1.8;
+               font-size:0.92rem;">
+
+      <li>Finding reliable and compatible components online that met the system requirements and budget constraints</li>
+
+      <li>Searching for accurate PCB footprints and symbols for several components during schematic and PCB development</li>
+
+      <li>Balancing component placement and routing while maintaining clean power distribution on the PCB</li>
+
+      <li>Ensuring compatibility between sensors, actuators, and the ESP32 development environment</li>
+
+    </ul>
+  </div>
+
+  <!-- Lessons Learned -->
+  <div style="background:rgba(8,35,8,0.85);
+              border:1px solid rgba(120,220,120,0.25);
+              border-radius:14px;
+              padding:22px;
+              margin-top:28px;">
+
+    <h3 style="color:#a8e6a3;
+               font-size:1.2rem;
+               font-weight:800;
+               margin:0 0 16px;">
+      Lessons Learned
+    </h3>
+
+    <ul style="margin:0;
+               padding-left:20px;
+               color:rgba(255,255,255,0.75);
+               line-height:1.8;
+               font-size:0.92rem;">
+
+      <li>Proper component placement in PCB design greatly improves routing efficiency and overall system reliability</li>
+
+      <li>Different environmental sensors require unique calibration methods and communication interfaces</li>
+
+      <li>Careful power management and decoupling are important for stable sensor readings and actuator control</li>
+
+      <li>Iterative prototyping and testing help identify hardware and integration issues early in development</li>
+
+    </ul>
+  </div>
+
+  <!-- Pivots -->
+  <div style="background:rgba(8,35,8,0.85);
+              border:1px solid rgba(255,210,120,0.22);
+              border-radius:14px;
+              padding:22px;
+              margin-top:28px;">
+
+    <h3 style="color:#ffd27a;
+               font-size:1.2rem;
+               font-weight:800;
+               margin:0 0 16px;">
+      Pivots
+    </h3>
+
+    <ul style="margin:0;
+               padding-left:20px;
+               color:rgba(255,255,255,0.75);
+               line-height:1.8;
+               font-size:0.92rem;">
+
+      <li>Pushed enclosure 3D printing to a later stage to prioritize PCB completion and hardware validation</li>
+
+      <li>Moved software integration alongside enclosure development to allow parallel progress across the team</li>
+
+    </ul>
+  </div>
+
 </div>
-
-</div> <!-- END timeline container -->
-
-<!-- Challenges -->
-<div style="background:rgba(8,35,8,0.85);
-            border:1px solid rgba(255,120,120,0.2);
-            border-radius:14px;
-            padding:22px;
-            margin-top:20px;
-            margin-bottom:28px;">
-
-  <h3 style="color:#ffb3b3;
-             font-size:1.2rem;
-             font-weight:800;
-             margin:0 0 16px;">
-    Challenges
-  </h3>
-
-  <ul style="margin:0;
-             padding-left:20px;
-             color:rgba(255,255,255,0.75);
-             line-height:1.8;
-             font-size:0.92rem;">
-
-    <li>Finding reliable and compatible components online that met the system requirements and budget constraints</li>
-
-    <li>Searching for accurate PCB footprints and symbols for several components during schematic and PCB development</li>
-
-    <li>Balancing component placement and routing while maintaining clean power distribution on the PCB</li>
-
-    <li>Ensuring compatibility between sensors, actuators, and the ESP32 development environment</li>
-
-  </ul>
-</div>
-
-<!-- Lessons Learned -->
-<div style="background:rgba(8,35,8,0.85);
-            border:1px solid rgba(120,220,120,0.25);
-            border-radius:14px;
-            padding:22px;
-            margin-top:28px;">
-
-  <h3 style="color:#a8e6a3;
-             font-size:1.2rem;
-             font-weight:800;
-             margin:0 0 16px;">
-    Lessons Learned
-  </h3>
-
-  <ul style="margin:0;
-             padding-left:20px;
-             color:rgba(255,255,255,0.75);
-             line-height:1.8;
-             font-size:0.92rem;">
-
-    <li>Proper component placement in PCB design greatly improves routing efficiency and overall system reliability</li>
-
-    <li>Different environmental sensors require unique calibration methods and communication interfaces</li>
-
-    <li>Careful power management and decoupling are important for stable sensor readings and actuator control</li>
-
-    <li>Iterative prototyping and testing help identify hardware and integration issues early in development</li>
-
-  </ul>
-</div>
-
-</div> <!-- END content-glass -->
 
