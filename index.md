@@ -149,43 +149,108 @@ permalink: /
 
 </div>
 
-  <!-- Proposed Solution -->
-  <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 16px;">Proposed Solution</h3>
+<!-- Proposed Solution -->
+<h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 16px;">
+  Proposed Solution
+</h3>
 
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:16px;">
-    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">🎯 What It Does</div>
-    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
-      <li>Automatically monitors and adjusts temperature, humidity, water level, and nutrient concentrations</li>
-      <li>Provides real-time feedback and notifications via a smartphone app</li>
-      <li>Recommends optimal settings based on selected seed species from a cloud database</li>
-      <li>Enables manual adjustments and social sharing of plant growth progress</li>
-    </ul>
+<!-- First Image -->
+<div style="text-align:center; margin-bottom:24px;">
+  <img src="{{ '/images/homehydroponicsystem.png' | relative_url }}" 
+       alt="Home Hydroponic System"
+       style="width:75%; max-width:520px; height:auto;
+       border-radius:12px;
+       box-shadow:0 6px 24px rgba(0,0,0,0.6);
+       border:1px solid rgba(255,255,255,0.12);">
+</div>
+
+<!-- What It Does -->
+<div style="background:rgba(8,35,8,0.75);
+            border:1px solid rgba(120,220,120,0.25);
+            border-radius:14px;
+            padding:24px;
+            margin-bottom:28px;">
+
+  <div style="font-size:0.82rem;
+              color:#a8e6a3;
+              text-transform:uppercase;
+              letter-spacing:1px;
+              font-weight:700;
+              margin-bottom:14px;">
+    🎯 What It Does
   </div>
 
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
-    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">⚙️ Technology</div>
-    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
-      <li>Microcontroller with sensor array (temperature, humidity, pH, water level, nutrients)</li>
-      <li>PID control loops for precise environmental regulation</li>
-      <li>Mobile app for species selection, live monitoring, and remote control</li>
-      <li>Cloud database with community-sourced plant data and regional recommendations</li>
-    </ul>
+  <ul style="margin:0;
+             padding-left:20px;
+             color:rgba(255,255,255,0.88);
+             font-size:1rem;
+             line-height:2;">
+
+    <li>Automatically monitors and adjusts temperature, humidity, water level, and nutrient concentrations</li>
+
+    <li>Provides real-time feedback and notifications via a smartphone app</li>
+
+    <li>Recommends optimal settings based on selected seed species from a cloud database</li>
+
+    <li>Enables manual adjustments and social sharing of plant growth progress</li>
+  </ul>
+</div>
+
+<!-- Second Image -->
+<div style="text-align:center; margin-bottom:24px;">
+  <img src="{{ '/images/hydroponicsystemdiag.png' | relative_url }}" 
+       alt="Hydroponic System Diagram"
+       style="width:75%; max-width:520px; height:auto;
+       border-radius:12px;
+       box-shadow:0 6px 24px rgba(0,0,0,0.6);
+       border:1px solid rgba(255,255,255,0.12);">
+</div>
+
+<!-- Technology -->
+<div style="background:rgba(8,35,8,0.75);
+            border:1px solid rgba(120,220,120,0.25);
+            border-radius:14px;
+            padding:24px;
+            margin-bottom:24px;">
+
+  <div style="font-size:0.82rem;
+              color:#a8e6a3;
+              text-transform:uppercase;
+              letter-spacing:1px;
+              font-weight:700;
+              margin-bottom:14px;">
+    ⚙️ Technology
   </div>
 
-  <!-- System images stacked -->
-  <div style="display:flex; flex-direction:column; align-items:center; gap:16px; margin-bottom:36px;">
-    <img src="{{ '/images/homehydroponicsystem.png' | relative_url }}" alt="Home Hydroponic System"
-         style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
-    <img src="{{ '/images/hydroponicsystemdiag.png' | relative_url }}" alt="Hydroponic System Diagram"
-         style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
-  </div>
+  <ul style="margin:0;
+             padding-left:20px;
+             color:rgba(255,255,255,0.88);
+             font-size:1rem;
+             line-height:2;">
 
-  <!-- Block Diagram -->
-  <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 16px;">Block Diagram of Technology</h3>
-  <div style="text-align:center; margin-bottom:32px;">
-    <img src="{{ '/images/BlockDiagramTechColored.png' | relative_url }}" alt="Technology Block Diagram"
-         style="width:100%; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12);">
-  </div>
+    <li>Microcontroller with sensor array (temperature, humidity, pH, water level, nutrients)</li>
+
+    <li>PID control loops for precise environmental regulation</li>
+
+    <li>Mobile app for species selection, live monitoring, and remote control</li>
+
+    <li>Cloud database with community-sourced plant data and regional recommendations</li>
+  </ul>
+</div>
+
+<!-- Block Diagram -->
+<h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 16px;">
+  Block Diagram of Technology
+</h3>
+
+<div style="text-align:center; margin-bottom:32px;">
+  <img src="{{ '/images/BlockDiagramTechColored.png' | relative_url }}" 
+       alt="Technology Block Diagram"
+       style="width:75%; max-width:700px; height:auto;
+       border-radius:12px;
+       box-shadow:0 6px 24px rgba(0,0,0,0.6);
+       border:1px solid rgba(255,255,255,0.12);">
+</div>
 
 </div>
 
@@ -247,7 +312,7 @@ permalink: /
              box-shadow:0 6px 24px rgba(0,0,0,0.6);
              border:1px solid rgba(255,255,255,0.12);">
 
-        <img src="{{ '/images/PCBBottomLayoutUA.png' | relative_url }}" alt="Board Back Layout 2"
+        <img src="{{ '/images/PCBBottomLayoutUA.jpg' | relative_url }}" alt="Board Back Layout 2"
              style="width:45%; min-width:260px; max-width:380px; height:auto;
              border-radius:12px;
              box-shadow:0 6px 24px rgba(0,0,0,0.6);
@@ -268,7 +333,7 @@ permalink: /
              box-shadow:0 6px 24px rgba(0,0,0,0.6);
              border:1px solid rgba(255,255,255,0.12);">
 
-        <img src="{{ '/images/PCBTopView.png' | relative_url }}" alt="PCB 3D Top 2"
+        <img src="{{ '/images/PCBTopView.jpg' | relative_url }}" alt="PCB 3D Top 2"
              style="width:45%; min-width:260px; max-width:380px; height:auto;
              border-radius:12px;
              box-shadow:0 6px 24px rgba(0,0,0,0.6);
@@ -289,7 +354,7 @@ permalink: /
              box-shadow:0 6px 24px rgba(0,0,0,0.6);
              border:1px solid rgba(255,255,255,0.12);">
 
-        <img src="{{ '/images/PCBBackView.png' | relative_url }}" alt="PCB 3D Bottom 2"
+        <img src="{{ '/images/PCBBackView.jpg' | relative_url }}" alt="PCB 3D Bottom 2"
              style="width:45%; min-width:260px; max-width:380px; height:auto;
              border-radius:12px;
              box-shadow:0 6px 24px rgba(0,0,0,0.6);
@@ -484,7 +549,7 @@ The purpose of our PCB is to serve as the central control system for the smart h
       <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
         <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
           <div style="width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">⏳</div>
-          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 25</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 29</div>
         </div>
         <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Enclosure Design &amp; 3D Printing</div>
         <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Designed and fabricated a 3D-printed enclosure to securely house all system components and wiring</div>
@@ -501,7 +566,7 @@ The purpose of our PCB is to serve as the central control system for the smart h
       <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
         <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
           <div style="width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">⏳</div>
-          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 27</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 29</div>
         </div>
         <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;"> System Assembly &amp; Hardware Integration</div>
         <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Assemble all hardware components, including PCB, sensors, actuators, and enclosure, into a fully functional prototype</div>
@@ -521,7 +586,7 @@ The purpose of our PCB is to serve as the central control system for the smart h
       <div style="background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:18px 20px;">
         <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
           <div style="width:34px; height:34px; border-radius:50%; background:rgba(255,165,0,0.2); border:2px solid rgba(255,165,0,0.7); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0;">⏳</div>
-          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 27</div>
+          <div style="font-size:0.75rem; color:rgba(160,200,255,0.85); font-weight:600;">Date of Completion: May 29</div>
         </div>
         <div style="font-size:1rem; color:#ffffff; font-weight:700; margin-bottom:5px;">Software Development &amp; System Integration</div>
         <div style="font-size:0.88rem; color:rgba(255,255,255,0.7); line-height:1.6;">Developed embedded software and mobile app features for sensor monitoring and automated system control.</div>
