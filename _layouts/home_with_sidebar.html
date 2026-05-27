@@ -181,20 +181,25 @@ layout: default
     .content-glass { padding: 28px 22px; }
   }
 
-  /* Image hover zoom effects for better visibility on high-res displays */
-  img {
+  /* Content images open into a full-screen viewer. */
+  .zoomable-image {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    cursor: zoom-in;
   }
 
-  img:hover {
+  .zoomable-image:hover {
     transform: scale(1.05);
     box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4);
     z-index: 10;
     position: relative;
   }
 
-  /* Special handling for small icons to prevent over-scaling */
+  .zoomable-image:focus-visible {
+    outline: 3px solid #a8e6a3;
+    outline-offset: 4px;
+  }
+
+  /* Special handling for small linked icons. */
   img[style*="width:24px"], img[style*="height:24px"] {
     transition: transform 0.2s ease, opacity 0.2s ease;
   }
@@ -208,6 +213,73 @@ layout: default
   .top-header img:hover {
     transform: scale(1.1);
     filter: brightness(1.2);
+  }
+
+  body.lightbox-open {
+    overflow: hidden;
+  }
+
+  .image-lightbox {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.92);
+    display: none;
+    inset: 0;
+    justify-content: center;
+    padding: 56px 24px 28px;
+    position: fixed;
+    z-index: 2000;
+  }
+
+  .image-lightbox.is-open {
+    display: flex;
+  }
+
+  .image-lightbox-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .image-lightbox img {
+    border-radius: 10px;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.65);
+    cursor: default;
+    max-height: calc(100vh - 112px);
+    max-width: min(1200px, 100%);
+    object-fit: contain;
+    transform: none;
+  }
+
+  .image-lightbox-caption {
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 1rem;
+    margin: 14px 0 0;
+    text-align: center;
+  }
+
+  .image-lightbox-close {
+    background: rgba(20, 36, 20, 0.85);
+    border: 1px solid rgba(168, 230, 163, 0.55);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    height: 46px;
+    line-height: 1;
+    position: absolute;
+    right: 22px;
+    top: 16px;
+    width: 46px;
+  }
+
+  .image-lightbox-close:hover,
+  .image-lightbox-close:focus-visible {
+    background: rgba(80, 130, 80, 0.8);
+    outline: 2px solid #a8e6a3;
   }
 </style>
 
@@ -240,6 +312,14 @@ layout: default
 
   <div class="main-content">
     {{ content }}
+  </div>
+</div>
+
+<div class="image-lightbox" id="imageLightbox" role="dialog" aria-modal="true" aria-label="Full-screen image viewer" hidden>
+  <button class="image-lightbox-close" type="button" aria-label="Close full-screen image">&times;</button>
+  <div class="image-lightbox-content">
+    <img src="" alt="">
+    <p class="image-lightbox-caption"></p>
   </div>
 </div>
 
@@ -837,4 +917,62 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.querySelector('.main-content').style.marginLeft = '0';
 }
+
+(function setupImageLightbox() {
+  const lightbox = document.getElementById('imageLightbox');
+  const lightboxImage = lightbox.querySelector('img');
+  const caption = lightbox.querySelector('.image-lightbox-caption');
+  const closeButton = lightbox.querySelector('.image-lightbox-close');
+  let opener = null;
+
+  function openLightbox(image) {
+    opener = image;
+    lightboxImage.src = image.currentSrc || image.src;
+    lightboxImage.alt = image.alt || '';
+    caption.textContent = image.alt || '';
+    caption.hidden = !image.alt;
+    lightbox.hidden = false;
+    lightbox.classList.add('is-open');
+    document.body.classList.add('lightbox-open');
+    closeButton.focus();
+  }
+
+  function closeLightbox() {
+    if (lightbox.hidden) return;
+    lightbox.classList.remove('is-open');
+    lightbox.hidden = true;
+    document.body.classList.remove('lightbox-open');
+    lightboxImage.src = '';
+    if (opener) opener.focus();
+  }
+
+  document.querySelectorAll('.main-content img').forEach(function (image) {
+    if (image.closest('a')) return;
+    image.classList.add('zoomable-image');
+    image.tabIndex = 0;
+    image.setAttribute('role', 'button');
+    image.setAttribute('aria-label', 'View ' + (image.alt || 'image') + ' full screen');
+    image.addEventListener('click', function () {
+      openLightbox(image);
+    });
+    image.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openLightbox(image);
+      }
+    });
+  });
+
+  closeButton.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function (event) {
+    if (event.target !== lightboxImage && event.target !== closeButton) closeLightbox();
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeLightbox();
+    if (!lightbox.hidden && event.key === 'Tab') {
+      event.preventDefault();
+      closeButton.focus();
+    }
+  });
+})();
 </script>

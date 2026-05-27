@@ -183,7 +183,7 @@ permalink: /
   <!-- Block Diagram -->
   <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 16px;">Block Diagram of Technology</h3>
   <div style="text-align:center; margin-bottom:32px;">
-    <img src="{{ '/images/TechBlockDiag.jpeg' | relative_url }}" alt="Technology Block Diagram"
+    <img src="{{ '/images/BlockDiagramTechColored.jpeg' | relative_url }}" alt="Technology Block Diagram"
          style="width:100%; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12);">
   </div>
 
@@ -212,12 +212,12 @@ permalink: /
     </div>
     <div style="text-align:left; width:100%;">
       <p style="font-size:1.1rem; color:rgba(255,255,255,0.75); margin:0 0 14px; font-style:normal;">PCB Top 3D View</p>
-      <img src="{{ '/images/PCBTop.png' | relative_url }}" alt="PCB 3D Top"
+      <img src="{{ '/images/PCBTopAnnotated.png' | relative_url }}" alt="PCB 3D Top"
            style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
     </div>
     <div style="text-align:left; width:100%;">
       <p style="font-size:1.1rem; color:rgba(255,255,255,0.75); margin:0 0 14px; font-style:normal;">PCB Bottom 3D View</p>
-      <img src="{{ '/images/PCBBottom.png' | relative_url }}" alt="PCB 3D Bottom"
+      <img src="{{ '/images/PCBBottomAnnotated.png' | relative_url }}" alt="PCB 3D Bottom"
            style="max-width:700px; width:100%; height:auto; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12); display:block;">
     </div>
   </div>
