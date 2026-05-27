@@ -362,10 +362,21 @@ permalink: /
       </div>
     </div>
 
-<h3 style="color:#ffffff; font-size:1.4rem; font-weight:700; margin:20px 0 10px;">PCB Functionality</h3>
-<p style="font-size:1.05rem; color:rgba(255,255,255,0.8); line-height:1.7; text-align:justify; margin:0;">
-The purpose of our PCB is to serve as the central control system for the smart hydroponics setup by integrating power management, sensing, and actuation into a single platform. It performs power conversions by taking a 12V input and stepping it down to regulated 5V and 3.3V levels required by different components. The board also provides structured I/O connections for sensors such as moisture, temperature, and water level, enabling the ESP32 to collect environmental data. Additionally, it handles peripheral device control by using switching components to operate actuators like pumps, fans, heaters, and LEDs based on sensor inputs, allowing the system to automatically maintain optimal growing conditions.
-</p>
+  </div>
+
+  <!-- PCB Functionality -->
+  <h3 style="color:#ffffff; font-size:1.4rem; font-weight:700; margin:40px 0 10px;">
+    PCB Functionality
+  </h3>
+
+  <p style="font-size:1.05rem;
+            color:rgba(255,255,255,0.8);
+            line-height:1.7;
+            text-align:justify;
+            margin:0;">
+
+    The purpose of our PCB is to serve as the central control system for the smart hydroponics setup by integrating power management, sensing, and actuation into a single platform. It performs power conversions by taking a 12V input and stepping it down to regulated 5V and 3.3V levels required by different components. The board also provides structured I/O connections for sensors such as moisture, temperature, and water level, enabling the ESP32 to collect environmental data. Additionally, it handles peripheral device control by using switching components to operate actuators like pumps, fans, heaters, and LEDs based on sensor inputs, allowing the system to automatically maintain optimal growing conditions.
+  </p>
 
 </div>
 
