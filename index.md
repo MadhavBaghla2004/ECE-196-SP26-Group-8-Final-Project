@@ -68,7 +68,7 @@ permalink: /
   <!-- Top Image -->
   <div style="text-align:center; margin-bottom:28px;">
     <img src="{{ '/images/HydroponicsFailure.jpg' | relative_url }}" alt="Hydroponics Failure Story"
-         style="width:100%; max-width:520px; aspect-ratio:1/1; object-fit:cover; border-radius:16px; border:1px solid rgba(255,255,255,0.12); box-shadow:0 6px 20px rgba(0,0,0,0.6);">
+         style="width:100%; max-width:380px; aspect-ratio:1/1; object-fit:cover; border-radius:16px; border:1px solid rgba(255,255,255,0.12); box-shadow:0 6px 20px rgba(0,0,0,0.6);">
   </div>
 
   <!-- Problem Definition -->
@@ -103,7 +103,7 @@ permalink: /
 
   <!-- Motivation Image -->
   <div style="text-align:center; margin-bottom:22px;">
-    <img src="{{ '/images/ProblemMotivation.jpeg' | relative_url }}" alt="Motivation Story"
+    <img src="{{ '/images/ProblemMotivation.png' | relative_url }}" alt="Motivation Story"
          style="width:100%; max-height:340px; object-fit:cover; border-radius:16px; border:1px solid rgba(255,255,255,0.12); box-shadow:0 6px 20px rgba(0,0,0,0.6);">
   </div>
 
@@ -655,7 +655,6 @@ permalink: /
     Milestones
   </h2>
 
-  <!-- Milestone Timeline -->
   <div style="position:relative; padding:8px 0 0 0;">
 
     <!-- Left vertical line -->
@@ -663,7 +662,9 @@ permalink: /
 
     <!-- Milestone 1 -->
     <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
-      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.15); border:3px solid rgba(168,230,163,0.7); display:flex; align-items:center; justify-content:center; z-index:2; flex-shrink:0;">
+        <div style="width:14px; height:14px; border-radius:50%; background:#a8e6a3;"></div>
+      </div>
 
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone1.jpg' | relative_url }}" alt="Milestone 1" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
@@ -677,7 +678,9 @@ permalink: /
 
     <!-- Milestone 2 -->
     <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
-      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.15); border:3px solid rgba(168,230,163,0.7); display:flex; align-items:center; justify-content:center; z-index:2; flex-shrink:0;">
+        <div style="width:14px; height:14px; border-radius:50%; background:#a8e6a3;"></div>
+      </div>
 
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone2.png' | relative_url }}" alt="Milestone 2" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
@@ -691,7 +694,9 @@ permalink: /
 
     <!-- Milestone 3 -->
     <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
-      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.15); border:3px solid rgba(168,230,163,0.7); display:flex; align-items:center; justify-content:center; z-index:2; flex-shrink:0;">
+        <div style="width:14px; height:14px; border-radius:50%; background:#a8e6a3;"></div>
+      </div>
 
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone3.png' | relative_url }}" alt="Milestone 3" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
@@ -705,7 +710,9 @@ permalink: /
 
     <!-- Milestone 4 -->
     <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
-      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.15); border:3px solid rgba(168,230,163,0.7); display:flex; align-items:center; justify-content:center; z-index:2; flex-shrink:0;">
+        <div style="width:14px; height:14px; border-radius:50%; background:#a8e6a3;"></div>
+      </div>
 
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone4.jpg' | relative_url }}" alt="Milestone 4" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
@@ -719,7 +726,9 @@ permalink: /
 
     <!-- Milestone 5 -->
     <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
-      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.15); border:3px solid rgba(168,230,163,0.7); display:flex; align-items:center; justify-content:center; z-index:2; flex-shrink:0;">
+        <div style="width:14px; height:14px; border-radius:50%; background:#a8e6a3;"></div>
+      </div>
 
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone5.png' | relative_url }}" alt="Milestone 5" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
@@ -733,7 +742,9 @@ permalink: /
 
     <!-- Milestone 6 -->
     <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
-      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.15); border:3px solid rgba(168,230,163,0.7); display:flex; align-items:center; justify-content:center; z-index:2; flex-shrink:0;">
+        <div style="width:14px; height:14px; border-radius:50%; background:#a8e6a3;"></div>
+      </div>
 
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone6.png' | relative_url }}" alt="Milestone 6" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
@@ -747,7 +758,9 @@ permalink: /
 
     <!-- Milestone 7 -->
     <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
-      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.15); border:3px solid rgba(168,230,163,0.7); display:flex; align-items:center; justify-content:center; z-index:2; flex-shrink:0;">
+        <div style="width:14px; height:14px; border-radius:50%; background:#a8e6a3;"></div>
+      </div>
 
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone7.png' | relative_url }}" alt="Milestone 7" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
@@ -761,7 +774,9 @@ permalink: /
 
     <!-- Milestone 8 -->
     <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
-      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.15); border:3px solid rgba(168,230,163,0.7); display:flex; align-items:center; justify-content:center; z-index:2; flex-shrink:0;">
+        <div style="width:14px; height:14px; border-radius:50%; background:#a8e6a3;"></div>
+      </div>
 
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone8.png' | relative_url }}" alt="Milestone 8" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
@@ -775,7 +790,9 @@ permalink: /
 
     <!-- Milestone 9 -->
     <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
-      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.15); border:3px solid rgba(168,230,163,0.7); display:flex; align-items:center; justify-content:center; z-index:2; flex-shrink:0;">
+        <div style="width:14px; height:14px; border-radius:50%; background:#a8e6a3;"></div>
+      </div>
 
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone9.png' | relative_url }}" alt="Milestone 9" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
@@ -789,10 +806,12 @@ permalink: /
 
     <!-- Milestone 10 -->
     <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
-      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.15); border:3px solid rgba(168,230,163,0.7); display:flex; align-items:center; justify-content:center; z-index:2; flex-shrink:0;">
+        <div style="width:14px; height:14px; border-radius:50%; background:#a8e6a3;"></div>
+      </div>
 
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
-        <img src="{{ '/images/Milestone10.png' | relative_url }}" alt="Milestone 10" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
+        <img src="{{ '/images/Milestone10.jpg' | relative_url }}" alt="Milestone 10" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
           <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 29</div>
           <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">3D Parts Printed</div>
@@ -803,10 +822,12 @@ permalink: /
 
     <!-- Milestone 11 -->
     <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
-      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.15); border:3px solid rgba(168,230,163,0.7); display:flex; align-items:center; justify-content:center; z-index:2; flex-shrink:0;">
+        <div style="width:14px; height:14px; border-radius:50%; background:#a8e6a3;"></div>
+      </div>
 
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
-        <img src="{{ '/images/Milestone11.png' | relative_url }}" alt="Milestone 11" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
+        <img src="{{ '/images/Milestone11.jpg' | relative_url }}" alt="Milestone 11" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
           <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">June 1</div>
           <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Hardware Integrated</div>
@@ -817,7 +838,9 @@ permalink: /
 
     <!-- Milestone 12 -->
     <div style="position:relative; display:flex; gap:22px; margin-bottom:0;">
-      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.15); border:3px solid rgba(168,230,163,0.7); display:flex; align-items:center; justify-content:center; z-index:2; flex-shrink:0;">
+        <div style="width:14px; height:14px; border-radius:50%; background:#a8e6a3;"></div>
+      </div>
 
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone12.png' | relative_url }}" alt="Milestone 12" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
@@ -851,15 +874,10 @@ permalink: /
                color:rgba(255,255,255,0.75);
                line-height:1.8;
                font-size:0.92rem;">
-
       <li>Finding reliable and compatible components online that met system and budget requirements</li>
-
       <li>Searching for accurate PCB footprints and symbols during schematic and PCB development</li>
-
       <li>Balancing component placement and routing while maintaining clean power distribution</li>
-
-      <li>Ensuring compatibility between sensors, actuators, and the ESP32 environment</li>
-
+      <li>MOSFETs and connectors were missing from the initial PCB design</li>
     </ul>
   </div>
 
@@ -882,15 +900,10 @@ permalink: /
                color:rgba(255,255,255,0.75);
                line-height:1.8;
                font-size:0.92rem;">
-
       <li>Proper component placement greatly improves routing efficiency and reliability</li>
-
       <li>Environmental sensors require unique calibration and communication methods</li>
-
       <li>Careful power management and decoupling improve sensor stability</li>
-
       <li>Iterative prototyping helps identify integration issues early</li>
-
     </ul>
   </div>
 
@@ -913,15 +926,10 @@ permalink: /
                color:rgba(255,255,255,0.75);
                line-height:1.8;
                font-size:0.92rem;">
-
       <li>Pushed enclosure 3D printing later to prioritize PCB completion and testing</li>
-
       <li>Moved software integration alongside enclosure development for parallel progress</li>
-
       <li>Focused first on sensing and control before refining the physical enclosure</li>
-
     </ul>
   </div>
 
 </div>
-
