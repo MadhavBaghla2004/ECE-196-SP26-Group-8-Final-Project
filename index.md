@@ -65,7 +65,7 @@ permalink: /
 
   <!-- Hero image -->
   <div style="text-align:center; margin-bottom:28px;">
-    <img src="{{ '/images/hydroponicshome.jpg' | relative_url }}" alt="Home Hydroponics"
+    <img src="{{ '/images/HydroponicsFailure.jpg' | relative_url }}" alt="Home Hydroponics"
          style="width:100%; max-height:260px; object-fit:cover; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12);">
   </div>
 
@@ -128,7 +128,7 @@ permalink: /
     <a href="https://patents.google.com/patent/US20230089847A1/en"
        target="_blank"
        style="color:#a8e6a3; text-decoration:none;">
-      📋 US12543625B2
+      📋 US12543625B2 🔗
     </a>
   </div>
 
@@ -155,7 +155,7 @@ permalink: /
     <a href="https://patents.google.com/patent/US4236350A/en"
        target="_blank"
        style="color:#a8e6a3; text-decoration:none;">
-      📋 US4236350A
+      📋 US4236350A 🔗
     </a>
   </div>
 
@@ -522,24 +522,6 @@ permalink: /
       allowfullscreen
       style="border:1px solid rgba(255,255,255,0.18); border-radius:14px; background:#0a140a;">
     </iframe>
-  </div>
-
-  <div style="text-align:center; margin-bottom:32px;">
-    <a href="https://www.youtube.com/watch?v=e8GXDmgkYN8"
-       target="_blank"
-       rel="noopener noreferrer"
-       style="
-         display:inline-block;
-         padding:10px 20px;
-         background:rgba(120,220,120,0.15);
-         border:1px solid rgba(120,220,120,0.35);
-         border-radius:10px;
-         color:#a8e6a3;
-         font-weight:700;
-         text-decoration:none;
-         transition:all 0.2s ease;">
-      🎥 Open Video in New Tab ↗
-    </a>
   </div>
 
 </div>
