@@ -271,18 +271,70 @@ permalink: /
   </ul>
 </div>
 
-<!-- Block Diagram -->
+<!-- System Overview -->
 <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 16px;">
-  Block Diagram of Technology
+  System Overview
 </h3>
 
-<div style="text-align:center; margin-bottom:32px;">
-  <img src="{{ '/images/BlockDiagramTechColored.png' | relative_url }}" 
-       alt="Technology Block Diagram"
+<div style="text-align:center; margin-bottom:40px;">
+  <img src="{{ '/images/SystemBlockDiag.png' | relative_url }}"
+       alt="System Overview"
        style="width:75%; max-width:700px; height:auto;
        border-radius:12px;
        box-shadow:0 6px 24px rgba(0,0,0,0.6);
        border:1px solid rgba(255,255,255,0.12);">
+</div>
+
+<!-- Software & Hardware Overview -->
+<div style="display:flex;
+            gap:24px;
+            justify-content:center;
+            align-items:flex-start;
+            flex-wrap:wrap;
+            margin-bottom:32px;">
+
+  <!-- Software Overview -->
+  <div style="flex:1; min-width:280px; max-width:380px;">
+
+    <h3 style="color:#a8e6a3;
+               font-size:1.1rem;
+               font-weight:700;
+               margin:0 0 12px;
+               text-align:center;">
+      Software Overview
+    </h3>
+
+    <img src="{{ '/images/SoftwareBlockDiag.png' | relative_url }}"
+         alt="Software Overview"
+         style="width:100%;
+         height:auto;
+         border-radius:12px;
+         box-shadow:0 6px 24px rgba(0,0,0,0.6);
+         border:1px solid rgba(255,255,255,0.12);">
+
+  </div>
+
+  <!-- Hardware Overview -->
+  <div style="flex:1; min-width:280px; max-width:380px;">
+
+    <h3 style="color:#a8e6a3;
+               font-size:1.1rem;
+               font-weight:700;
+               margin:0 0 12px;
+               text-align:center;">
+      Hardware Overview
+    </h3>
+
+    <img src="{{ '/images/HardareBlockDiag.png' | relative_url }}"
+         alt="Hardware Overview"
+         style="width:100%;
+         height:auto;
+         border-radius:12px;
+         box-shadow:0 6px 24px rgba(0,0,0,0.6);
+         border:1px solid rgba(255,255,255,0.12);">
+
+  </div>
+
 </div>
 
 </div>
