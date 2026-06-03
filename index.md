@@ -61,46 +61,59 @@ permalink: /
 <!-- ══════════════════════════════ PROBLEM ═══════════════════════════════ -->
 <div class="content-glass" id="problem" style="max-width:820px; margin:0 auto;">
 
-  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">The Problem</h2>
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">
+    The Problem
+  </h2>
 
-  <!-- Hero image -->
+  <!-- Top Image -->
   <div style="text-align:center; margin-bottom:28px;">
-    <img src="{{ '/images/HydroponicsFailure.jpg' | relative_url }}" alt="Home Hydroponics"
-         style="width:100%; max-height:260px; object-fit:cover; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.12);">
+    <img src="{{ '/images/HydroponicsFailure.jpg' | relative_url }}" alt="Hydroponics Failure Story"
+         style="width:100%; max-width:520px; aspect-ratio:1/1; object-fit:cover; border-radius:16px; border:1px solid rgba(255,255,255,0.12); box-shadow:0 6px 20px rgba(0,0,0,0.6);">
   </div>
 
   <!-- Problem Definition -->
-  <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 10px;">Problem Definition</h3>
-  <p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 24px;">
-    Home hydroponics beginners often experience failed or inconsistent seed germination because they lack real-time insight and guidance on maintaining optimal growth conditions. Rock wool, a commonly used hydroponic substrate, is difficult to manage in terms of temperature and humidity, making seed germination more challenging and creating a barrier to entry for beginners.
-  </p>
+  <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 18px;">
+    Problem Definition
+  </h3>
 
-  <!-- What → Who → Where (no arrows, with icons) -->
-  <div style="display:flex; justify-content:center; gap:12px; margin:0 0 36px; flex-wrap:wrap;">
-    <div style="background:rgba(30,80,30,0.55); border:1px solid rgba(120,220,120,0.3); border-radius:12px; padding:22px 20px; text-align:center; flex:1; min-width:170px;">
-      <div style="font-size:1.6rem; margin-bottom:8px;">🔍</div>
-      <div style="font-size:0.7rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1.5px; font-weight:700; margin-bottom:8px;">What</div>
-      <div style="font-size:1rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Failed Germination</div>
-      <div style="font-size:0.88rem; color:rgba(255,255,255,0.72); line-height:1.55;">Inconsistent results from poor environmental control </div>
+  <div style="display:flex; flex-direction:column; gap:14px; margin-bottom:36px;">
+
+    <div style="display:flex; align-items:flex-start; gap:14px; background:rgba(30,80,30,0.45); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:16px;">
+      <div style="font-size:1.4rem;">💰</div>
+      <div style="color:rgba(255,255,255,0.88); line-height:1.7;">
+        Beginners have to invest lots of time and money to start in hydroponics.
+      </div>
     </div>
-    <div style="background:rgba(30,80,30,0.55); border:1px solid rgba(120,220,120,0.3); border-radius:12px; padding:22px 20px; text-align:center; flex:1; min-width:170px;">
-      <div style="font-size:1.6rem; margin-bottom:8px;">👤</div>
-      <div style="font-size:0.7rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1.5px; font-weight:700; margin-bottom:8px;">Who</div>
-      <div style="font-size:1rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Home Growers</div>
-      <div style="font-size:0.88rem; color:rgba(255,255,255,0.72); line-height:1.55;">Beginners with little to no experience managing hydroponic systems</div>
+
+    <div style="display:flex; align-items:flex-start; gap:14px; background:rgba(30,80,30,0.45); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:16px;">
+      <div style="font-size:1.4rem;">🌱</div>
+      <div style="color:rgba(255,255,255,0.88); line-height:1.7;">
+        Beginners have low success with hydroponic seed germination.
+      </div>
     </div>
-    <div style="background:rgba(30,80,30,0.55); border:1px solid rgba(120,220,120,0.3); border-radius:12px; padding:22px 20px; text-align:center; flex:1; min-width:170px;">
-      <div style="font-size:1.6rem; margin-bottom:8px;">📍</div>
-      <div style="font-size:0.7rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1.5px; font-weight:700; margin-bottom:8px;">Where</div>
-      <div style="font-size:1rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Indoor Spaces</div>
-      <div style="font-size:0.88rem; color:rgba(255,255,255,0.72); line-height:1.55;">Living spaces without controlled greenhouse environments</div>
+
+    <div style="display:flex; align-items:flex-start; gap:14px; background:rgba(30,80,30,0.45); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:16px;">
+      <div style="font-size:1.4rem;">🌡️</div>
+      <div style="color:rgba(255,255,255,0.88); line-height:1.7;">
+        Maintaining temperature and moisture in soilless mediums is difficult.
+      </div>
     </div>
+
+  </div>
+
+  <!-- Motivation Image -->
+  <div style="text-align:center; margin-bottom:22px;">
+    <img src="{{ '/images/ProblemMotivation.jpeg' | relative_url }}" alt="Motivation Story"
+         style="width:100%; max-height:340px; object-fit:cover; border-radius:16px; border:1px solid rgba(255,255,255,0.12); box-shadow:0 6px 20px rgba(0,0,0,0.6);">
   </div>
 
   <!-- Motivation -->
-  <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 10px;">Motivation</h3>
-  <p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 28px;">
-    Last summer, Nathaniel built a hydroponics tower from scratch, assembling components, 3D printing connectors, and preparing multiple plant varieties for germination; however, despite his efforts, the seeds failed due to environmental conditions, leaving the system unused. While existing products such as seed trays with domes, heat pads, and lighting aim to improve germination, they still require significant user knowledge, monitoring, and manual adjustments, making them difficult for beginners. This highlights an opportunity to develop a more automated system that minimizes user input and intelligently controls environmental conditions, reducing failure rates and making hydroponics more accessible.
+  <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 10px;">
+    Motivation
+  </h3>
+
+  <p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0;">
+    Nathaniel invested significant time and money into a hydroponics system, but the seeds failed to germinate due to environmental conditions, highlighting the challenges beginners face when growing plants hydroponically.
   </p>
 
 </div>
