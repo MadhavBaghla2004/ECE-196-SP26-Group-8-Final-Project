@@ -65,56 +65,67 @@ permalink: /
     The Problem
   </h2>
 
-  <!-- Top Image -->
-  <div style="text-align:center; margin-bottom:28px;">
-    <img src="{{ '/images/HydroponicsFailure.jpg' | relative_url }}" alt="Hydroponics Failure Story"
-         style="width:100%; max-width:380px; aspect-ratio:1/1; object-fit:cover; border-radius:16px; border:1px solid rgba(255,255,255,0.12); box-shadow:0 6px 20px rgba(0,0,0,0.6);">
+ <!-- Top Image -->
+<div style="text-align:center; margin-bottom:28px;">
+  <img src="{{ '/images/HydroponicsFailure.jpg' | relative_url }}" alt="Hydroponics Failure Story"
+       style="width:100%;
+       max-width:300px;
+       aspect-ratio:1/1;
+       object-fit:cover;
+       border-radius:16px;
+       border:1px solid rgba(255,255,255,0.12);
+       box-shadow:0 6px 20px rgba(0,0,0,0.6);">
+</div>
+
+<!-- Problem Definition -->
+<h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 18px;">
+  Problem Definition
+</h3>
+
+<div style="display:flex; flex-direction:column; gap:14px; margin-bottom:36px;">
+
+  <div style="display:flex; align-items:flex-start; gap:14px; background:rgba(30,80,30,0.45); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:16px;">
+    <div style="font-size:1.4rem;">💰</div>
+    <div style="color:rgba(255,255,255,0.88); line-height:1.7;">
+      Beginners have to invest lots of time and money to start in hydroponics.
+    </div>
   </div>
 
-  <!-- Problem Definition -->
-  <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 18px;">
-    Problem Definition
-  </h3>
-
-  <div style="display:flex; flex-direction:column; gap:14px; margin-bottom:36px;">
-
-    <div style="display:flex; align-items:flex-start; gap:14px; background:rgba(30,80,30,0.45); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:16px;">
-      <div style="font-size:1.4rem;">💰</div>
-      <div style="color:rgba(255,255,255,0.88); line-height:1.7;">
-        Beginners have to invest lots of time and money to start in hydroponics.
-      </div>
+  <div style="display:flex; align-items:flex-start; gap:14px; background:rgba(30,80,30,0.45); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:16px;">
+    <div style="font-size:1.4rem;">🌱</div>
+    <div style="color:rgba(255,255,255,0.88); line-height:1.7;">
+      Beginners have low success with hydroponic seed germination.
     </div>
-
-    <div style="display:flex; align-items:flex-start; gap:14px; background:rgba(30,80,30,0.45); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:16px;">
-      <div style="font-size:1.4rem;">🌱</div>
-      <div style="color:rgba(255,255,255,0.88); line-height:1.7;">
-        Beginners have low success with hydroponic seed germination.
-      </div>
-    </div>
-
-    <div style="display:flex; align-items:flex-start; gap:14px; background:rgba(30,80,30,0.45); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:16px;">
-      <div style="font-size:1.4rem;">🌡️</div>
-      <div style="color:rgba(255,255,255,0.88); line-height:1.7;">
-        Maintaining temperature and moisture in soilless mediums is difficult.
-      </div>
-    </div>
-
   </div>
 
-  <!-- Motivation Image -->
-  <div style="text-align:center; margin-bottom:22px;">
-    <img src="{{ '/images/ProblemMotivation.png' | relative_url }}" alt="Motivation Story"
-         style="width:100%; max-height:340px; object-fit:cover; border-radius:16px; border:1px solid rgba(255,255,255,0.12); box-shadow:0 6px 20px rgba(0,0,0,0.6);">
+  <div style="display:flex; align-items:flex-start; gap:14px; background:rgba(30,80,30,0.45); border:1px solid rgba(120,220,120,0.25); border-radius:12px; padding:16px;">
+    <div style="font-size:1.4rem;">🌡️</div>
+    <div style="color:rgba(255,255,255,0.88); line-height:1.7;">
+      Maintaining temperature and moisture in soilless mediums is difficult.
+    </div>
   </div>
 
-  <!-- Motivation -->
-  <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 10px;">
-    Motivation
-  </h3>
+</div>
 
-  <p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0;">
-    Nathaniel invested significant time and money into a hydroponics system, but the seeds failed to germinate due to environmental conditions, highlighting the challenges beginners face when growing plants hydroponically.
-  </p>
+<!-- Motivation Image -->
+<div style="text-align:center; margin-bottom:22px;">
+  <img src="{{ '/images/ProblemMotivation.png' | relative_url }}" alt="Motivation Story"
+       style="width:100%;
+       max-height:420px;
+       object-fit:contain;
+       border-radius:16px;
+       border:1px solid rgba(255,255,255,0.12);
+       box-shadow:0 6px 20px rgba(0,0,0,0.6);">
+</div>
+
+<!-- Motivation -->
+<h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 10px;">
+  Motivation
+</h3>
+
+<p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0;">
+  Nathaniel invested significant time and money into a hydroponics system, but the seeds failed to germinate due to environmental conditions, highlighting the challenges beginners face when growing plants hydroponically.
+</p>
 
 </div>
 
@@ -325,7 +336,7 @@ permalink: /
       Hardware Overview
     </h3>
 
-    <img src="{{ '/images/HardareBlockDiag.png' | relative_url }}"
+    <img src="{{ '/images/HardwareBlockDiag.png' | relative_url }}"
          alt="Hardware Overview"
          style="width:100%;
          height:auto;
