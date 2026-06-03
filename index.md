@@ -7,12 +7,12 @@ permalink: /
 <!-- ═══════════════════════════════ HOME ═══════════════════════════════ -->
 <div class="content-glass" id="home" style="text-align:center; max-width:820px; margin:0 auto;">
   <div style="margin-bottom:22px;">
-    <img src="{{ '/images/homehydroponicsystem.png' | relative_url }}" alt="Home Hydroponic System"
+    <img src="{{ '/images/PrototypePreview.png' | relative_url }}" alt="Home Hydroponic System"
          style="max-width:100%; width:440px; height:300px; object-fit:cover; border-radius:14px; box-shadow:0 8px 30px rgba(0,0,0,0.7); border:1px solid rgba(255,255,255,0.15);">
   </div>
   <p style="color:#ffffff; font-size:1.7rem; font-weight:800; letter-spacing:0.3px; margin:0 0 6px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">ECE 196 SP26 Group 8 Final Project</p>
   <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; margin:0 0 14px; line-height:1.3; text-shadow:0 2px 8px rgba(0,0,0,0.6);">
-    Indoor Smart Hydroponics System for Beginners
+    AutoGreen: Automated Greenhouse
   </h2>
   <p style="color:rgba(255,255,255,0.72); font-size:1rem; line-height:1.6; margin:0 0 24px;">An affordable, sensor-driven growing system that automates seed germination so anyone can grow fresh produce at the comfort of their home</p>
 
@@ -113,7 +113,7 @@ permalink: /
   <!-- Existing Solutions -->
   <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 10px;">Existing Solutions</h3>
   <p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 20px;">
-    There are many products which attempt to simplify hydroponics, but most still require personal intervention. This means a learning curve still exists — users must know the temperature range for germination, nutrition requirements, heat thresholds, etc. — which causes plants to fail. These solutions typically use a simple tabletop container with a water misting setup in a plastic greenhouse dome, with limited customization for different seed types.
+   Many hydroponic systems simplify growing but still require users to manage germination conditions and plant-specific requirements, creating a learning curve that can lead to failed growth.
   </p>
 
 <!-- Patent card 1 -->
@@ -124,8 +124,18 @@ permalink: /
          style="max-width:100%; max-height:100%; object-fit:contain; display:block;">
   </div>
 
-  <div style="font-size:0.95rem; color:#a8e6a3; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">📋 US12543625B2</div>
-  <div style="font-size:1.15rem; color:#ffffff; font-weight:800; margin-bottom:10px;">Soil/Seed Monitoring System for Germination</div>
+  <div style="font-size:0.95rem; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">
+    <a href="https://patents.google.com/patent/US20230089847A1/en"
+       target="_blank"
+       style="color:#a8e6a3; text-decoration:none;">
+      📋 US12543625B2
+    </a>
+  </div>
+
+  <div style="font-size:1.15rem; color:#ffffff; font-weight:800; margin-bottom:10px;">
+    Systems and apparatuses for soil and seed monitoring
+  </div>
+
   <div style="font-size:1rem; color:rgba(255,255,255,0.8); line-height:1.75;">
     A precision agriculture system that uses sensors and data processing to monitor soil conditions and predict seed germination timing, emergence, and risk.
   </div>
@@ -141,8 +151,18 @@ permalink: /
          style="max-width:100%; max-height:100%; object-fit:contain; display:block;">
   </div>
 
-  <div style="font-size:0.95rem; color:#a8e6a3; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">📋 US4236350A</div>
-  <div style="font-size:1.15rem; color:#ffffff; font-weight:800; margin-bottom:10px;">Seedling Tray / Greenhouse Assembly</div>
+  <div style="font-size:0.95rem; font-weight:700; letter-spacing:0.8px; margin-bottom:6px;">
+    <a href="https://patents.google.com/patent/US4236350A/en"
+       target="_blank"
+       style="color:#a8e6a3; text-decoration:none;">
+      📋 US4236350A
+    </a>
+  </div>
+
+  <div style="font-size:1.15rem; color:#ffffff; font-weight:800; margin-bottom:10px;">
+    Seedling tray assembly and greenhouse
+  </div>
+
   <div style="font-size:1rem; color:rgba(255,255,255,0.8); line-height:1.75;">
     A modular seedling tray and greenhouse assembly designed to efficiently grow and manage plant seedlings in controlled environments.
   </div>
@@ -487,13 +507,39 @@ permalink: /
 <!-- ═══════════════════════════════ VIDEO DEMO ═══════════════════════════════ -->
 <div class="content-glass" id="video-demo" style="max-width:820px; margin:0 auto;">
 
-  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Video Demo</h2>
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">
+    Video Demo
+  </h2>
 
-  <div class="doc-frame-shell" style="margin-bottom:32px;">
-    <p>Scroll through the embedded document below to navigate the demo content.</p>
-    <iframe src="https://docs.google.com/document/d/1xzU8UcMcpKXJ8mXc36a6TB2d4cCmEwv0vu0MmWzqOn4/preview"
-            allowfullscreen>
+  <div style="text-align:center; margin-bottom:16px;">
+    <iframe
+      width="100%"
+      height="460"
+      src="https://www.youtube.com/embed/e8GXDmgkYN8"
+      title="AutoGreen Video Demo"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      style="border:1px solid rgba(255,255,255,0.18); border-radius:14px; background:#0a140a;">
     </iframe>
+  </div>
+
+  <div style="text-align:center; margin-bottom:32px;">
+    <a href="https://www.youtube.com/watch?v=e8GXDmgkYN8"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="
+         display:inline-block;
+         padding:10px 20px;
+         background:rgba(120,220,120,0.15);
+         border:1px solid rgba(120,220,120,0.35);
+         border-radius:10px;
+         color:#a8e6a3;
+         font-weight:700;
+         text-decoration:none;
+         transition:all 0.2s ease;">
+      🎥 Open Video in New Tab ↗
+    </a>
   </div>
 
 </div>
@@ -501,13 +547,34 @@ permalink: /
 <!-- ═══════════════════════════════ POSTER ═══════════════════════════════ -->
 <div class="content-glass" id="poster" style="max-width:820px; margin:0 auto;">
 
-  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Poster</h2>
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">
+    Poster
+  </h2>
+
+  <div style="text-align:center; margin-bottom:16px;">
+    <iframe
+      src="https://docs.google.com/presentation/d/1P1LDY73guXG3NnxYoRm6mlEnYV38SoIO68-8Utp_w2I/embed?start=false&loop=false&delayms=3000"
+      style="width:100%; height:680px; border:1px solid rgba(255,255,255,0.18); border-radius:14px; background:#0a140a;"
+      allowfullscreen>
+    </iframe>
+  </div>
 
   <div style="text-align:center; margin-bottom:32px;">
-    <iframe src="https://docs.google.com/presentation/d/1P1LDY73guXG3NnxYoRm6mlEnYV38SoIO68-8Utp_w2I/embed?start=false&loop=false&delayms=3000"
-            style="width:100%; height:680px; border:1px solid rgba(255,255,255,0.18); border-radius:14px; background:#0a140a;"
-            allowfullscreen>
-    </iframe>
+    <a href="https://docs.google.com/presentation/d/1P1LDY73guXG3NnxYoRm6mlEnYV38SoIO68-8Utp_w2I/view"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="
+         display:inline-block;
+         padding:10px 20px;
+         background:rgba(120,220,120,0.15);
+         border:1px solid rgba(120,220,120,0.35);
+         border-radius:10px;
+         color:#a8e6a3;
+         font-weight:700;
+         text-decoration:none;
+         transition:all 0.2s ease;">
+      📄 Open Poster in New Tab ↗
+    </a>
   </div>
 
 </div>
