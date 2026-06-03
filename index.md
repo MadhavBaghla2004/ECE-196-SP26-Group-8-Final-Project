@@ -651,480 +651,182 @@ permalink: /
 <!-- ══════════════════════════════ MILESTONES ═══════════════════════════════ -->
 <div class="content-glass" id="milestones" style="max-width:820px; margin:0 auto;">
 
-  <h2 style="color:#ffffff;
-             font-size:1.7rem;
-             font-weight:800;
-             text-align:center;
-             margin:0 0 24px;
-             text-shadow:0 2px 8px rgba(0,0,0,0.6);">
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">
     Milestones
   </h2>
 
-  <div style="position:relative; padding:8px 0;">
+  <!-- Milestone Timeline -->
+  <div style="position:relative; padding:8px 0 0 0;">
 
-    <!-- Center vertical line -->
-    <div style="position:absolute;
-                left:50%;
-                top:0;
-                bottom:0;
-                width:2px;
-                background:rgba(255,255,255,0.15);
-                transform:translateX(-50%);">
-    </div>
+    <!-- Left vertical line -->
+    <div style="position:absolute; left:24px; top:34px; bottom:58px; width:3px; background:rgba(168,230,163,0.35); border-radius:10px;"></div>
 
-    <!-- Week 4 — LEFT -->
-    <div style="display:flex; align-items:stretch; position:relative;">
+    <!-- Milestone 1 -->
+    <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
 
-      <div style="flex:1;
-                  padding-right:28px;
-                  padding-bottom:48px;
-                  position:relative;">
-
-        <div style="position:absolute;
-                    top:34px;
-                    right:0;
-                    width:28px;
-                    height:2px;
-                    background:rgba(255,255,255,0.15);">
-        </div>
-
-        <div style="background:rgba(8,35,8,0.85);
-                    border:1px solid rgba(120,220,120,0.25);
-                    border-radius:12px;
-                    padding:18px 20px;">
-
-          <div style="display:flex;
-                      align-items:center;
-                      gap:10px;
-                      margin-bottom:8px;">
-
-            <div style="width:34px;
-                        height:34px;
-                        border-radius:50%;
-                        background:rgba(120,220,120,0.2);
-                        border:2px solid rgba(120,220,120,0.7);
-                        display:flex;
-                        align-items:center;
-                        justify-content:center;
-                        font-size:1rem;">
-              ✅
-            </div>
-
-            <div style="font-size:0.75rem;
-                        color:rgba(160,200,255,0.85);
-                        font-weight:600;">
-              Date of Completion: April 25
-            </div>
-
-          </div>
-
-          <div style="font-size:1rem;
-                      color:#ffffff;
-                      font-weight:700;
-                      margin-bottom:5px;">
-            Define System Requirements &amp; Success Criteria
-          </div>
-
-          <div style="font-size:0.88rem;
-                      color:rgba(255,255,255,0.7);
-                      line-height:1.6;">
-            Establish clear functional requirements, performance metrics, and measurable success criteria for reliable seed germination in hydroponic systems
-          </div>
-
-        </div>
-      </div>
-
-      <div style="flex:1;"></div>
-    </div>
-
-    <!-- Week 5 — RIGHT -->
-    <div style="display:flex; align-items:stretch; position:relative;">
-
-      <div style="flex:1; padding-bottom:48px;"></div>
-
-      <div style="flex:1;
-                  padding-left:28px;
-                  padding-bottom:48px;
-                  position:relative;">
-
-        <div style="position:absolute;
-                    top:34px;
-                    left:0;
-                    width:28px;
-                    height:2px;
-                    background:rgba(255,255,255,0.15);">
-        </div>
-
-        <div style="background:rgba(8,35,8,0.85);
-                    border:1px solid rgba(120,220,120,0.25);
-                    border-radius:12px;
-                    padding:18px 20px;">
-
-          <div style="display:flex;
-                      align-items:center;
-                      gap:10px;
-                      margin-bottom:8px;">
-
-            <div style="width:34px;
-                        height:34px;
-                        border-radius:50%;
-                        background:rgba(120,220,120,0.2);
-                        border:2px solid rgba(120,220,120,0.7);
-                        display:flex;
-                        align-items:center;
-                        justify-content:center;
-                        font-size:1rem;">
-              ✅
-            </div>
-
-            <div style="font-size:0.75rem;
-                        color:rgba(160,200,255,0.85);
-                        font-weight:600;">
-              Date of Completion: May 2
-            </div>
-
-          </div>
-
-          <div style="font-size:1rem;
-                      color:#ffffff;
-                      font-weight:700;
-                      margin-bottom:5px;">
-            Component Selection &amp; Procurement
-          </div>
-
-          <div style="font-size:0.88rem;
-                      color:rgba(255,255,255,0.7);
-                      line-height:1.6;">
-            Identify and select appropriate sensors, actuators, microcontrollers, and supporting components
-          </div>
-
+      <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
+        <img src="{{ '/images/Milestone1.jpg' | relative_url }}" alt="Milestone 1" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
+        <div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">April 25</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Germination Requirements Defined</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Defined temperature, humidity, moisture, and success metrics for reliable seed germination.</div>
         </div>
       </div>
     </div>
 
-    <!-- Week 6 — LEFT -->
-    <div style="display:flex; align-items:stretch; position:relative;">
+    <!-- Milestone 2 -->
+    <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
 
-      <div style="flex:1;
-                  padding-right:28px;
-                  padding-bottom:48px;
-                  position:relative;">
-
-        <div style="position:absolute;
-                    top:34px;
-                    right:0;
-                    width:28px;
-                    height:2px;
-                    background:rgba(255,255,255,0.15);">
-        </div>
-
-        <div style="background:rgba(8,35,8,0.85);
-                    border:1px solid rgba(120,220,120,0.25);
-                    border-radius:12px;
-                    padding:18px 20px;">
-
-          <div style="display:flex;
-                      align-items:center;
-                      gap:10px;
-                      margin-bottom:8px;">
-
-            <div style="width:34px;
-                        height:34px;
-                        border-radius:50%;
-                        background:rgba(120,220,120,0.2);
-                        border:2px solid rgba(120,220,120,0.7);
-                        display:flex;
-                        align-items:center;
-                        justify-content:center;
-                        font-size:1rem;">
-              ✅
-            </div>
-
-            <div style="font-size:0.75rem;
-                        color:rgba(160,200,255,0.85);
-                        font-weight:600;">
-              Date of Completion: May 9
-            </div>
-
-          </div>
-
-          <div style="font-size:1rem;
-                      color:#ffffff;
-                      font-weight:700;
-                      margin-bottom:5px;">
-            PCB Design &amp; Circuit Integration
-          </div>
-
-          <div style="font-size:0.88rem;
-                      color:rgba(255,255,255,0.7);
-                      line-height:1.6;">
-            Designed our PCB integrating the ESP32, sensor interfaces, actuator connections, and power regulation circuitry
-          </div>
-
-        </div>
-      </div>
-
-      <div style="flex:1;"></div>
-    </div>
-
-    <!-- Week 7 — RIGHT -->
-    <div style="display:flex; align-items:stretch; position:relative;">
-
-      <div style="flex:1;"></div>
-
-      <div style="flex:1;
-                  padding-left:28px;
-                  padding-bottom:48px;
-                  position:relative;">
-
-        <div style="position:absolute;
-                    top:34px;
-                    left:0;
-                    width:28px;
-                    height:2px;
-                    background:rgba(255,255,255,0.15);">
-        </div>
-
-        <div style="background:rgba(8,35,8,0.85);
-                    border:1px solid rgba(120,220,120,0.25);
-                    border-radius:12px;
-                    padding:18px 20px;">
-
-          <div style="display:flex;
-                      align-items:center;
-                      gap:10px;
-                      margin-bottom:8px;">
-
-            <div style="width:34px;
-                        height:34px;
-                        border-radius:50%;
-                        background:rgba(255,165,0,0.2);
-                        border:2px solid rgba(255,165,0,0.7);
-                        display:flex;
-                        align-items:center;
-                        justify-content:center;
-                        font-size:1rem;">
-              ⏳
-            </div>
-
-            <div style="font-size:0.75rem;
-                        color:rgba(160,200,255,0.85);
-                        font-weight:600;">
-              Date of Completion: May 29
-            </div>
-
-          </div>
-
-          <div style="font-size:1rem;
-                      color:#ffffff;
-                      font-weight:700;
-                      margin-bottom:5px;">
-            Enclosure Design &amp; 3D Printing
-          </div>
-
-          <div style="font-size:0.88rem;
-                      color:rgba(255,255,255,0.7);
-                      line-height:1.6;">
-            Designed and fabricated a 3D-printed enclosure to securely house all system components and wiring
-          </div>
-
+      <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
+        <img src="{{ '/images/Milestone2.png' | relative_url }}" alt="Milestone 2" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
+        <div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 2</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Components Selected</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Selected sensors, actuators, ESP32, power components, and supporting hardware.</div>
         </div>
       </div>
     </div>
 
-    <!-- Week 8 — LEFT -->
-    <div style="display:flex; align-items:stretch; position:relative;">
+    <!-- Milestone 3 -->
+    <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
 
-      <div style="flex:1;
-                  padding-right:28px;
-                  padding-bottom:48px;
-                  position:relative;">
-
-        <div style="position:absolute;
-                    top:34px;
-                    right:0;
-                    width:28px;
-                    height:2px;
-                    background:rgba(255,255,255,0.15);">
-        </div>
-
-        <div style="background:rgba(8,35,8,0.85);
-                    border:1px solid rgba(120,220,120,0.25);
-                    border-radius:12px;
-                    padding:18px 20px;">
-
-          <div style="display:flex;
-                      align-items:center;
-                      gap:10px;
-                      margin-bottom:8px;">
-
-            <div style="width:34px;
-                        height:34px;
-                        border-radius:50%;
-                        background:rgba(255,165,0,0.2);
-                        border:2px solid rgba(255,165,0,0.7);
-                        display:flex;
-                        align-items:center;
-                        justify-content:center;
-                        font-size:1rem;">
-              ⏳
-            </div>
-
-            <div style="font-size:0.75rem;
-                        color:rgba(160,200,255,0.85);
-                        font-weight:600;">
-              Date of Completion: May 29
-            </div>
-
-          </div>
-
-          <div style="font-size:1rem;
-                      color:#ffffff;
-                      font-weight:700;
-                      margin-bottom:5px;">
-            System Assembly &amp; Hardware Integration
-          </div>
-
-          <div style="font-size:0.88rem;
-                      color:rgba(255,255,255,0.7);
-                      line-height:1.6;">
-            Assemble all hardware components, including PCB, sensors, actuators, and enclosure
-          </div>
-
-        </div>
-      </div>
-
-      <div style="flex:1;"></div>
-    </div>
-
-    <!-- Week 9 — RIGHT -->
-    <div style="display:flex; align-items:stretch; position:relative;">
-
-      <div style="flex:1;"></div>
-
-      <div style="flex:1;
-                  padding-left:28px;
-                  padding-bottom:48px;
-                  position:relative;">
-
-        <div style="position:absolute;
-                    top:34px;
-                    left:0;
-                    width:28px;
-                    height:2px;
-                    background:rgba(255,255,255,0.15);">
-        </div>
-
-        <div style="background:rgba(8,35,8,0.85);
-                    border:1px solid rgba(120,220,120,0.25);
-                    border-radius:12px;
-                    padding:18px 20px;">
-
-          <div style="display:flex;
-                      align-items:center;
-                      gap:10px;
-                      margin-bottom:8px;">
-
-            <div style="width:34px;
-                        height:34px;
-                        border-radius:50%;
-                        background:rgba(255,165,0,0.2);
-                        border:2px solid rgba(255,165,0,0.7);
-                        display:flex;
-                        align-items:center;
-                        justify-content:center;
-                        font-size:1rem;">
-              ⏳
-            </div>
-
-            <div style="font-size:0.75rem;
-                        color:rgba(160,200,255,0.85);
-                        font-weight:600;">
-              Date of Completion: May 29
-            </div>
-
-          </div>
-
-          <div style="font-size:1rem;
-                      color:#ffffff;
-                      font-weight:700;
-                      margin-bottom:5px;">
-            Software Development &amp; System Integration
-          </div>
-
-          <div style="font-size:0.88rem;
-                      color:rgba(255,255,255,0.7);
-                      line-height:1.6;">
-            Developed embedded software and mobile app features for monitoring and automated control
-          </div>
-
+      <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
+        <img src="{{ '/images/Milestone3.png' | relative_url }}" alt="Milestone 3" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
+        <div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 6</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">PCB Schematic Completed</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Created the circuit schematic for power, sensing, and actuator control.</div>
         </div>
       </div>
     </div>
 
-    <!-- Week 10 — LEFT -->
-    <div style="display:flex; align-items:stretch; position:relative;">
+    <!-- Milestone 4 -->
+    <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
 
-      <div style="flex:1;
-                  padding-right:28px;
-                  padding-bottom:48px;
-                  position:relative;">
-
-        <div style="position:absolute;
-                    top:34px;
-                    right:0;
-                    width:28px;
-                    height:2px;
-                    background:rgba(255,255,255,0.15);">
-        </div>
-
-        <div style="background:rgba(8,35,8,0.85);
-                    border:1px solid rgba(120,220,120,0.25);
-                    border-radius:12px;
-                    padding:18px 20px;">
-
-          <div style="display:flex;
-                      align-items:center;
-                      gap:10px;
-                      margin-bottom:8px;">
-
-            <div style="width:34px;
-                        height:34px;
-                        border-radius:50%;
-                        background:rgba(255,165,0,0.2);
-                        border:2px solid rgba(255,165,0,0.7);
-                        display:flex;
-                        align-items:center;
-                        justify-content:center;
-                        font-size:1rem;">
-              ⏳
-            </div>
-
-            <div style="font-size:0.75rem;
-                        color:rgba(160,200,255,0.85);
-                        font-weight:600;">
-              Date of Completion: June 1
-            </div>
-
-          </div>
-
-          <div style="font-size:1rem;
-                      color:#ffffff;
-                      font-weight:700;
-                      margin-bottom:5px;">
-            Validation, Testing &amp; Iteration
-          </div>
-
-          <div style="font-size:0.88rem;
-                      color:rgba(255,255,255,0.7);
-                      line-height:1.6;">
-            Conduct controlled experiments to evaluate performance and refine the system using Lettuce seeds
-          </div>
-
+      <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
+        <img src="{{ '/images/Milestone4.jpg' | relative_url }}" alt="Milestone 4" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
+        <div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 9</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">PCB Layout Designed</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Routed the PCB with ESP32 connections, sensor ports, and power regulation.</div>
         </div>
       </div>
+    </div>
 
-      <div style="flex:1;"></div>
+    <!-- Milestone 5 -->
+    <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+
+      <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
+        <img src="{{ '/images/Milestone5.png' | relative_url }}" alt="Milestone 5" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
+        <div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 12</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Plant Database Built</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Created a database storing germination conditions for different seed types.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Milestone 6 -->
+    <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+
+      <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
+        <img src="{{ '/images/Milestone6.png' | relative_url }}" alt="Milestone 6" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
+        <div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 16</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Web App Connected</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Connected the web application to the plant database for crop-specific information.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Milestone 7 -->
+    <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+
+      <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
+        <img src="{{ '/images/Milestone7.png' | relative_url }}" alt="Milestone 7" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
+        <div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 20</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">PCB Assembly Started</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Partially assembled the PCB and soldered key power and connector components.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Milestone 8 -->
+    <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+
+      <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
+        <img src="{{ '/images/Milestone8.png' | relative_url }}" alt="Milestone 8" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
+        <div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 23</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">PCB Fully Assembled</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Completed PCB soldering and prepared it for electrical validation.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Milestone 9 -->
+    <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+
+      <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
+        <img src="{{ '/images/Milestone9.png' | relative_url }}" alt="Milestone 9" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
+        <div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 26</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">3D Enclosure Designed</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Designed the enclosure to hold the PCB, wiring, sensors, and system components.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Milestone 10 -->
+    <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+
+      <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
+        <img src="{{ '/images/Milestone10.png' | relative_url }}" alt="Milestone 10" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
+        <div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 29</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">3D Parts Printed</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Printed the enclosure parts and prepared them for full system assembly.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Milestone 11 -->
+    <div style="position:relative; display:flex; gap:22px; margin-bottom:28px;">
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+
+      <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
+        <img src="{{ '/images/Milestone11.png' | relative_url }}" alt="Milestone 11" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
+        <div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">June 1</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Hardware Integrated</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Integrated the PCB, ESP32, sensors, actuators, and enclosure into one system.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Milestone 12 -->
+    <div style="position:relative; display:flex; gap:22px; margin-bottom:0;">
+      <div style="width:50px; height:50px; border-radius:50%; background:rgba(120,220,120,0.2); border:2px solid rgba(120,220,120,0.8); display:flex; align-items:center; justify-content:center; z-index:2; font-size:1.2rem;">✅</div>
+
+      <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
+        <img src="{{ '/images/Milestone12.png' | relative_url }}" alt="Milestone 12" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
+        <div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">June 3</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Testing &amp; Validation Completed</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Tested sensing, control logic, and system behavior using the final prototype.</div>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -1134,7 +836,7 @@ permalink: /
               border:1px solid rgba(255,120,120,0.2);
               border-radius:14px;
               padding:22px;
-              margin-top:20px;
+              margin-top:32px;
               margin-bottom:28px;">
 
     <h3 style="color:#ffb3b3;
