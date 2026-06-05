@@ -117,7 +117,7 @@ permalink: /
        border:1px solid rgba(255,255,255,0.12);
        box-shadow:0 6px 20px rgba(0,0,0,0.6);">
   <p style="font-size:0.8rem; color:rgba(255,255,255,0.55); font-style:italic; margin:8px 0 0;">
-    This image was generated with AI.
+    Image created using AI
   </p>
 </div>
 
@@ -969,7 +969,7 @@ private:
         <img src="{{ '/images/Milestone1.jpg' | relative_url }}" alt="Milestone 1" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
           <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">April 25</div>
-          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Germination Requirements Defined</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Germination requirements defined</div>
           <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Defined temperature, humidity, moisture, and success metrics for reliable seed germination.</div>
         </div>
       </div>
@@ -985,7 +985,7 @@ private:
         <img src="{{ '/images/Milestone2.png' | relative_url }}" alt="Milestone 2" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
           <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 2</div>
-          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Components Selected</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Components selected</div>
           <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Selected sensors, actuators, ESP32, power components, and supporting hardware.</div>
         </div>
       </div>
@@ -1000,9 +1000,9 @@ private:
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone3.png' | relative_url }}" alt="Milestone 3" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
-          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 6</div>
-          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">PCB Schematic Completed</div>
-          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Created the circuit schematic for power, sensing, and actuator control.</div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 9</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Custom PCB designed</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Designed a custom PCB integrating power regulation, sensors, actuators, and ESP32.</div>
         </div>
       </div>
     </div>
@@ -1016,9 +1016,9 @@ private:
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone4.jpg' | relative_url }}" alt="Milestone 4" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
-          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 9</div>
-          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">PCB Layout Designed</div>
-          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Routed the PCB with ESP32 connections, sensor ports, and power regulation.</div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 20</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">PCB partially assembled</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Assembled PCB with ESP32 connections, sensor ports, and power regulation.</div>
         </div>
       </div>
     </div>
@@ -1032,7 +1032,7 @@ private:
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone5.png' | relative_url }}" alt="Milestone 5" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
-          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 12</div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 22</div>
           <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Plant Database Built</div>
           <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Created a database storing germination conditions for different seed types.</div>
         </div>
@@ -1048,8 +1048,8 @@ private:
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone6.png' | relative_url }}" alt="Milestone 6" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
-          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 16</div>
-          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Web App Connected</div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 23</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Web app connected</div>
           <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Connected the web application to the plant database for crop-specific information.</div>
         </div>
       </div>
@@ -1064,9 +1064,9 @@ private:
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone7.png' | relative_url }}" alt="Milestone 7" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
-          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 20</div>
-          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">PCB Assembly Started</div>
-          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Partially assembled the PCB and soldered key power and connector components.</div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 27</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">PCB Fully Assembled</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Completed PCB assembly by soldering MOSFETs, connectors, and remaining components.</div>
         </div>
       </div>
     </div>
@@ -1080,9 +1080,9 @@ private:
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone8.png' | relative_url }}" alt="Milestone 8" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
-          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 23</div>
-          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">PCB Fully Assembled</div>
-          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Completed PCB soldering and prepared it for electrical validation.</div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 28</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Enclosure Designed</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Designed a custom enclosure to house and organize all hardware components.</div>
         </div>
       </div>
     </div>
@@ -1096,9 +1096,9 @@ private:
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone9.png' | relative_url }}" alt="Milestone 9" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
-          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 26</div>
-          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">3D Enclosure Designed</div>
-          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Designed the enclosure to hold the PCB, wiring, sensors, and system components.</div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 30</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Enclosure components printed</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Fabricated all 3D-printed enclosure components for system assembly.</div>
         </div>
       </div>
     </div>
@@ -1112,9 +1112,9 @@ private:
       <div style="flex:1; display:flex; gap:18px; align-items:center; background:rgba(8,35,8,0.85); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:16px;">
         <img src="{{ '/images/Milestone10.jpg' | relative_url }}" alt="Milestone 10" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
-          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 29</div>
-          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">3D Parts Printed</div>
-          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Printed the enclosure parts and prepared them for full system assembly.</div>
+          <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">June 1</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Complete system assembled</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Integrated the enclosure, PCB, sensors, actuators, and wiring into the final prototype.</div>
         </div>
       </div>
     </div>
@@ -1129,8 +1129,8 @@ private:
         <img src="{{ '/images/Milestone11.jpg' | relative_url }}" alt="Milestone 11" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
           <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">June 1</div>
-          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Hardware Integrated</div>
-          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Integrated the PCB, ESP32, sensors, actuators, and enclosure into one system.</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Hardware - software integrated</div>
+          <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;"> Connected the app, database, and embedded controller. </div>
         </div>
       </div>
     </div>
@@ -1145,7 +1145,7 @@ private:
         <img src="{{ '/images/Milestone12.png' | relative_url }}" alt="Milestone 12" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
           <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">June 3</div>
-          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Testing &amp; Validation Completed</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Testing &amp; validation completed</div>
           <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Tested sensing, control logic, and system behavior using the final prototype.</div>
         </div>
       </div>
