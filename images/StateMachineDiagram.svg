@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 700" font-family="-apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#a8e6a3"/>
+    </marker>
+    <marker id="arrowDim" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#cfeccf"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="440" y="32" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="800">Greenhouse Controller State Machine</text>
+
+  <!-- ===== Top-level mode switch ===== -->
+  <!-- initial state dot -->
+  <circle cx="40" cy="92" r="6" fill="#a8e6a3"/>
+  <line x1="46" y1="92" x2="95" y2="92" stroke="#a8e6a3" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="40" y="78" text-anchor="middle" fill="#cfeccf" font-size="11">init</text>
+
+  <!-- MANUAL box -->
+  <rect x="100" y="62" width="220" height="62" rx="12" fill="#0d3311" stroke="#78dc78" stroke-width="2"/>
+  <text x="210" y="90" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="800">MANUAL</text>
+  <text x="210" y="110" text-anchor="middle" fill="#cfeccf" font-size="12">outputs parked — pump / fan / heaters OFF</text>
+
+  <!-- AUTO box -->
+  <rect x="560" y="62" width="220" height="62" rx="12" fill="#14431a" stroke="#a8e6a3" stroke-width="2.5"/>
+  <text x="670" y="90" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="800">AUTO</text>
+  <text x="670" y="110" text-anchor="middle" fill="#cfeccf" font-size="12">control loops run on every tick()</text>
+
+  <!-- mode transitions -->
+  <line x1="320" y1="80" x2="560" y2="80" stroke="#a8e6a3" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="440" y="72" text-anchor="middle" fill="#a8e6a3" font-size="12.5" font-weight="600">setMode(AUTO)</text>
+
+  <line x1="560" y1="106" x2="320" y2="106" stroke="#a8e6a3" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="440" y="122" text-anchor="middle" fill="#a8e6a3" font-size="12.5" font-weight="600">setMode(MANUAL)</text>
+
+  <!-- connector down to AUTO container -->
+  <line x1="670" y1="124" x2="670" y2="158" stroke="#a8e6a3" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+
+  <!-- ===== AUTO container ===== -->
+  <rect x="30" y="160" width="820" height="520" rx="16" fill="#08230c" fill-opacity="0.55" stroke="#78dc78" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="440" y="186" text-anchor="middle" fill="#a8e6a3" font-size="13.5" font-weight="700" letter-spacing="0.5">AUTO — tick() evaluates three independent control loops</text>
+
+  <!-- ============ PUMP LOOP ============ -->
+  <text x="180" y="222" text-anchor="middle" fill="#9fd0ff" font-size="13.5" font-weight="800">Pump loop</text>
+  <!-- state A -->
+  <rect x="72" y="232" width="216" height="58" rx="11" fill="#0d3311" stroke="#78dc78" stroke-width="2"/>
+  <text x="180" y="257" text-anchor="middle" fill="#ffffff" font-size="14.5" font-weight="700">IDLE / COOLDOWN</text>
+  <text x="180" y="276" text-anchor="middle" fill="#cfeccf" font-size="11.5">pump OFF</text>
+  <!-- state B -->
+  <rect x="72" y="588" width="216" height="58" rx="11" fill="#14431a" stroke="#a8e6a3" stroke-width="2.5"/>
+  <text x="180" y="613" text-anchor="middle" fill="#ffffff" font-size="14.5" font-weight="700">PUMPING</text>
+  <text x="180" y="632" text-anchor="middle" fill="#cfeccf" font-size="11.5">pump ON</text>
+  <!-- down arrow (enter) -->
+  <line x1="145" y1="290" x2="145" y2="588" stroke="#a8e6a3" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- up arrow (exit) -->
+  <line x1="215" y1="588" x2="215" y2="290" stroke="#cfeccf" stroke-width="2" marker-end="url(#arrowDim)"/>
+  <!-- enter condition -->
+  <text x="180" y="372" text-anchor="middle" fill="#a8e6a3" font-size="11" font-weight="600">enter</text>
+  <text x="180" y="390" text-anchor="middle" fill="#e8ffe8" font-size="11">cooldown done</text>
+  <text x="180" y="406" text-anchor="middle" fill="#e8ffe8" font-size="11">&amp; soil &lt; target − deadband</text>
+  <!-- exit condition -->
+  <text x="180" y="476" text-anchor="middle" fill="#cfeccf" font-size="11" font-weight="600">exit</text>
+  <text x="180" y="494" text-anchor="middle" fill="#e8ffe8" font-size="11">after PUMP_RUN_MS</text>
+  <text x="180" y="510" text-anchor="middle" fill="#e8ffe8" font-size="11">→ start cooldown</text>
+
+  <!-- ============ HEAT LOOP ============ -->
+  <text x="440" y="222" text-anchor="middle" fill="#ffb27a" font-size="13.5" font-weight="800">Heat loop</text>
+  <rect x="332" y="232" width="216" height="58" rx="11" fill="#0d3311" stroke="#78dc78" stroke-width="2"/>
+  <text x="440" y="257" text-anchor="middle" fill="#ffffff" font-size="14.5" font-weight="700">OFF</text>
+  <text x="440" y="276" text-anchor="middle" fill="#cfeccf" font-size="11.5">heaters OFF</text>
+  <rect x="332" y="588" width="216" height="58" rx="11" fill="#14431a" stroke="#a8e6a3" stroke-width="2.5"/>
+  <text x="440" y="613" text-anchor="middle" fill="#ffffff" font-size="14.5" font-weight="700">HEATING</text>
+  <text x="440" y="632" text-anchor="middle" fill="#cfeccf" font-size="11.5">heaters ON</text>
+  <line x1="405" y1="290" x2="405" y2="588" stroke="#a8e6a3" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="475" y1="588" x2="475" y2="290" stroke="#cfeccf" stroke-width="2" marker-end="url(#arrowDim)"/>
+  <text x="440" y="380" text-anchor="middle" fill="#a8e6a3" font-size="11" font-weight="600">enter</text>
+  <text x="440" y="398" text-anchor="middle" fill="#e8ffe8" font-size="11">air ≤ target − deadband</text>
+  <text x="440" y="484" text-anchor="middle" fill="#cfeccf" font-size="11" font-weight="600">exit</text>
+  <text x="440" y="502" text-anchor="middle" fill="#e8ffe8" font-size="11">air ≥ target</text>
+
+  <!-- ============ VENT LOOP ============ -->
+  <text x="700" y="222" text-anchor="middle" fill="#8fe6ff" font-size="13.5" font-weight="800">Vent loop</text>
+  <rect x="592" y="232" width="216" height="58" rx="11" fill="#0d3311" stroke="#78dc78" stroke-width="2"/>
+  <text x="700" y="257" text-anchor="middle" fill="#ffffff" font-size="14.5" font-weight="700">OFF</text>
+  <text x="700" y="276" text-anchor="middle" fill="#cfeccf" font-size="11.5">fan OFF</text>
+  <rect x="592" y="588" width="216" height="58" rx="11" fill="#14431a" stroke="#a8e6a3" stroke-width="2.5"/>
+  <text x="700" y="613" text-anchor="middle" fill="#ffffff" font-size="14.5" font-weight="700">VENTING</text>
+  <text x="700" y="632" text-anchor="middle" fill="#cfeccf" font-size="11.5">fan ON</text>
+  <line x1="665" y1="290" x2="665" y2="588" stroke="#a8e6a3" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="735" y1="588" x2="735" y2="290" stroke="#cfeccf" stroke-width="2" marker-end="url(#arrowDim)"/>
+  <text x="700" y="364" text-anchor="middle" fill="#a8e6a3" font-size="11" font-weight="600">enter</text>
+  <text x="700" y="382" text-anchor="middle" fill="#e8ffe8" font-size="11">air ≥ target + deadband</text>
+  <text x="700" y="398" text-anchor="middle" fill="#e8ffe8" font-size="11">OR humid ≥ target + db</text>
+  <text x="700" y="476" text-anchor="middle" fill="#cfeccf" font-size="11" font-weight="600">exit</text>
+  <text x="700" y="494" text-anchor="middle" fill="#e8ffe8" font-size="11">air ≤ target</text>
+  <text x="700" y="510" text-anchor="middle" fill="#e8ffe8" font-size="11">AND humid ≤ target</text>
+</svg>

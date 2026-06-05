@@ -116,7 +116,11 @@ permalink: /
        border-radius:16px;
        border:1px solid rgba(255,255,255,0.12);
        box-shadow:0 6px 20px rgba(0,0,0,0.6);">
+  <p style="font-size:0.8rem; color:rgba(255,255,255,0.55); font-style:italic; margin:8px 0 0;">
+    This image was generated with AI.
+  </p>
 </div>
+
 
 <!-- Motivation -->
 <h3 style="color:#a8e6a3; font-size:1.15rem; font-weight:700; margin:0 0 10px;">
@@ -640,11 +644,243 @@ permalink: /
 <!-- ═══════════════════════════════ PROJECT TUTORIAL ═══════════════════════════════ -->
 <div class="content-glass" id="tutorial" style="max-width:820px; margin:0 auto;">
 
-  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Mini Project #3 Tutorial</h2>
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Mini Project #3 Tutorials</h2>
 
   <p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 24px;">
     Step-by-step guide on how to build and use the Indoor Smart Hydroponics System.
   </p>
+
+  <!-- Tutorial #1: State Machines -->
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📘 Tutorial #1: State Machines</div>
+    <p style="font-size:1rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 16px;">
+      This tutorial focuses on state machines. The controller runs a finite state machine (FSM)
+      that decides, on every <code>tick()</code>, which actuators should be active based on the
+      latest sensor readings and the user's target setpoints. In <strong>AUTO</strong> mode the FSM
+      drives pumping, heating, and venting through independent control loops with deadbands and
+      cooldowns; in <strong>MANUAL</strong> mode it parks the outputs so the user is in control.
+    </p>
+
+    <!-- State machine diagram -->
+    <img src="{{ '/images/StateMachineDiagram.svg' | relative_url }}" alt="Greenhouse controller state machine diagram"
+         style="width:100%; max-width:760px; display:block; margin:0 auto 20px; background:rgba(0,0,0,0.35); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:12px;">
+
+    <p style="font-size:0.85rem; color:rgba(255,255,255,0.6); text-align:center; font-style:italic; margin:0 0 18px;">
+      The FSM switches between MANUAL and AUTO; in AUTO, three independent loops control pumping, heating, and venting.
+    </p>
+
+    <!-- Expandable source: StateMachine.cpp -->
+    <details style="margin-bottom:14px;">
+      <summary style="cursor:pointer; color:#a8e6a3; font-weight:700; font-size:0.95rem; padding:10px 0;">▸ View source: StateMachine.cpp</summary>
+    <pre style="background:rgba(0,0,0,0.55); border:1px solid rgba(255,255,255,0.12); border-radius:10px; padding:16px; overflow-x:auto; font-size:0.85rem; line-height:1.5; color:#d6f5d6; margin:10px 0 0;"><code>#include "StateMachine.h"
+#include "Config.h"
+
+const char* modeName(GhMode m) {
+    return (m == GhMode::AUTO) ? "AUTO" : "MANUAL";
+}
+
+String actionsLabel(ActionMask m) {
+    if (m == 0) return String("IDLE");
+    String s;
+    if (m &amp; ACT_PUMPING) { if (s.length()) s += "+"; s += "PUMPING"; }
+    if (m &amp; ACT_HEATING) { if (s.length()) s += "+"; s += "HEATING"; }
+    if (m &amp; ACT_VENTING) { if (s.length()) s += "+"; s += "VENTING"; }
+    return s;
+}
+
+String actionsShortLabel(ActionMask m) {
+    if (m == 0) return String("IDLE");
+    String s;
+    if (m &amp; ACT_PUMPING) { if (s.length()) s += "+"; s += "PUMP"; }
+    if (m &amp; ACT_HEATING) { if (s.length()) s += "+"; s += "HEAT"; }
+    if (m &amp; ACT_VENTING) { if (s.length()) s += "+"; s += "VENT"; }
+    return s;
+}
+
+StateMachine::StateMachine(Actuators&amp; actuators)
+: _act(actuators) {
+    _targets.airTempC   = DEFAULT_TARGET_AIR_TEMP_C;
+    _targets.waterTempC = DEFAULT_TARGET_WATER_TEMP_C;
+    _targets.humidity   = DEFAULT_TARGET_HUMIDITY;
+    _targets.soilBin    = DEFAULT_TARGET_SOIL_BIN;
+}
+
+void StateMachine::setMode(GhMode m) {
+    if (m == _mode) return;
+    _mode = m;
+    Serial.print("[FSM] mode -&gt; ");
+    Serial.println(modeName(_mode));
+
+    // Whichever direction we move, park outputs so the new mode starts clean.
+    _actions = 0;
+    if (_mode == GhMode::MANUAL) {
+        _act.pumpOff();
+        _act.fanOff();
+        _act.heatersOff();
+        // LED stays — it's user-controlled in both modes.
+    } else {
+        _applyOutputs();
+    }
+}
+
+float StateMachine::_soilTargetPct() const {
+    int b = _targets.soilBin;
+    if (b &lt; 1) b = 1;
+    if (b &gt; 5) b = 5;
+    return SOIL_BIN_PCT[b];
+}
+
+// ---- per-action control loops ----
+
+void StateMachine::_updatePumping(const SensorReading&amp; r, uint32_t now) {
+    bool pumping = (_actions &amp; ACT_PUMPING) != 0;
+
+    if (pumping) {
+        // Stop after PUMP_RUN_MS and start a cooldown.
+        if (now - _pumpStartedAt &gt;= PUMP_RUN_MS) {
+            _actions &amp;= ~ACT_PUMPING;
+            _pumpCooldownUntil = now + PUMP_COOLDOWN_MS;
+        }
+        return;
+    }
+
+    if (now &lt; _pumpCooldownUntil) return;
+    if (!r.soilOk || isnan(r.soilPct)) return;
+
+    float targetPct = _soilTargetPct();
+    if (r.soilPct &lt; (targetPct - SOIL_DEADBAND_PCT)) {
+        _actions |= ACT_PUMPING;
+        _pumpStartedAt = now;
+    }
+}
+
+void StateMachine::_updateHeating(const SensorReading&amp; r) {
+    if (!r.shtOk) return;
+    bool heating = (_actions &amp; ACT_HEATING) != 0;
+
+    bool tooCold     = r.airTempC &lt;= (_targets.airTempC - TEMP_DEADBAND_C);
+    bool warmEnough  = r.airTempC &gt;= _targets.airTempC;
+
+    if (!heating &amp;&amp; tooCold)        _actions |= ACT_HEATING;
+    else if (heating &amp;&amp; warmEnough) _actions &amp;= ~ACT_HEATING;
+}
+
+void StateMachine::_updateVenting(const SensorReading&amp; r) {
+    if (!r.shtOk) return;
+    bool venting = (_actions &amp; ACT_VENTING) != 0;
+
+    bool tooHot   = r.airTempC    &gt;= (_targets.airTempC + TEMP_DEADBAND_C);
+    bool tooHumid = r.airHumidPct &gt;= (_targets.humidity + HUMID_DEADBAND_PCT);
+    bool fine     = r.airTempC    &lt;= _targets.airTempC
+                 &amp;&amp; r.airHumidPct &lt;= _targets.humidity;
+
+    if (!venting &amp;&amp; (tooHot || tooHumid)) _actions |= ACT_VENTING;
+    else if (venting &amp;&amp; fine)             _actions &amp;= ~ACT_VENTING;
+}
+
+void StateMachine::_applyOutputs() {
+    if (_actions &amp; ACT_PUMPING) _act.pumpOn();    else _act.pumpOff();
+    if (_actions &amp; ACT_VENTING) _act.fanOn();     else _act.fanOff();
+    if (_actions &amp; ACT_HEATING) _act.heatersOn(); else _act.heatersOff();
+}
+
+void StateMachine::tick(const SensorReading&amp; r) {
+    if (_mode == GhMode::MANUAL) return;
+
+    ActionMask before = _actions;
+    uint32_t   now    = millis();
+
+    _updatePumping(r, now);
+    _updateHeating(r);
+    _updateVenting(r);
+
+    if (_actions != before) {
+        Serial.print("[FSM] actions -&gt; ");
+        Serial.println(actionsLabel(_actions));
+    }
+
+    _applyOutputs();
+}</code></pre>
+    </details>
+
+    <!-- Expandable source: StateMachine.h -->
+    <details>
+      <summary style="cursor:pointer; color:#a8e6a3; font-weight:700; font-size:0.95rem; padding:10px 0;">▸ View header: StateMachine.h</summary>
+    <pre style="background:rgba(0,0,0,0.55); border:1px solid rgba(255,255,255,0.12); border-radius:10px; padding:16px; overflow-x:auto; font-size:0.85rem; line-height:1.5; color:#d6f5d6; margin:10px 0 0;"><code>#ifndef GREENHOUSE_STATEMACHINE_H
+#define GREENHOUSE_STATEMACHINE_H
+
+#include &lt;Arduino.h&gt;
+#include "Sensors.h"
+#include "Actuators.h"
+
+// Each action is an independent bit. The controller can have any combination
+// of them active at once (e.g. HEATING + VENTING to warm air while exhausting
+// humidity). Mask == 0 is IDLE.
+enum ActionFlag : uint8_t {
+    ACT_PUMPING = 1 &lt;&lt; 0,
+    ACT_HEATING = 1 &lt;&lt; 1,
+    ACT_VENTING = 1 &lt;&lt; 2,
+};
+using ActionMask = uint8_t;
+
+enum class GhMode : uint8_t {
+    AUTO = 0,
+    MANUAL
+};
+
+struct Targets {
+    float airTempC   = 16.0f;
+    float waterTempC = 13.0f;
+    float humidity   = 65.0f;
+    int   soilBin    = 3;          // 1, 2, or 3
+};
+
+const char* modeName(GhMode m);
+
+/** "IDLE" or "PUMPING+HEATING" etc. */
+String actionsLabel(ActionMask m);
+/** Compact "IDLE" / "PUMP+HEAT+VENT" — fits the 240px LCD. */
+String actionsShortLabel(ActionMask m);
+
+class StateMachine {
+public:
+    StateMachine(Actuators&amp; actuators);
+
+    void tick(const SensorReading&amp; r);
+
+    ActionMask  actions() const { return _actions; }
+    String      actionsString() const { return actionsLabel(_actions); }
+    GhMode      mode() const { return _mode; }
+    const char* modeLabel() const { return modeName(_mode); }
+    const Targets&amp; targets() const { return _targets; }
+
+    void setMode(GhMode m);
+    void setTargets(const Targets&amp; t) { _targets = t; }
+    void patchTarget_airTemp(float v)   { _targets.airTempC   = v; }
+    void patchTarget_waterTemp(float v) { _targets.waterTempC = v; }
+    void patchTarget_humidity(float v)  { _targets.humidity   = v; }
+    void patchTarget_soilBin(int b)     {
+        if (b &gt;= 1 &amp;&amp; b &lt;= 5) _targets.soilBin = b;
+    }
+
+private:
+    Actuators&amp; _act;
+    ActionMask _actions          = 0;
+    GhMode     _mode             = GhMode::MANUAL;
+    Targets    _targets;
+    uint32_t   _pumpStartedAt    = 0;
+    uint32_t   _pumpCooldownUntil = 0;
+
+    void _updatePumping(const SensorReading&amp; r, uint32_t now);
+    void _updateHeating(const SensorReading&amp; r);
+    void _updateVenting(const SensorReading&amp; r);
+    void _applyOutputs();
+    float _soilTargetPct() const;
+};
+
+#endif</code></pre>
+    </details>
+  </div>
 
   <!-- Tutorial steps -->
   <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
