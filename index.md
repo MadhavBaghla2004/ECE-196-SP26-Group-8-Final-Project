@@ -6,15 +6,79 @@ permalink: /
 
 <!-- ═══════════════════════════════ HOME ═══════════════════════════════ -->
 <div class="content-glass" id="home" style="text-align:center; max-width:820px; margin:0 auto;">
-  <div style="margin-bottom:22px;">
-    <img src="{{ '/images/PrototypePreview.png' | relative_url }}" alt="Home Hydroponic System"
-         style="max-width:100%; width:440px; height:300px; object-fit:cover; border-radius:14px; box-shadow:0 8px 30px rgba(0,0,0,0.7); border:1px solid rgba(255,255,255,0.15);">
+
+  <style>
+    .home-slideshow {
+      position: relative;
+      width: 440px;
+      height: 300px;
+      max-width: 100%;
+      margin: 0 auto 22px;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .home-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      animation: homeFade 12s infinite;
+    }
+
+    .home-slide:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .home-slide:nth-child(2) {
+      animation-delay: 6s;
+    }
+
+    .home-slide video,
+    .home-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @keyframes homeFade {
+      0% { opacity: 0; }
+      8% { opacity: 1; }
+      42% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+  </style>
+
+  <div class="home-slideshow">
+
+    <!-- Slide 1: Video -->
+    <div class="home-slide">
+      <video autoplay muted loop playsinline>
+        <source src="{{ '/images/Autogreen Homepage.mp4' | relative_url }}" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Slide 2: Image -->
+    <div class="home-slide">
+      <img src="{{ '/images/PrototypePreview.png' | relative_url }}" alt="Home Hydroponic System">
+    </div>
+
   </div>
-  <p style="color:#ffffff; font-size:1.7rem; font-weight:800; letter-spacing:0.3px; margin:0 0 6px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">ECE 196 SP26 Group 8 Final Project</p>
+
+  <p style="color:#ffffff; font-size:1.7rem; font-weight:800; letter-spacing:0.3px; margin:0 0 6px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">
+    ECE 196 SP26 Group 8 Final Project
+  </p>
+
   <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; margin:0 0 14px; line-height:1.3; text-shadow:0 2px 8px rgba(0,0,0,0.6);">
     AutoGreen: Automated Greenhouse
   </h2>
-  <p style="color:rgba(255,255,255,0.72); font-size:1rem; line-height:1.6; margin:0 0 24px;">An affordable, sensor-driven growing system that automates seed germination so anyone can grow fresh produce at the comfort of their home</p>
+
+  <p style="color:rgba(255,255,255,0.72); font-size:1rem; line-height:1.6; margin:0 0 24px;">
+    An affordable, sensor-driven growing system that automates seed germination so anyone can grow fresh produce at the comfort of their home
+  </p>
 
 </div>
 
