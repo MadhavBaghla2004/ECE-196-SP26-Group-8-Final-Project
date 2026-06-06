@@ -915,34 +915,135 @@ private:
 <!-- ═══════════════════════════════ RESOURCES ═══════════════════════════════ -->
 <div class="content-glass" id="resources" style="max-width:820px; margin:0 auto;">
 
-  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">Resources</h2>
+  <h2 style="color:#ffffff;
+             font-size:1.7rem;
+             font-weight:800;
+             text-align:center;
+             margin:0 0 24px;
+             text-shadow:0 2px 8px rgba(0,0,0,0.6);">
+    Resources
+  </h2>
 
-  <p style="font-size:1.05rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 24px;">
-    Links to code repositories, documentation, and additional materials.
+  <p style="font-size:1.05rem;
+            color:rgba(255,255,255,0.88);
+            line-height:1.8;
+            margin:0 0 32px;">
+    Key resources, references, tools, and technologies used throughout the development of AutoGreen.
   </p>
 
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
-    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">🔗 Code Repository</div>
-    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
-      <li><a href="https://github.com/your-repo" target="_blank" style="color:#a8e6a3;">GitHub Repository</a></li>
-    </ul>
-  </div>
+  <div style="display:flex; flex-direction:column; gap:18px;">
 
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
-    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📚 Documentation</div>
-    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
-      <li><a href="{{ '/docs/' | relative_url }}" style="color:#a8e6a3;">Full Documentation</a></li>
-      <li><a href="{{ '/api/' | relative_url }}" style="color:#a8e6a3;">API Reference</a></li>
-    </ul>
-  </div>
+    <!-- GitHub -->
+    <div style="background:rgba(8,35,8,0.75);
+                border:1px solid rgba(120,220,120,0.25);
+                border-radius:14px;
+                padding:22px;">
+      <div style="font-size:1.05rem; font-weight:800; color:#ffffff; margin-bottom:8px;">
+        💻 GitHub Repository
+      </div>
+      <div style="color:rgba(255,255,255,0.78); line-height:1.7; margin-bottom:10px;">
+        Contains the source code, firmware, mobile application, and project files used to build AutoGreen.
+      </div>
+      <a href="https://github.com/bordium/Automated-Greenhouse"
+         target="_blank"
+         style="color:#a8e6a3; font-weight:700;">
+         View Repository ↗
+      </a>
+    </div>
 
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
-    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">🛠️ Tools & Libraries</div>
-    <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.88); font-size:1rem; line-height:2;">
-      <li>Arduino IDE</li>
-      <li>Python</li>
-      <li>Jekyll</li>
-    </ul>
+    <!-- Plant Database -->
+    <div style="background:rgba(8,35,8,0.75);
+                border:1px solid rgba(120,220,120,0.25);
+                border-radius:14px;
+                padding:22px;">
+      <div style="font-size:1.05rem; font-weight:800; color:#ffffff; margin-bottom:8px;">
+        🌱 Plant Database
+      </div>
+      <div style="color:rgba(255,255,255,0.78); line-height:1.7; margin-bottom:10px;">
+        Provided germination and environmental requirements used to build the plant recommendation database.
+      </div>
+      <a href="https://tomclothier.hort.net/page02.html"
+         target="_blank"
+         style="color:#a8e6a3; font-weight:700;">
+         Visit Resource ↗
+      </a>
+    </div>
+
+    <!-- SHT45 -->
+    <div style="background:rgba(8,35,8,0.75);
+                border:1px solid rgba(120,220,120,0.25);
+                border-radius:14px;
+                padding:22px;">
+      <div style="font-size:1.05rem; font-weight:800; color:#ffffff; margin-bottom:8px;">
+        🌡️ SHT45 Sensor
+      </div>
+      <div style="color:rgba(255,255,255,0.78); line-height:1.7; margin-bottom:10px;">
+        Datasheet and technical specifications for the temperature and humidity sensor used in AutoGreen.
+      </div>
+      <a href="https://sensirion.com/products/catalog/SHT45"
+         target="_blank"
+         style="color:#a8e6a3; font-weight:700;">
+         View Datasheet ↗
+      </a>
+    </div>
+
+    <!-- TI Guide -->
+    <div style="background:rgba(8,35,8,0.75);
+                border:1px solid rgba(120,220,120,0.25);
+                border-radius:14px;
+                padding:22px;">
+      <div style="font-size:1.05rem; font-weight:800; color:#ffffff; margin-bottom:8px;">
+        ⚡ TI Buck Converter Design Guide
+      </div>
+      <div style="color:rgba(255,255,255,0.78); line-height:1.7; margin-bottom:10px;">
+        Reference used to design efficient power conversion and voltage regulation circuitry.
+      </div>
+      <a href="https://www.ti.com/lit/pdf/slva477"
+         target="_blank"
+         style="color:#a8e6a3; font-weight:700;">
+         Open Guide ↗
+      </a>
+    </div>
+
+    <!-- MQTT -->
+    <div style="background:rgba(8,35,8,0.75);
+                border:1px solid rgba(120,220,120,0.25);
+                border-radius:14px;
+                padding:22px;">
+      <div style="font-size:1.05rem; font-weight:800; color:#ffffff; margin-bottom:8px;">
+        📡 MQTT Protocol
+      </div>
+      <div style="color:rgba(255,255,255,0.78); line-height:1.7;">
+        Enabled lightweight real-time communication between the ESP32 and mobile application.
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div style="background:rgba(8,35,8,0.75);
+                border:1px solid rgba(120,220,120,0.25);
+                border-radius:14px;
+                padding:22px;">
+      <div style="font-size:1.05rem; font-weight:800; color:#ffffff; margin-bottom:8px;">
+        🛠️ Development Tools & Technologies
+      </div>
+      <div style="color:rgba(255,255,255,0.78); line-height:1.7;">
+        KiCAD, Onshape, PlatformIO, C++, Python, TypeScript, and JavaScript were used for PCB design, enclosure development, firmware, backend, and application development.
+      </div>
+    </div>
+
+    <!-- Course Staff -->
+    <div style="background:rgba(8,35,8,0.75);
+                border:1px solid rgba(120,220,120,0.25);
+                border-radius:14px;
+                padding:22px;">
+      <div style="font-size:1.05rem; font-weight:800; color:#ffffff; margin-bottom:8px;">
+        👨‍🏫 Course Staff
+      </div>
+      <div style="color:rgba(255,255,255,0.78); line-height:1.7;">
+        Special thanks to Prof. Morris, Korey, Ming, Juliana, and Ferrari for their guidance, feedback, and support throughout ECE 196.
+      </div>
+    </div>
+
   </div>
 
 </div>
@@ -1033,7 +1134,7 @@ private:
         <img src="{{ '/images/Milestone5.png' | relative_url }}" alt="Milestone 5" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
           <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 22</div>
-          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Plant Database Built</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Plant database built</div>
           <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Created a database storing germination conditions for different seed types.</div>
         </div>
       </div>
@@ -1065,7 +1166,7 @@ private:
         <img src="{{ '/images/Milestone7.png' | relative_url }}" alt="Milestone 7" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
           <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 27</div>
-          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">PCB Fully Assembled</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">PCB fully assembled</div>
           <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Completed PCB assembly by soldering MOSFETs, connectors, and remaining components.</div>
         </div>
       </div>
@@ -1081,7 +1182,7 @@ private:
         <img src="{{ '/images/Milestone8.png' | relative_url }}" alt="Milestone 8" style="width:150px; height:110px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.15);">
         <div>
           <div style="font-size:0.8rem; color:rgba(160,200,255,0.9); font-weight:700; margin-bottom:6px;">May 28</div>
-          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Enclosure Designed</div>
+          <div style="font-size:1.05rem; color:#ffffff; font-weight:800; margin-bottom:6px;">Enclosure designed</div>
           <div style="font-size:0.9rem; color:rgba(255,255,255,0.72); line-height:1.6;">Designed a custom enclosure to house and organize all hardware components.</div>
         </div>
       </div>
