@@ -1161,6 +1161,34 @@ private:
     </details>
   </div>
 
+  <!-- Tutorial #2 Placeholder -->
+
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+
+    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📗 Tutorial #2: Coming Soon</div>
+
+    <p style="font-size:1rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0;">
+
+      This tutorial will be added soon and will cover another key concept from Mini Project #3.
+
+    </p>
+
+  </div>
+
+  <!-- Tutorial #3 Placeholder -->
+
+  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+
+    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📙 Tutorial #3: Coming Soon</div>
+
+    <p style="font-size:1rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0;">
+
+      This tutorial will be added soon and will include additional implementation details, code, and explanations.
+
+    </p>
+
+  </div>
+
 </div>
 
 <!-- ═══════════════════════════════ RESOURCES ═══════════════════════════════ -->
