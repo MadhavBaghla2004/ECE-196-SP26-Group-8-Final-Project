@@ -648,6 +648,242 @@ permalink: /
 
 </div>
 
+<!-- ═══════════════════════════════ PROTOTYPES ═══════════════════════════════ -->
+<div class="content-glass" id="prototypes" style="max-width:820px; margin:0 auto;">
+
+  <h2 style="color:#ffffff; font-size:1.7rem; font-weight:800; text-align:center; margin:0 0 24px; text-shadow:0 2px 8px rgba(0,0,0,0.6);">
+    Prototypes
+  </h2>
+
+  <!-- Prototype 1 -->
+  <div style="display:flex; gap:24px; align-items:center; background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:22px; margin-bottom:24px; flex-wrap:wrap;">
+
+    <!-- Text -->
+    <div style="flex:1; min-width:260px; text-align:left;">
+      <h3 style="color:#ffffff; font-size:1.15rem; font-weight:800; margin:0 0 16px;">
+        Features
+      </h3>
+
+      <div style="display:flex; flex-direction:column; gap:12px;">
+
+        <div style="display:flex; align-items:center; gap:12px; color:rgba(255,255,255,0.86);">
+          <span class="material-icons" style="color:#a8e6a3; font-size:1.35rem;">shopping_cart</span>
+          <span>Off shelf</span>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:12px; color:rgba(255,255,255,0.86);">
+          <span class="material-icons" style="color:#a8e6a3; font-size:1.35rem;">grid_view</span>
+          <span>Seed Cell tray</span>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:12px; color:rgba(255,255,255,0.86);">
+          <span class="material-icons" style="color:#a8e6a3; font-size:1.35rem;">water_drop</span>
+          <span>Water Reservoir</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div style="flex:1; min-width:280px; text-align:center;">
+      <img src="{{ '/images/EnclosureAssembledView.png' | relative_url }}" alt="Enclosure - Assembled View"
+           style="width:100%; max-width:360px; height:auto; border-radius:14px; border:1px solid rgba(255,255,255,0.12); box-shadow:0 6px 24px rgba(0,0,0,0.6);">
+
+      <div style="color:#a8e6a3; font-size:0.9rem; font-weight:700; margin-top:10px;">
+        Enclosure - Assembled View
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Prototype 2 -->
+  <div style="display:flex; gap:24px; align-items:center; background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:22px; margin-bottom:24px; flex-wrap:wrap;">
+
+    <!-- Text -->
+    <div style="flex:1; min-width:260px; text-align:left;">
+      <h3 style="color:#ffffff; font-size:1.15rem; font-weight:800; margin:0 0 16px;">
+        Features
+      </h3>
+
+      <div style="display:flex; flex-direction:column; gap:12px;">
+
+        <div style="display:flex; align-items:center; gap:12px; color:rgba(255,255,255,0.86);">
+          <span class="material-icons" style="color:#a8e6a3; font-size:1.35rem;">opacity</span>
+          <span>Attached Water Tray</span>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:12px; color:rgba(255,255,255,0.86);">
+          <span class="material-icons" style="color:#a8e6a3; font-size:1.35rem;">memory</span>
+          <span>Isolating Electronics Bay</span>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:12px; color:rgba(255,255,255,0.86);">
+          <span class="material-icons" style="color:#a8e6a3; font-size:1.35rem;">space_dashboard</span>
+          <span>Cell Tray Spacer</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div style="flex:1; min-width:280px; text-align:center;">
+      <img src="{{ '/images/EnclosureExplodedView.png' | relative_url }}" alt="Enclosure - Exploded View"
+           style="width:100%; max-width:360px; height:auto; border-radius:14px; border:1px solid rgba(255,255,255,0.12); box-shadow:0 6px 24px rgba(0,0,0,0.6);">
+
+      <div style="color:#a8e6a3; font-size:0.9rem; font-weight:700; margin-top:10px;">
+        Enclosure - Exploded View
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Prototype 3 -->
+  <div style="display:flex; gap:24px; align-items:center; background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:16px; padding:22px; margin-bottom:24px; flex-wrap:wrap;">
+
+    <!-- Text -->
+    <div style="flex:1; min-width:260px; text-align:left;">
+      <h3 style="color:#ffffff; font-size:1.15rem; font-weight:800; margin:0 0 16px;">
+        Features
+      </h3>
+
+      <div style="display:flex; flex-direction:column; gap:12px;">
+
+        <div style="display:flex; align-items:center; gap:12px; color:rgba(255,255,255,0.86);">
+          <span class="material-icons" style="color:#a8e6a3; font-size:1.35rem;">view_in_ar</span>
+          <span>3D Printed Frame</span>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:12px; color:rgba(255,255,255,0.86);">
+          <span class="material-icons" style="color:#a8e6a3; font-size:1.35rem;">layers</span>
+          <span>Laser cut Acrylic Panels</span>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:12px; color:rgba(255,255,255,0.86);">
+          <span class="material-icons" style="color:#a8e6a3; font-size:1.35rem;">lightbulb</span>
+          <span>LED Strips</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div style="flex:1; min-width:280px; text-align:center;">
+      <img src="{{ '/images/EnclosureLid.png' | relative_url }}" alt="Enclosure Lid"
+           style="width:100%; max-width:360px; height:auto; border-radius:14px; border:1px solid rgba(255,255,255,0.12); box-shadow:0 6px 24px rgba(0,0,0,0.6);">
+
+      <div style="color:#a8e6a3; font-size:0.9rem; font-weight:700; margin-top:10px;">
+        Enclosure Lid
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════ SOFTWARE ═══════════════════════════════ -->
+<div class="content-glass" id="software" style="max-width:820px; margin:0 auto;">
+
+  <h2 style="color:#ffffff;
+             font-size:1.7rem;
+             font-weight:800;
+             text-align:center;
+             margin:0 0 24px;
+             text-shadow:0 2px 8px rgba(0,0,0,0.6);">
+    Software Architecture
+  </h2>
+
+  <p style="font-size:1.05rem;
+            color:rgba(255,255,255,0.88);
+            line-height:1.8;
+            margin:0 0 28px;">
+    AutoGreen uses MQTT to enable real-time communication between the mobile application and ESP32 controller. Users can select a plant from the database, automatically configure environmental targets, and monitor sensor readings through the app.
+  </p>
+
+  <div style="display:flex;
+              gap:24px;
+              align-items:center;
+              background:rgba(8,35,8,0.75);
+              border:1px solid rgba(120,220,120,0.25);
+              border-radius:16px;
+              padding:24px;
+              flex-wrap:wrap;">
+
+    <!-- Left Content -->
+    <div style="flex:1; min-width:260px;">
+
+      <h3 style="color:#ffffff;
+                 font-size:1.15rem;
+                 font-weight:800;
+                 margin:0 0 18px;">
+        Key Features
+      </h3>
+
+      <div style="display:flex; flex-direction:column; gap:14px;">
+
+        <div style="display:flex; align-items:center; gap:12px;">
+          <span class="material-icons" style="color:#a8e6a3;">wifi</span>
+          <span style="color:rgba(255,255,255,0.86);">
+            MQTT-based communication between the app and ESP32
+          </span>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:12px;">
+          <span class="material-icons" style="color:#a8e6a3;">search</span>
+          <span style="color:rgba(255,255,255,0.86);">
+            Search and select plants from the database
+          </span>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:12px;">
+          <span class="material-icons" style="color:#a8e6a3;">tune</span>
+          <span style="color:rgba(255,255,255,0.86);">
+            Automatically configure environmental targets
+          </span>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:12px;">
+          <span class="material-icons" style="color:#a8e6a3;">monitoring</span>
+          <span style="color:rgba(255,255,255,0.86);">
+            Live monitoring of temperature, humidity, and moisture
+          </span>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:12px;">
+          <span class="material-icons" style="color:#a8e6a3;">smart_toy</span>
+          <span style="color:rgba(255,255,255,0.86);">
+            Automatic control of pumps, fans, heaters, and lighting
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Right Image -->
+    <div style="flex:1; min-width:280px; text-align:center;">
+
+      <img src="{{ '/images/SoftwareArchitecture.png' | relative_url }}"
+           alt="Software Architecture"
+           style="width:100%;
+                  max-width:380px;
+                  height:auto;
+                  border-radius:14px;
+                  border:1px solid rgba(255,255,255,0.12);
+                  box-shadow:0 6px 24px rgba(0,0,0,0.6);">
+
+      <div style="color:#a8e6a3;
+                  font-size:0.9rem;
+                  font-weight:700;
+                  margin-top:10px;">
+        Mobile App ↔ MQTT Broker ↔ ESP32
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
 <!-- ═══════════════════════════════ VIDEO DEMO ═══════════════════════════════ -->
 <div class="content-glass" id="video-demo" style="max-width:820px; margin:0 auto;">
 
