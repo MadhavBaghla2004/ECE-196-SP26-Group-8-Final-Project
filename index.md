@@ -1168,7 +1168,7 @@ private:
   <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📘 Tutorial #2: MOSFET Switching and PWM Control</div>
 
   <p style="font-size:1rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 18px;">
-    This tutorial introduces MOSFETs as electronic switches that allow an ESP32 to control higher-voltage devices such as pumps, fans, heaters, and LED strips. It explains the difference between relays and MOSFETs, how gate pulldown resistors and decoupling components improve reliability, and why logic-level MOSFETs are important in embedded systems. The tutorial also demonstrates how PWM can be used to control device brightness and speed.  [oai_citation:0‡Nathaniel_Miller_ece196_sp26.md](sediment://file_000000006de471fd9992461e72ba5a82)
+    This tutorial introduces MOSFETs as electronic switches that allow an ESP32 to control higher-voltage devices such as pumps, fans, heaters, and LED strips. It explains the difference between relays and MOSFETs, how gate pulldown resistors and decoupling components improve reliability, and why logic-level MOSFETs are important in embedded systems. The tutorial also demonstrates how PWM can be used to control device brightness and speed.
   </p>
 
   <div style="text-align:center;">
@@ -1190,8 +1190,7 @@ private:
   <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📙 Tutorial #3: Plant Environment Classification Using an ESP32 and SHT45</div>
 
   <p style="font-size:1rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 18px;">
-    This tutorial demonstrates how an ESP32 and SHT45 sensor can be used to collect humidity measurements and classify environmental conditions as Dry, Optimal, or Humid. The activity introduces classification, a core machine learning concept from CSE 151A, using simple threshold-based decision logic. Students learn sensor integration, data acquisition, and automated decision-making using real-world environmental data.  [oai_citation:1‡madhav_baghla_ece196_sp26.md](sediment://file_00000000cb0871f8a5ea094752621741)
-  </p>
+    This tutorial demonstrates how an ESP32 and SHT45 sensor can be used to collect humidity measurements and classify environmental conditions as Dry, Optimal, or Humid. The activity introduces classification, a core machine learning concept from CSE 151A, using simple threshold-based decision logic. Students learn sensor integration, data acquisition, and automated decision-making using real-world environmental data.
 
   <div style="text-align:center;">
     <img src="{{ '/images/MP2.png' | relative_url }}"
