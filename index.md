@@ -1161,33 +1161,66 @@ private:
     </details>
   </div>
 
-  <!-- Tutorial #2 Placeholder -->
+<!-- Tutorial #2: MOSFET Switching -->
 
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
+<div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
 
-    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📗 Tutorial #2: Coming Soon</div>
+  <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📘 Tutorial #2: MOSFET Switching and PWM Control</div>
 
-    <p style="font-size:1rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0;">
+  <p style="font-size:1rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 18px;">
+    This tutorial introduces MOSFETs as electronic switches that allow an ESP32 to control higher-voltage devices such as pumps, fans, heaters, and LED strips. It explains the difference between relays and MOSFETs, how gate pulldown resistors and decoupling components improve reliability, and why logic-level MOSFETs are important in embedded systems. The tutorial also demonstrates how PWM can be used to control device brightness and speed.  [oai_citation:0‡Nathaniel_Miller_ece196_sp26.md](sediment://file_000000006de471fd9992461e72ba5a82)
+  </p>
 
-      This tutorial will be added soon and will cover another key concept from Mini Project #3.
-
+  <div style="text-align:center;">
+    <img src="{{ '/images/BOARD.jpg' | relative_url }}"
+         alt="MOSFET PCB Example"
+         style="max-width:700px; width:100%; height:auto; border-radius:12px;">
+    <p style="font-size:0.9rem; color:rgba(255,255,255,0.65); margin-top:10px;">
+      Example PCB implementation showing MOSFET switching circuitry, gate pulldown resistors, and supporting components.
     </p>
-
   </div>
 
-  <!-- Tutorial #3 Placeholder -->
+</div>
 
-  <div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
 
-    <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📙 Tutorial #3: Coming Soon</div>
+<!-- Tutorial #3: Plant Environment Classification -->
 
-    <p style="font-size:1rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0;">
+<div style="background:rgba(8,35,8,0.75); border:1px solid rgba(120,220,120,0.25); border-radius:14px; padding:24px; margin-bottom:24px;">
 
-      This tutorial will be added soon and will include additional implementation details, code, and explanations.
+  <div style="font-size:0.82rem; color:#a8e6a3; text-transform:uppercase; letter-spacing:1px; font-weight:700; margin-bottom:14px;">📙 Tutorial #3: Plant Environment Classification Using an ESP32 and SHT45</div>
 
+  <p style="font-size:1rem; color:rgba(255,255,255,0.88); line-height:1.8; margin:0 0 18px;">
+    This tutorial demonstrates how an ESP32 and SHT45 sensor can be used to collect humidity measurements and classify environmental conditions as Dry, Optimal, or Humid. The activity introduces classification, a core machine learning concept from CSE 151A, using simple threshold-based decision logic. Students learn sensor integration, data acquisition, and automated decision-making using real-world environmental data.  [oai_citation:1‡madhav_baghla_ece196_sp26.md](sediment://file_00000000cb0871f8a5ea094752621741)
+  </p>
+
+  <div style="text-align:center;">
+    <img src="{{ '/images/MP2.png' | relative_url }}"
+         alt="ESP32 and SHT45 Setup"
+         style="max-width:700px; width:100%; height:auto; border-radius:12px;">
+    <p style="font-size:0.9rem; color:rgba(255,255,255,0.65); margin-top:10px;">
+      AI-generated representation of the ESP32 and SHT45 sensor setup used for environmental classification.
     </p>
-
   </div>
+
+  <h4 style="color:#a8e6a3; margin-top:24px; margin-bottom:12px;">Example Classification Code</h4>
+
+  <pre style="background:#111; color:#f5f5f5; padding:16px; border-radius:10px; overflow-x:auto; font-size:0.9rem;"><code>
+if (rh < 40) {
+  state = "Dry";
+}
+else if (rh <= 70) {
+  state = "Optimal";
+}
+else {
+  state = "Humid";
+}
+  </code></pre>
+
+  <p style="font-size:0.9rem; color:rgba(255,255,255,0.65); margin-top:10px;">
+    Example humidity classification logic. Code adapted from the tutorial implementation.
+  </p>
+
+</div>
 
 </div>
 
